@@ -1,0 +1,29 @@
+root       507   0.0   0.1  258268   3288  ?      Ssl   15:52   0:00  /usr/sbin/rsyslogd  - n 
+
+message+   508   0.0   0.2   44176   5160  ?      Ss    15:52   0:00  /usr/bin/dbusdaemon  - - system  - - address=systemd:  - - nofork  - - nopidfile  - - systemd - activa 
+
+root       523   0.0   0.3  281092   6312  ?      Ssl   15:52   0:00  /usr/lib/accountsservice/accounts - daemon 
+
+root       524   0.0   0.7  389760  15956  ?      Ssl   15:52   0:00  /usr/sbin/NetworkManager  - - no - daemon 
+
+root       527   0.0   0.1   28432   2992  ?      Ss    15:52   0:00  /lib/systemd/systemd - logind 
+
+apache     714   0.0   0.1   27416   2748  ?      Ss    15:52   0:00  /www/temp/webmin 
+
+root       617   0.0   0.1   19312   2056  ?      Ss    15:52   0:00  /usr/sbin/irqbalance  - - pid=/var/run/irqbalance.pid 
+
+root       644   0.0   0.1  245472   2444  ?      Sl    15:52   0:01  /usr/sbin/VBoxService 
+
+root       653   0.0   0.0   12828   1848  tty1   Ss+   15:52   0:00  /sbin/agetty  - - noclear  tty1  linux 
+
+root       661   0.0   0.3  285428   8088  ?      Ssl   15:52   0:00  /usr/lib/policykit - 1/polkitd  - - no - debug 
+
+root       663   0.0   0.3  364752   7600  ?      Ssl   15:52   0:00  /usr/sbin/gdm3 
+
+root       846   0.0   0.5  285816  10884  ?      Ssl   15:53   0:00  /usr/lib/upower/upowerd 
+
+root       867   0.0   0.3  235180   7272  ?      Sl    15:53   0:00  gdm - session - worker  [pam/gdm - launch - environment] 
+
+Debian - +   877   0.0   0.2   46892   4816  ?      Ss    15:53   0:00  /lib/systemd/systemd  - - user 
+
+Debian - +   878   0.0   0.0   62672   1596  ?      S     15:53   0:00  (sd - pam)

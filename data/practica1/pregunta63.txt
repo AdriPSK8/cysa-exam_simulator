@@ -1,0 +1,3 @@
+        mo:~#  md5sum  - c  demo.md5 
+        mo.txt:  FAILED 
+        sum:  WARNING:  1  computed  checksum  did  not  match

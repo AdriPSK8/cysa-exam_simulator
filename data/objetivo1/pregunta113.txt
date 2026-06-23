@@ -1,0 +1,11 @@
+Sep  16  2019  23:01:37:  %ASA - 4 - 106023:  Deny  tcp  src  outside:10.10.0.100/53534  dst  inside:192.168.1.128/1521  by 
+access - group  "OUTSIDE"  [0x5063b82f,  0x0] 
+
+Sep  16  2019  23:01:38:  %ASA - 4 - 106023:  Deny  tcp  src  outside:10.10.0.100/53534  dst  inside:192.168.1.128/1521  by 
+access - group  "OUTSIDE"  [0x5063b82f,  0x0] 
+
+Sep  16  2019  23:01:39:  %ASA - 4 - 106023:  Deny  tcp  src  outside:10.10.0.100/53534  dst  inside:192.168.1.128/1521  by 
+access - group  "OUTSIDE"  [0x5063b82f,  0x0] 
+
+Sep  16  2019  23:01:40:  %ASA - 4 - 106023:  Deny  tcp  src  outside:10.10.0.100/53534  dst  inside:192.168.1.128/1521  by 
+access - group  "OUTSIDE"  [0x5063b82f,  0x0]

@@ -1,0 +1,17 @@
+        DOWS\system32>vssadmin  list  Shadowstorage 
+
+        sadmin  1.1  -  Volume  Shadow  Copy  Service  administrative  command - line  tool 
+
+          Copyright  2001 - 2013  Microsoft  Corp. 
+
+          Copy  Storage  association 
+
+             volume:  (C:)\\?\Volume{c3b53dae - 0e54 - 13e3 - 97ab - 806e6f6e69633}\ 
+
+             Copy  Storage  volume:  (C:)\\?\Volume{c3b53dae - 0e54 - 13e3 - 97ab - 806e6f6e6963}\ 
+
+             Shadow  Copy  Storage  space:  25.6  GB  (2%) 
+
+           located  Shadow  Copy  Storage  space:  26.0  GB  (2%) 
+
+           imum  Shadow  Copy  Storage  space:  89.4  GB  (10%)

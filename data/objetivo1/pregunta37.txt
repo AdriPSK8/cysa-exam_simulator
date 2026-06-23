@@ -1,0 +1,5 @@
+root@demo:~#  md5sum  - c  demo.md5 
+
+demo.txt:  FAILED 
+
+md5sum:  WARNING:  1  computed  checksum  did  NOT  match

@@ -1,0 +1,1976 @@
+[
+  {
+    "id": 1,
+    "pregunta": "1. Considera el análisis de modelado de amenazas que se muestra aquí. ¿Qué marco de trabajo (framework) de ataque se utilizó para desarrollar este análisis?",
+    "opciones": [
+      "A) ATT&CK",
+      "B) Cyber Kill Chain",
+      "C) STRIDE",
+      "D) Diamond"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Este análisis utilizó el modelo de Diamante (Diamond Model) de análisis de intrusiones, que describe una secuencia donde un adversario despliega una capacidad dirigida a una infraestructura contra una víctima. El modelo toma su nombre de la forma del diagrama creado durante el análisis."
+    ,"imagen": "pregunta1.png"
+  },
+  {
+    "id": 2,
+    "pregunta": "2. Como parte de un ejercicio de equipo rojo (red team) a nivel de toda la organización, Frank puede utilizar una vulnerabilidad conocida para comprometer un servidor web Apache. Frank sabe que el servicio Apache se ejecuta bajo una cuenta de usuario limitada. Una vez que ha obtenido acceso, ¿cuál debería ser su siguiente paso si desea utilizar el sistema para pivotar hacia sistemas protegidos detrás de la subred filtrada (DMZ) en la que reside el servidor web?",
+    "opciones": [
+      "A) Escaneo de vulnerabilidades",
+      "B) Escalada de privilegios",
+      "C) Aplicación de parches",
+      "D) Instalación de herramientas adicionales"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Por defecto, Apache no se ejecuta como un usuario administrativo. De hecho, normalmente se ejecuta como un usuario limitado. Para tomar acciones adicionales, Frank debe buscar una ruta de escalada de privilegios que le permita obtener más acceso."
+  },
+  {
+    "id": 3,
+    "pregunta": "3. Helen está utilizando el Cyber Kill Chain de Lockheed Martin para analizar un ataque que tuvo lugar contra su organización. Durante el ataque, el autor adjuntó una herramienta maliciosa a un mensaje de correo electrónico que se envió a la víctima. ¿Qué fase del Cyber Kill Chain incluye este tipo de actividad?",
+    "opciones": [
+      "A) Armamentización (Weaponization)",
+      "B) Entrega (Delivery)",
+      "C) Explotación (Exploitation)",
+      "D) Acciones sobre los objetivos (Actions on objectives)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. La entrega ocurre cuando el adversario despliega su herramienta directamente contra los objetivos o mediante una liberación que depende de que el personal del objetivo interactúe con ella (por ejemplo, un archivo adjunto de correo electrónico, un USB o sitios web maliciosos)."
+  },
+  {
+    "id": 4,
+    "pregunta": "4. Betty desea revisar los registros de seguridad en su estación de trabajo Windows. ¿Qué herramienta debe usar para hacer esto?",
+    "opciones": [
+      "A) Secpol.msc",
+      "B) Event Viewer",
+      "C) Log Viewer",
+      "D) Logview.msc"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. El Visor de eventos de Windows es una herramienta integrada para ver aplicaciones, seguridad, configuración, sistema y otros registros. Secpol.msc es el complemento de Directiva de seguridad local, mientras que logview.msc no es una herramienta ni un complemento integrado de Windows."
+  },
+  {
+    "id": 5,
+    "pregunta": "5. El marco de trabajo ATT&CK define cuál de los siguientes como “los detalles específicos sobre cómo el adversario atacaría al objetivo”?",
+    "opciones": [
+      "A) El actor de la amenaza",
+      "B) El método de direccionamiento (targeting method)",
+      "C) El vector de ataque",
+      "D) La debilidad organizacional"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El marco MITRE ATT&CK define el vector de ataque como los detalles específicos sobre cómo el adversario atacaría al objetivo. No es necesario memorizar todo el marco, pero debes saber descartar opciones (como el actor de amenazas) para decidir entre el vector de ataque y la debilidad organizacional."
+  },
+  {
+    "id": 6,
+    "pregunta": "6. Jamal desea aprovechar un marco de trabajo para mejorar su búsqueda de amenazas (threat hunting) para la defensa de la red. ¿Qué marco de trabajo de búsqueda de amenazas debería seleccionar para ayudar a su equipo a categorizar y analizar las amenazas de manera más efectiva?",
+    "opciones": [
+      "A) MOPAR",
+      "B) CVSS",
+      "C) MITRE ATT&CK",
+      "D) CAPEC"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El marco ATT&CK se centra en la defensa de la red y el threat hunting. CAPEC se enfoca en la seguridad de aplicaciones. CVSS es el Sistema de puntuación de vulnerabilidades comunes, y Mopar es una organización de piezas y servicio de Fiat Chrysler."
+  },
+  {
+    "id": 7,
+    "pregunta": "7. Maria es una administradora de dominio de Active Directory para su empresa, y sabe que una botnet que se propaga rápidamente depende de una serie de nombres de dominio para el comando y control, y que prevenir el acceso a esos nombres de dominio hará que la infección de malware que se conecta a la botnet deje de realizar más acciones. ¿Cuál de las siguientes acciones es su mejor opción si desea evitar que los usuarios de Windows fuera de las instalaciones se conecten a los sistemas de comando y control de la botnet?",
+    "opciones": [
+      "A) Forzar una actualización de BGP.",
+      "B) Configurar un sumidero DNS (DNS sinkhole).",
+      "C) Modificar el archivo hosts.",
+      "D) Instalar una aplicación antimalware."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. María puede enviar un archivo de hosts actualizado a sus sistemas para redirigir el tráfico de dominios maliciosos al localhost o a un sistema seguro. Un DNS sinkhole funcionaría solo si todos los sistemas usaran DNS local; los usuarios externos suelen usar el DNS de sus redes actuales."
+  },
+  {
+    "id": 8,
+    "pregunta": "8. Mientras intenta detener un servicio no autorizado, Monica emite el siguiente comando de Linux en un sistema Ubuntu usando upstart: service rogueservice stop. Después de reiniciar, descubre que el servicio se está ejecutando de nuevo. ¿Qué sucedió y qué necesita hacer para evitar esto?",
+    "opciones": [
+      "A) El servicio se reinició al arrancar, por lo que necesita incluir el indicador -p, o permanente.",
+      "B) El servicio se reinició solo, por lo que necesita eliminar el binario asociado con el servicio.",
+      "C) El servicio se reinició al arrancar, por lo que debería agregar un archivo .override para evitar que el servicio se inicie.",
+      "D) Un usuario malintencionado reinició el servicio, por lo que necesita asegurarse de que los usuarios no puedan reiniciar los servicios."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Mónica usó un comando que solo detiene un servicio en ejecución, pero este se reiniciará al arrancar el sistema a menos que los scripts de inicio sean deshabilitados (mediante upstart o init.d)."
+  },
+  {
+    "id": 9,
+    "pregunta": "9. Bill está revisando los registros de autenticación de un sistema Linux que opera y encuentra las siguientes entradas de registro: ¿Cuál es la dirección IP del sistema desde donde inició sesión el usuario cuando estableció la conexión?",
+    "opciones": [
+      "A) 172.30.0.62",
+      "B) 62.0.30.172",
+      "C) 10.174.238.88",
+      "D) 9.48.6.0"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La primera entrada en el registro indica que el usuario se autenticó desde el sistema 10.174.238.88."
+    ,"tabla": "pregunta9.txt"
+  },
+  {
+    "id": 10,
+    "pregunta": "10. ¿Qué servicio utilizó el usuario para conectarse al servidor?",
+    "opciones": [
+      "A) HTTPS",
+      "B) PTS",
+      "C) SSH",
+      "D) Telnet"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La segunda entrada del registro indica que el demonio sshd manejó la conexión, el cual admite el protocolo Secure Shell (SSH)."
+  },
+  {
+    "id": 11,
+    "pregunta": "11. ¿Qué técnica de autenticación utilizó el usuario para conectarse al servidor?",
+    "opciones": [
+      "A) Contraseña (Password)",
+      "B) PKI",
+      "C) Token",
+      "D) Biométrica"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. La primera entrada del registro indica que el usuario utilizó cifrado de clave pública (PKI). Por lo tanto, el usuario poseía la clave privada correspondiente a la clave pública almacenada en el servidor."
+  },
+  {
+    "id": 12,
+    "pregunta": "12. ¿Qué cuenta utilizó el individuo para conectarse al servidor?",
+    "opciones": [
+      "A) root",
+      "B) ec2-user",
+      "C) bash",
+      "D) pam_unix"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. La identidad del usuario (ec2-user) aparece en la primera entrada. La tercera entrada (USER=root) registra que el usuario usó sudo para obtener privilegios administrativos. La entrada pam_unix indica que la sesión fue autenticada usando el módulo PAM."
+  },
+  {
+    "id": 13,
+    "pregunta": "13. Alaina añade la lista de URL de OpenPhish a su herramienta SOAR y ve las siguientes entradas: ¿Qué acción debe tomar basándose en URL de phishing como estas?",
+    "opciones": [
+      "A) Bloquear la dirección IP en su firewall perimetral.",
+      "B) Monitorear la dirección IP usando su IDS.",
+      "C) Eliminar correos electrónicos que contengan la URL desde el correo entrante.",
+      "D) Nada, ya que estas no han sido confirmadas."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La mejor opción de Alaina es eliminar correos electrónicos con dichas URL del correo entrante. Bloquear IP puede no proteger a usuarios móviles que no pasan por su firewall o IDS."
+    ,"tabla": "pregunta13.txt"
+  },
+  {
+    "id": 14,
+    "pregunta": "14. Rowan desea bloquear las descargas automáticas (drive-by-downloads) y los canales de comando y control de botnets, mientras redirige los sistemas potencialmente afectados a un mensaje de advertencia. ¿Qué debería implementar para lograr esto?",
+    "opciones": [
+      "A) Un sumidero DNS (DNS sinkhole)",
+      "B) Un WAF (Web Application Firewall)",
+      "C) Un IDS (Intrusion Detection System)",
+      "D) Un UEBA (User and Entity Behavior Analytics)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Un DNS sinkhole satisface exactamente las necesidades de Rowan al redirigir el tráfico hacia sitios maliciosos o de control de botnets hacia una página de destino que advierte al usuario."
+    ,"tabla": "pregunta14.txt"
+  },
+  {
+    "id": 15,
+    "pregunta": "15. Nathan descubre un paquete de malware en la estación de trabajo de un usuario final. ¿Qué calificación debería darle si está considerando el impacto organizacional basado en la tabla mostrada?",
+    "opciones": [
+      "A) Sin impacto",
+      "B) Sin impacto a los servicios",
+      "C) Denegación de servicios no críticos",
+      "D) Denegación de servicios críticos o pérdida de control"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Ante un incidente, aunque sea tentador decir \"sin impacto\", la respuesta correcta es \"sin impacto a los servicios\", ya que el sistema aún requiere tiempo de remediación por parte del personal."
+  },
+  {
+    "id": 16,
+    "pregunta": "16. La organización de Nathan utiliza una herramienta de software como servicio (SaaS) para gestionar sus listas de correo de clientes, las cuales utilizan para informar a los clientes sobre próximas ventas con una semana de antelación. El software principal de línea de negocio de la organización continúa funcionando y la mercancía se puede vender. Debido a una interrupción del servicio, no pueden agregar nuevos clientes a la lista durante un día hábil completo. ¿Cómo debería Nathan calificar este problema de impacto local durante la interrupción?",
+    "opciones": [
+      "A) Impacto mínimo a servicios no críticos",
+      "B) Impacto mínimo a servicios críticos",
+      "C) Impacto significativo a servicios no críticos",
+      "D) Denegación de servicios no críticos"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. El servicio no es crítico porque puede usarse para realizar negocios normalmente tras ser restaurado sin un impacto comercial significativo; sin embargo, durante la caída, se clasifica como una denegación de un servicio no crítico."
+  },
+  {
+    "id": 17,
+    "pregunta": "17. Durante una investigación sobre un sistema comprometido, Nathan descubre señales de una amenaza persistente avanzada (APT) residente en los sistemas administrativos de su organización. ¿Cómo debería clasificar esta amenaza?",
+    "opciones": [
+      "A) Impacto significativo a servicios no críticos",
+      "B) Denegación de servicios no críticos",
+      "C) Impacto significativo a servicios críticos",
+      "D) Denegación de servicios críticos o pérdida de control"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Descubrir una Amenaza Persistente Avanzada (APT) en sus sistemas administrativos generalmente indica que se ha perdido el control del entorno."
+  },
+  {
+    "id": 18,
+    "pregunta": "18. Melissa está utilizando la escala de US-CERT para medir el impacto de la ubicación de la actividad observada por un actor de amenazas. ¿Cuál de las siguientes debería ser la actividad de amenaza con la ubicación de mayor calificación?",
+    "opciones": [
+      "A) Subred filtrada (DMZ) de sistemas críticos",
+      "B) Red de negocios",
+      "C) Subred filtrada (DMZ) de negocios",
+      "D) Sistemas de seguridad (Safety systems)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. La seguridad y la vida humana son siempre el recurso más crítico. Los sistemas de seguridad deben recibir la calificación más alta; por ejemplo, en el demo NCISS de US-CERT, reciben 100/100 puntos en la escala."
+  },
+  {
+    "id": 19,
+    "pregunta": "19. La organización de Derek ha estado trabajando para recuperarse de una reciente infección de malware que causó interrupciones en toda la organización durante una parte importante de su ciclo comercial. Para realizar un triaje adecuado, ¿a qué debería prestarle más atención Derek primero?",
+    "opciones": [
+      "A) El impacto inmediato en las operaciones para que su equipo pueda restaurar la funcionalidad.",
+      "B) El impacto total del evento para que su equipo pueda proporcionar un informe final preciso.",
+      "C) El impacto inmediato en las operaciones para que su equipo pueda identificar al actor de amenazas probable.",
+      "D) El impacto total del evento para que su equipo pueda construir un nuevo modelo de amenazas para uso futuro."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Durante un evento, los responsables de respuesta a incidentes deben priorizar el impacto inmediato para la remediación. Una vez que los sistemas están en línea, se debe evaluar el impacto total e incluirlo en el informe de lecciones aprendidas."
+  },
+  {
+    "id": 20,
+    "pregunta": "20. Jeff descubre múltiples fotos JPEG durante su investigación forense de una computadora involucrada en un incidente. Cuando ejecuta exiftool para recopilar los metadatos del archivo, ¿qué información no es probable que forme parte de las imágenes incluso si tienen metadatos completos e intactos?",
+    "opciones": [
+      "A) Ubicación GPS",
+      "B) Tipo de cámara",
+      "C) Número de copias realizadas",
+      "D) Fecha/marca de tiempo correcta"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La cantidad de metadatos en las fotos varía según el dispositivo, pero frecuentemente incluyen ubicación GPS, marcas de tiempo y tipo de cámara. Los archivos de imagen no rastrean cuántas veces han sido copiados."
+  },
+  {
+    "id": 21,
+    "pregunta": "21. John ha diseñado su red como se muestra aquí y coloca los sistemas no confiables que desean conectarse a la red en el segmento de red \"Guests\" (Invitados). ¿Cómo se llama este tipo de segmentación?",
+    "opciones": [
+      "A) Segmentación de red proactiva",
+      "B) Aislamiento",
+      "C) Cuarentena",
+      "D) Eliminación"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Este es un ejemplo de segmentación de red proactiva. Si se detecta un sistema problemático, se puede crear una red de cuarentena dedicada, aislarlo o eliminarlo."
+    ,"imagen": "pregunta21.png"
+  },
+  {
+    "id": 22,
+    "pregunta": "22. La organización para la que trabaja Jamal clasifica los eventos relacionados con la seguridad utilizando las definiciones estándar del NIST. ¿Qué clasificación debería usar cuando descubre un software de registro de teclas (key logging) en la computadora portátil de uno de sus viajeros de negocios frecuentes?",
+    "opciones": [
+      "A) Un evento (An event)",
+      "B) Un evento adverso (An adverse event)",
+      "C) Un incidente de seguridad (A security incident)",
+      "D) Una violación de política (A policy violation)"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. NIST clasifica estos eventos como incidentes de seguridad si violan políticas o amenazan con hacerlo. Un \"evento adverso\" es cualquier evento con consecuencias negativas, y un \"evento\" es cualquier ocurrencia observable."
+  },
+  {
+    "id": 23,
+    "pregunta": "23. Dan está diseñando una red segmentada que coloca sistemas con diferentes niveles de requisitos de seguridad en diferentes subredes, con firewalls y otros dispositivos de seguridad de red entre ellos. ¿En qué fase del proceso de respuesta a incidentes se encuentra Dan?",
+    "opciones": [
+      "A) Actividad posterior al incidente",
+      "B) Detección y análisis",
+      "C) Preparación",
+      "D) Contención, erradicación y recuperación"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Los esfuerzos de preparación están diseñados para limitar el daño que un atacante podría causar."
+  },
+  {
+    "id": 24,
+    "pregunta": "24. Lauren quiere crear una copia de seguridad de los permisos de Linux antes de realizar cambios en la estación de trabajo Linux que intenta remediar. ¿Qué herramienta de Linux puede usar para hacer una copia de seguridad de los permisos de un directorio completo en el sistema?",
+    "opciones": [
+      "A) Puede usar chbkup.",
+      "B) Puede usar getfacl.",
+      "C) Puede usar aclman.",
+      "D) No existe una herramienta común de copia de seguridad de permisos en Linux."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Linux ofrece getfacl para realizar respaldos recursivos de directorios y permisos, y setfacl para restaurarlos. Comandos como aclman o chbkup no son herramientas estándar."
+  },
+  {
+    "id": 25,
+    "pregunta": "25. Mientras trabaja para restaurar los sistemas a su configuración original después de un compromiso de APT a largo plazo, Manish tiene tres opciones: Opción A: Puede restaurar desde una copia de seguridad y luego actualizar los parches en el sistema. Opción B: Puede reconstruir y parchear el sistema usando el medio de instalación original y el software de aplicación utilizando la documentación de construcción de su organización. Opción C: Puede eliminar las cuentas comprometidas y las herramientas de rootkit y luego solucionar los problemas que permitieron a los atacantes acceder a los sistemas. ¿Qué opción debería elegir Manish en este escenario?",
+    "opciones": [
+      "A) Opción A.",
+      "B) Opción B.",
+      "C) Opción C.",
+      "D) Ninguna de las anteriores. Manish debería contratar a un tercero para evaluar los sistemas antes de proceder."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Cuando una APT ha estado presente por un tiempo desconocido, se debe asumir que los respaldos están comprometidos. La mejor opción es reconstruir los sistemas desde cero, asegurando que estén parcheados y protegidos."
+  },
+  {
+    "id": 26,
+    "pregunta": "26. Jessica quiere acceder a una unidad cifrada con FileVault 2 en macOS. ¿Cuál de los siguientes métodos no es una forma posible de desbloquear el volumen?",
+    "opciones": [
+      "A) Cambiar la clave de FileVault usando una cuenta de usuario confiable.",
+      "B) Recuperar la clave de la memoria mientras el volumen está montado.",
+      "C) Adquirir la clave de recuperación.",
+      "D) Extraer las claves de iCloud."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. FileVault permite desbloquear una unidad mediante cuentas confiables, pero no cambiando la clave. Las claves de FileVault 2 pueden recuperarse de la memoria o desde iCloud. Se recomienda que los usuarios siempre registren su clave de recuperación."
+  },
+  {
+    "id": 27,
+    "pregunta": "27. Susan descubre las siguientes entradas de registro que ocurrieron con segundos de diferencia entre sí en su consola Squert (una interfaz web de Sguil). ¿Qué han detectado más probablemente sus sensores de red?",
+    "opciones": [
+      "A) Una conexión de base de datos fallida desde un servidor",
+      "B) Un ataque de denegación de servicio (DoS)",
+      "C) Un escaneo de puertos",
+      "D) Una fuente de registro mal configurada"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Una serie de intentos de conexión fallidos a varios servicios en pocos segundos es un indicador clásico de un escaneo de puertos. A diferencia de una denegación de servicio (enfocada en un single service,), esto busca identificar servicios expuestos."
+    ,"imagen": "pregunta27.png"
+  },
+  {
+    "id": 28,
+    "pregunta": "28. Si Suki quiere purgar (borrar de forma segura) una unidad, ¿cuál de las siguientes opciones logrará su objetivo?",
+    "opciones": [
+      "A) Borrado criptográfico (Cryptographic erase)",
+      "B) Reformateo (Reformat)",
+      "C) Sobrescritura (Overwrite)",
+      "D) Reparticionamiento (Repartition)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. La purga requiere la eliminación completa de los datos; el borrado criptográfico es la única opción en la lista que destruye totalmente el contenido. El formateo o re-particionado no eliminan los datos de forma segura."
+  },
+  {
+    "id": 29,
+    "pregunta": "29. Mientras realiza esfuerzos de validación posteriores a la reconstrucción, Scott escanea un servidor desde una red remota y no ve vulnerabilidades. Joanna, la administradora de la máquina, ejecuta un escaneo y descubre dos vulnerabilidades críticas y cinco problemas moderados. ¿Qué es lo que más probablemente está causando la diferencia en sus informes?",
+    "opciones": [
+      "A) Se utilizaron diferentes niveles de parcheo durante los escaneos.",
+      "B) Están escaneando a través de un balanceador de carga.",
+      "C) Hay un firewall entre la red remota y el servidor.",
+      "D) Scott o Joanna ejecutaron el escaneo de vulnerabilidades con configuraciones diferentes."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Los escaneos locales suelen ser más informativos que los remotos, ya que los firewalls a menudo bloquean el tráfico de servicios específicos hacia el exterior."
+  },
+  {
+    "id": 30,
+    "pregunta": "30. Como parte de la cooperación de su organización en un caso penal importante, se le ha pedido al equipo forense de Adam que envíe una imagen forense de un sistema comprometido altamente sensible en formato RAW a un examinador forense externo. ¿Qué pasos debe seguir el equipo de Adam antes de enviar una unidad que contiene la imagen forense?",
+    "opciones": [
+      "A) Codificar en formato EO1 y proporcionar un hash del archivo original en la unidad.",
+      "B) Codificar en formato FTK y proporcionar un hash del nuevo archivo en la unidad.",
+      "C) Cifrar el archivo RAW y transferir un hash y una clave por separado.",
+      "D) Descifrar el archivo RAW y transferir un hash por separado."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Al enviar unidades sensibles a terceros, se debe cifrar la imagen, proporcionar el hash y enviar la clave de descifrado por un mecanismo separado para garantizar que la pérdida física no exponga la información."
+  },
+  {
+    "id": 31,
+    "pregunta": "31. Mika quiere analizar el contenido de una unidad sin causar ningún cambio en ella. ¿Qué método es el más adecuado para asegurar esto?",
+    "opciones": [
+      "A) Establecer el puente (jumper) de \"solo lectura\" en la unidad.",
+      "B) Usar un bloqueador de escritura (write blocker).",
+      "C) Usar un bloqueador de lectura (read blocker).",
+      "D) Usar un paquete de software forense."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Un bloqueador de escritura de hardware asegura que no se realicen cambios al montar una unidad. Se deben crear imágenes forenses del original y trabajar únicamente sobre las copias."
+  },
+  {
+    "id": 32,
+    "pregunta": "32. ¿Qué tipo de formulario relacionado con la investigación forense se muestra aquí? (Una ilustración de un formulario relacionado con una investigación forense).",
+    "opciones": [
+      "A) Cadena de custodia (Chain of custody)",
+      "B) Informe de examen (Report of examination)",
+      "C) Registro de descubrimiento forense (Forensic discovery log)",
+      "D) Liberación de custodia de política (Policy custody release)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. El formulario de cadena de custodia documenta el caso, las copias realizadas y quién tuvo posesión de la evidencia en cada momento de la investigación."
+    ,"imagen": "pregunta32.png"
+  },
+  {
+    "id": 33,
+    "pregunta": "33. James quiere determinar si otros sistemas Windows en su red están infectados con el mismo paquete de malware que ha descubierto en la estación de trabajo que está analizando. Ha desconectado el sistema de su red desenchufando su cable de red, según lo requiere la política corporativa. Sabe que el sistema ha exhibido previamente un comportamiento de \"beaconing\" (señalización) y quiere usar ese comportamiento para identificar otros sistemas infectados. ¿Cómo puede crear de forma segura una huella digital para este comportamiento sin modificar el sistema infectado?",
+    "opciones": [
+      "A) Conectar el sistema a la red y capturar el tráfico rápidamente en el firewall usando Wireshark o tcpdump.",
+      "B) Conectar el sistema a un switch aislado y usar un puerto span o un tap y Wireshark/tcpdump para capturar el tráfico.",
+      "C) Revisar la caché ARP para el tráfico saliente.",
+      "D) Revisar el registro del Firewall de Windows Defender para obtener registros de tráfico."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. James puede usar un puerto SPAN o un tap para capturar el tráfico y crear una huella digital (fingerprint) del comportamiento de balizamiento (beaconing) de un sistema infectado."
+  },
+  {
+    "id": 34,
+    "pregunta": "34. Después de completar un proceso de respuesta a incidentes y proporcionar un informe final a la gerencia, ¿qué paso debería usar Casey para identificar mejoras en su plan de respuesta a incidentes?",
+    "opciones": [
+      "A) Actualizar la documentación del sistema.",
+      "B) Realizar una sesión de lecciones aprendidas (lessons learned).",
+      "C) Revisar el estado de los parches y los escaneos de vulnerabilidades.",
+      "D) Contratar consultores externos."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Las lecciones aprendidas sirven para identificar mejoras en el plan de respuesta y asegurar que esté actualizado para eventos futuros."
+  },
+  {
+    "id": 35,
+    "pregunta": "35. Durante una investigación forense, Lukas descubre que necesita capturar una máquina virtual que es parte de las operaciones críticas del sitio web de su empresa. Si no puede suspender o apagar la máquina por razones comerciales, ¿qué proceso de creación de imágenes debería seguir?",
+    "opciones": [
+      "A) Realizar una instantánea (snapshot) del sistema, arrancarla, suspender la versión copiada y copiar el directorio en el que reside.",
+      "B) Copiar los archivos de disco virtual y luego usar una herramienta de captura de memoria.",
+      "C) Escalar a la gerencia para obtener permiso para suspender el sistema y permitir una copia forense real.",
+      "D) Usar una herramienta como Volatility Framework para capturar completamente la máquina en vivo."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Si el sistema debe permanecer en línea, lo mejor es copiar los archivos de disco virtual y realizar una imagen de memoria en vivo. Las instantáneas (snapshots) provocan pérdida de artefactos críticos de memoria volátil."
+  },
+  {
+    "id": 36,
+    "pregunta": "36. Mika, una examinadora forense informática, recibe una PC y sus periféricos que fueron incautados como evidencia forense durante una investigación. Después de firmar el registro de cadena de custodia y comenzar a prepararse para su investigación, una de las primeras cosas que nota es que cada cable y puerto fue etiquetado con una pegatina codificada por colores por el equipo en el sitio. ¿Por qué están etiquetados los elementos de esta manera?",
+    "opciones": [
+      "A) Para asegurar la cadena de custodia.",
+      "B) Para asegurar un reensamblaje correcto.",
+      "C) Para permitir una documentación más fácil de la adquisición.",
+      "D) Para proteger el sistema contra la manipulación (tamper-proof)."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Para investigaciones forenses, es vital documentar la configuración original (por ejemplo, mediante fotos o codificación de colores de cables) antes de mover o desensamblar el equipo."
+  },
+  {
+    "id": 37,
+    "pregunta": "37. Mientras revisa sus registros de Nagios, Selah descubre el mensaje de error que se muestra aquí. ¿Qué debería hacer respecto a este error? (Una ilustración de un mensaje de error).",
+    "opciones": [
+      "A) Comprobar si hay evidencia de un escaneo de puertos.",
+      "B) Revisar el registro de errores de Apache.",
+      "C) Reiniciar el servidor para restaurar el servicio.",
+      "D) Reiniciar el servicio Apache."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Los errores 404 en los registros de acceso de un servidor web pueden indicar enlaces rotos, pero también pueden ser una señal de que alguien está realizando un escaneo de vulnerabilidades contra el servidor."
+    ,"imagen": "pregunta37.png"
+  },
+  {
+    "id": 38,
+    "pregunta": "38. Lakshman necesita higienizar discos duros que saldrán de su organización después de que finalice un contrato de arrendamiento. Los discos contenían información que su organización clasifica como datos sensibles que los competidores encontrarían valiosos si pudieran obtenerlos. ¿Qué opción es la más apropiada para asegurar que no ocurra una exposición de datos durante este proceso?",
+    "opciones": [
+      "A) Limpiar (Clear), validar y documentar.",
+      "B) Purgar (Purge) los discos.",
+      "C) Purgar (Purge), validar y documentar.",
+      "D) Los discos deben ser destruidos para asegurar que no haya pérdida de datos."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Como las unidades se devuelven al finalizar un arrendamiento, no se pueden destruir. La acción adecuada es purgar (purge), validar y documentar el proceso. Según la norma NIST SP 800-88, el borrado simple (clearing) permite la recuperación de datos, mientras que la purga hace que la recuperación sea inviable."
+  },
+  {
+    "id": 39,
+    "pregunta": "39. Selah se está preparando para recopilar una imagen forense de una computadora Macintosh que ejecuta el sistema operativo Ventura. ¿Qué formato de disco duro es más probable que encuentre?",
+    "opciones": [
+      "A) FAT32",
+      "B) MacFAT",
+      "C) APFS",
+      "D) HFS+"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El sistema de archivos nativo de macOS es APFS. macOS puede leer NTFS pero requiere software adicional para escribir en él, y el sistema previo estándar era HFS+."
+  },
+  {
+    "id": 40,
+    "pregunta": "40. Durante un análisis forense de la computadora de un empleado como parte de una investigación de recursos humanos sobre el mal uso de los recursos de la empresa, Tim descubre un programa llamado Eraser instalado en la PC. ¿Qué debería esperar encontrar Tim como parte de su investigación?",
+    "opciones": [
+      "A) Una unidad C: borrada.",
+      "B) Actividades antiforenses.",
+      "C) Todo el espacio de holgura (slack space) limpiado.",
+      "D) Archivos temporales e historial de Internet borrados."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. El uso de herramientas de borrado seguro como Eraser después de un incidente sospechoso es un indicador claro de intentos de ocultar evidencia, lo cual se clasifica como actividad antiforense."
+  },
+  {
+    "id": 41,
+    "pregunta": "41. Jessica quiere recuperar archivos eliminados del espacio de holgura (slack space) y necesita identificar dónde comienzan y terminan los archivos. ¿Cómo se llama este proceso?",
+    "opciones": [
+      "A) Slacking",
+      "B) Data carving (Tallado de datos)",
+      "C) Disk recovery",
+      "D) Header manipulation"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. El data carving es el proceso de identificar archivos basándose en firmas de encabezado (header) y pie (footer), extrayendo la información contenida entre ellas para recuperar archivos eliminados."
+  },
+  {
+    "id": 42,
+    "pregunta": "42. Latisha es la gerente de TI de una empresa pequeña y ocasionalmente se desempeña como oficial de seguridad de la información de la organización. ¿Quién sería el líder más apropiado para el CSIRT (Equipo de Respuesta a Incidentes de Seguridad Informática) de su organización?",
+    "opciones": [
+      "A) Su técnico principal de soporte de TI.",
+      "B) El asesor legal de su organización.",
+      "C) Un líder de equipo de IR de terceros.",
+      "D) Ella debería seleccionarse a sí misma."
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. El líder del CSIRT requiere autoridad para dirigir la respuesta y actuar como enlace con la gerencia. Si carece de experiencia técnica profunda, debe apoyarse en expertos externos."
+  },
+  {
+    "id": 43,
+    "pregunta": "43. Durante su análisis forense de un sistema Windows, Cynthia accede al registro y verifica \\HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\WindowsNT\\CurrentVersion\\Winlogin (como se muestra aquí). ¿A qué dominio estaba conectado el sistema y cuál era el nombre de usuario que aparecería al iniciar sesión? (Una página de ventana que muestra el nombre, tipo y datos).",
+    "opciones": [
+      "A) Admin, administrator",
+      "B) No domain, administrator",
+      "C) Legal, admin",
+      "D) Corporate, no default username"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Este sistema no está en un dominio y utiliza \"administrador\" como usuario por defecto."
+    ,"imagen": "pregunta43.png"
+  },
+  {
+    "id": 44,
+    "pregunta": "44. Alex sospecha que un atacante ha modificado un ejecutable de Linux utilizando bibliotecas estáticas. ¿Cuál de los siguientes comandos de Linux es el más adecuado para determinar si esto ha ocurrido?",
+    "opciones": [
+      "A) file",
+      "B) stat",
+      "C) strings",
+      "D) grep"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. El comando file en Linux es la mejor herramienta para determinar el formato, codificación y bibliotecas vinculadas de un archivo, especialmente útil si se sospecha de bibliotecas enlazadas estáticamente."
+  },
+  {
+    "id": 45,
+    "pregunta": "45. Debido a factores externos, Eric solo tiene un período de tiempo limitado para recolectar una imagen de una estación de trabajo. Si solo recolecta archivos específicos de interés, ¿qué tipo de adquisición ha realizado?",
+    "opciones": [
+      "A) Lógica (Logical)",
+      "B) Bit a bit (Bit-by-bit)",
+      "C) Dispersa (Sparse)",
+      "D) Ninguna de las anteriores"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Una adquisición lógica se centra en recolectar archivos o directorios específicos en lugar de realizar una copia forense completa (bit a bit) de todo el medio de almacenamiento."
+  },
+  {
+    "id": 46,
+    "pregunta": "46. Durante una investigación forense, Kwame registra información sobre cada unidad, incluyendo dónde fue adquirida, quién hizo la copia forense, el hash MD5 de la unidad y otros detalles. ¿Qué término describe el proceso que está utilizando Kwame mientras etiqueta la evidencia con detalles de quién la adquirió y validó?",
+    "opciones": [
+      "A) Evidencia directa",
+      "B) Evidencia circunstancial",
+      "C) Registro de incidentes (Incident logging)",
+      "D) Cadena de custodia (Chain of custody)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. La cadena de custodia se mantiene mediante el registro y etiquetado riguroso de toda evidencia, garantizando su integridad y control de acceso."
+  },
+  {
+    "id": 47,
+    "pregunta": "47. Susan necesita realizar una investigación forense en una máquina virtual. ¿Qué proceso debería utilizar para asegurarse de obtener todos los datos forenses que pueda necesitar?",
+    "opciones": [
+      "A) Suspender la máquina y copiar el contenido del directorio en el que reside.",
+      "B) Realizar una imagen en vivo de la máquina.",
+      "C) Suspender la máquina y hacer una copia forense de la unidad en la que reside.",
+      "D) Apagar la máquina virtual y hacer una copia forense de ella."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Al suspender una máquina virtual, el contenido de la RAM y del disco se guarda en el directorio de la MV. Copiar dicha carpeta es suficiente para obtener una copia forense integral sin necesidad de apagar el sistema."
+  },
+  {
+    "id": 48,
+    "pregunta": "48. Allison quiere acceder a los registros de Chrome como parte de una investigación forense. ¿En qué formato se guarda la información sobre cookies, historial y respuestas guardadas de formularios?",
+    "opciones": [
+      "A) SQLite",
+      "B) Texto sin formato (Plain text)",
+      "C) Texto codificado en Base64",
+      "D) NoSQL"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Chrome almacena gran cantidad de datos forenses en bases de datos SQLite (historial, cookies, inicios de sesión). Dominar consultas SQL permite extraer información detallada del historial de navegación del usuario."
+  },
+  {
+    "id": 49,
+    "pregunta": "49. Mientras Chris intenta crear una imagen de un dispositivo, encuentra problemas de escritura y no puede escribir la imagen tal como está configurada actualmente (consulte la imagen mostrada aquí: un cuadro de diálogo de selección de destino de imagen). ¿Qué problema es el que más probablemente está encontrando?",
+    "opciones": [
+      "A) Los archivos necesitan ser comprimidos.",
+      "B) La unidad de destino está formateada en FAT32.",
+      "C) La unidad de destino está formateada en NTFS.",
+      "D) Los archivos están cifrados."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. FTK Imager Light puede fallar al crear archivos grandes en unidades FAT32 debido a la limitación de 4 GB por archivo. La solución es usar una unidad formateada en NTFS o crear imágenes raw directamente."
+    ,"imagen": "pregunta49.png"
+  },
+  {
+    "id": 50,
+    "pregunta": "50. Saanvi necesita validar la suma de comprobación (checksum) MD5 de un archivo en un sistema Windows para asegurarse de que no hubo cambios no autorizados en el archivo binario. No se le permite instalar ningún programa y no puede ejecutar archivos desde medios o unidades externas. ¿Qué utilidad de Windows puede usar para obtener el hash MD5 del archivo?",
+    "opciones": [
+      "A) md5sum",
+      "B) certutil",
+      "C) sha1sum",
+      "D) hashcheck"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Certutil es una herramienta de línea de comandos integrada en Windows que puede calcular hashes (incluyendo MD5 y SHA256) de archivos locales sin necesidad de instalar software de terceros."
+  },
+  {
+    "id": 51,
+    "pregunta": "51. La investigación forense muestra que el objetivo de una investigación utilizó el comando de Formato Rápido (Quick Format) de Windows para intentar destruir evidencia en una unidad flash USB. ¿Cuál de las técnicas de higienización del NIST ha utilizado el objetivo de la investigación en su intento de ocultar evidencia?",
+    "opciones": [
+      "A) Clear (Limpiar)",
+      "B) Purge (Purgar)",
+      "C) Destroy (Destruir)",
+      "D) Ninguna de las anteriores"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. El Formato rápido de Windows no cumple con ninguna norma de sanitización NIST, ya que los datos permanecen en el espacio no asignado y pueden ser recuperados mediante carving."
+  },
+  {
+    "id": 52,
+    "pregunta": "52. Durante un proceso de respuesta a incidentes, Susan vuelve a conectar un sistema a la red, permitiéndole acceso normal a la misma. ¿Qué fase del proceso de respuesta a incidentes está realizando Susan?",
+    "opciones": [
+      "A) Preparación",
+      "B) Detección y análisis",
+      "C) Contención, erradicación y recuperación",
+      "D) Actividad posterior al incidente"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La restauración del sistema es parte de la fase de contención, erradicación y recuperación. La fase posterior al incidente se reserva para informes y lecciones aprendidas."
+  },
+  {
+    "id": 53,
+    "pregunta": "53. El equipo de Mei ha completado las fases iniciales de su proceso de respuesta a incidentes y está evaluando el tiempo requerido para recuperarse del incidente. Utilizando las categorías de esfuerzo de recuperabilidad del NIST, el equipo ha determinado que pueden predecir el tiempo de recuperación, pero requerirán recursos adicionales. ¿Cómo debería categorizar esto utilizando el modelo NIST?",
+    "opciones": [
+      "A) Regular",
+      "B) Supplemented (Complementado)",
+      "C) Extended (Extendido)",
+      "D) Not recoverable (No recuperable)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. NIST categoriza el esfuerzo de recuperación según recursos y tiempos: \"regular\", \"suplementado\" (requiere recursos adicionales) y \"extendido\". Una situación de exposición de datos se considera no recuperable, lo que desencadena una investigación legal."
+  },
+  {
+    "id": 54,
+    "pregunta": "54. Janet intenta ocultar sus acciones en una computadora propiedad de la empresa. Como parte de sus intentos de limpieza, elimina todos los archivos que descargó de un servidor de archivos corporativo usando un navegador en modo incógnito. ¿Cómo puede un investigador forense determinar qué archivos descargó?",
+    "opciones": [
+      "A) Flujos de red (Network flows)",
+      "B) Registros SMB",
+      "C) Caché del navegador",
+      "D) Análisis de la unidad (Drive analysis)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. En un caso de borrado de archivos, la mejor opción forense es incautar y analizar la unidad. Es altamente probable que el contenido de los archivos eliminados pueda ser recuperado mediante técnicas forenses."
+  },
+  {
+    "id": 55,
+    "pregunta": "55. Jose es consciente de que un atacante ha comprometido un sistema en su red, pero quiere seguir observando los esfuerzos del atacante mientras continúan su ataque. Si Jose quiere evitar un impacto adicional en su red mientras observa lo que hace el atacante, ¿qué método de contención debería utilizar?",
+    "opciones": [
+      "A) Eliminación (Removal)",
+      "B) Aislamiento (Isolation)",
+      "C) Segmentación (Segmentation)",
+      "D) Detección (Detection)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. El aislamiento permite al respondedor separar el sistema afectado del resto de la red corporativa (creando una \"caja de arena\") para monitorear las acciones del atacante sin riesgo de daño lateral o exfiltración adicional."
+  },
+  {
+    "id": 56,
+    "pregunta": "56. Cuando Abdul llegó al trabajo esta mañana, encontró un correo electrónico en su bandeja de entrada que decía: “Sus sistemas son débiles; seremos dueños de su red para el final de la semana”. ¿Cómo categorizaría esta señal de un posible incidente si estuviera usando las descripciones de señales de incidentes de NIST SP 800-61?",
+    "opciones": [
+      "A) Un indicador",
+      "B) Una amenaza",
+      "C) Un riesgo",
+      "D) Un precursor"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Según NIST SP 800-61, existen \"precursores\" (señales de que un incidente podría ocurrir) e \"indicadores\" (señales de que un evento está en curso). Un correo electrónico de advertencia de un atacante es un precursor clásico."
+  },
+  {
+    "id": 57,
+    "pregunta": "57. Durante un proceso de respuesta a incidentes, Cynthia realiza una revisión de lecciones aprendidas. ¿En qué fase del proceso de respuesta a incidentes se encuentra?",
+    "opciones": [
+      "A) Preparación",
+      "B) Detección y análisis",
+      "C) Contención, erradicación y recuperación",
+      "D) Actividad posterior al incidente (Post-incident activity)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Las revisiones de lecciones aprendidas son facilitadas por expertos independientes para analizar qué ocurrió, cuándo y qué información fue necesaria. Forman parte de la fase de actividad posterior al incidente para mejorar continuamente los procesos de respuesta."
+  },
+  {
+    "id": 58,
+    "pregunta": "58. Como parte de su programa de respuesta a incidentes, Allan está diseñando un manual (playbook) para amenazas de día cero (zero-day). ¿Cuál de los siguientes no debería estar en su plan para manejarlas?",
+    "opciones": [
+      "A) Segmentación",
+      "B) Parcheo",
+      "C) Uso de inteligencia de amenazas",
+      "D) Listas blancas (Allow listing/whitelisting)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. El parcheo no detiene las amenazas de día cero (zero-day) porque aún no existe una actualización para la vulnerabilidad. Para combatirlas, se debe diseñar la red con un enfoque de defensa en profundidad: segmentación, listas blancas (allowlisting), reglas de firewall mínimas, prevención de intrusiones basada en comportamiento y alertas SIEM."
+  },
+  {
+    "id": 59,
+    "pregunta": "59. Como CISO de su organización, Mei está trabajando en un esquema de clasificación de incidentes y quiere basar su diseño en las definiciones de NIST. ¿Cuál de las siguientes opciones debería usar para describir mejor a un usuario accediendo a un archivo que no está autorizado a ver?",
+    "opciones": [
+      "A) Un incidente",
+      "B) Un evento",
+      "C) Un evento adverso",
+      "D) Un incidente de seguridad"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. NIST define los eventos adversos como aquellos con consecuencias negativas. Un evento adverso solo se convierte en un incidente de seguridad si, tras una investigación, se determina que hubo una violación intencional o maliciosa de las políticas."
+  },
+  {
+    "id": 60,
+    "pregunta": "60. Fred quiere identificar evidencia digital que pueda situar a un individuo en un lugar específico a una hora específica. ¿Cuál de los siguientes tipos de datos forenses digitales no se utiliza comúnmente para intentar documentar la ubicación física en momentos específicos?",
+    "opciones": [
+      "A) Registros de GPS de teléfonos celulares",
+      "B) Metadatos de fotografías",
+      "C) Registros de torres de telefonía celular",
+      "D) Metadatos de documentos de Microsoft Office"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Si bien los metadatos de documentos pueden incluir el nombre del autor o la fecha de creación, generalmente no registran la ubicación física del usuario en el momento de la creación, a diferencia de los datos de GPS o registros de torres de telefonía."
+  },
+  {
+    "id": 61,
+    "pregunta": "61. Kai ha completado el proceso de validación de sus esfuerzos de sanitización de medios y ha verificado una muestra de las unidades que purgó utilizando una utilidad de borrado criptográfico incorporada. ¿Cuál es su siguiente paso?",
+    "opciones": [
+      "A) Volver a muestrear para validar sus pruebas.",
+      "B) Destruir las unidades.",
+      "C) Crear documentación.",
+      "D) Ha terminado y puede enviar las unidades para su disposición."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La documentación es vital para rastrear el ciclo de vida de los medios de almacenamiento, asegurando que todos los discos hayan sido sanitizados y proporcionando evidencia para auditorías."
+  },
+  {
+    "id": 62,
+    "pregunta": "62. En su papel como gerente de seguridad de la información de una pequeña empresa, Mike tiene un presupuesto limitado para contratar personal permanente. Aunque su equipo puede manejar infecciones virales simples, actualmente no tiene una forma de manejar incidentes significativos de seguridad de la información. ¿Cuál de las siguientes opciones debería investigar Mike para asegurarse de que su empresa esté preparada para incidentes de seguridad?",
+    "opciones": [
+      "A) Externalizar a un SOC de terceros.",
+      "B) Crear un SOC interno.",
+      "C) Contratar un equipo de respuesta a incidentes interno.",
+      "D) Externalizar a un proveedor de respuesta a incidentes."
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. La subcontratación de un proveedor externo de respuesta a incidentes es una estrategia financiera eficiente para organizaciones que sufren incidentes de forma poco frecuente, permitiendo el acceso a expertos sin el costo de mantener un equipo interno permanente."
+  },
+  {
+    "id": 63,
+    "pregunta": "63. Bohai quiere asegurarse de que los medios han sido sanitizados adecuadamente. ¿Cuál de las siguientes opciones enumera correctamente las descripciones de sanitización de la menos a la más efectiva?",
+    "opciones": [
+      "A) Purge, clear, destroy",
+      "B) Eliminate, eradicate, destroy",
+      "C) Clear, purge, destroy",
+      "D) Eradicate, eliminate, destroy"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. NIST identifica tres métodos para la sanitización de medios: limpieza (clearing, técnica lógica), purga (purging, técnica lógica o física que hace inviable la recuperación) y destrucción (física)."
+  },
+  {
+    "id": 64,
+    "pregunta": "64. La desmagnetización (Degaussing) es un ejemplo de qué forma de sanitización de medios?",
+    "opciones": [
+      "A) Clearing (Limpiar).",
+      "B) Purging (Purgar).",
+      "C) Cryptoshredding (Borrado criptográfico).",
+      "D) No es una forma de sanitización de medios."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. La desmagnetización (degaussing) utiliza un electroimán potente para eliminar datos de cintas magnéticas y es una forma válida de purga."
+  },
+  {
+    "id": 65,
+    "pregunta": "65. Mientras revisa el uso de almacenamiento en un sistema Windows, Brian verifica el almacenamiento de instantáneas de volumen (Volume Shadow Copy) como se muestra aquí: Used Shadow Copy Storage space: 25.6 GB (2%) ¿Qué propósito sirve este almacenamiento y puede eliminarlo de forma segura?",
+    "opciones": [
+      "A) Proporciona una instantánea a nivel de bloque y puede ser eliminado de forma segura.",
+      "B) Proporciona almacenamiento oculto seguro y puede ser eliminado de forma segura.",
+      "C) Proporciona almacenamiento oculto seguro y no puede ser eliminado de forma segura.",
+      "D) Proporciona una instantánea a nivel de bloque y no puede ser eliminado de forma segura."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Volume Shadow Copy Service (VSS) crea instantáneas de archivos y volúmenes para copias de seguridad o puntos de restauración. Si no se necesitan estos puntos de restauración anteriores, este espacio puede ser liberado eliminando las instantáneas (shadow copies) sin comprometer la integridad del sistema operativo."
+    ,"tabla":"pregunta65.txt"
+  },
+  {
+    "id": 66,
+    "pregunta": "66. Lauren recupera varias tarjetas microSD de 16GB y 32GB durante una investigación forense. Sin verificarlas manualmente, ¿en qué tipo de sistema de archivos es más probable que las encuentre formateadas si se utilizaron con una cámara digital?",
+    "opciones": [
+      "A) RAW",
+      "B) FAT16",
+      "C) FAT32",
+      "D) APFS"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La mayoría de los dispositivos portátiles utilizan FAT32 por defecto debido a su alta compatibilidad entre sistemas operativos."
+  },
+  {
+    "id": 67,
+    "pregunta": "67. Después de llegar al lugar de una investigación, Brian determina que tres computadoras encendidas deben ser llevadas para examen forense. ¿Qué pasos debe seguir antes de retirar las PC?",
+    "opciones": [
+      "A) Apagarlas, tomar fotos de cómo está conectada cada una y registrar cada sistema como evidencia.",
+      "B) Tomar fotos de cada sistema, apagarlas y colocar un sello a prueba de manipulaciones en cada PC.",
+      "C) Recopilar información forense en vivo, tomar fotos de cada sistema y apagarlas.",
+      "D) Recopilar una imagen estática del disco, validar el hash de la imagen y transportar de forma segura cada sistema."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. En forense, si no se tiene certeza, el camino más seguro es capturar información en vivo y documentar el estado del sistema con fotos antes de apagarlo, para evitar la pérdida de datos volátiles."
+  },
+  {
+    "id": 68,
+    "pregunta": "68. En su papel como examinador forense, a Lukas se le ha pedido producir evidencia forense relacionada con un caso civil. ¿Cómo se llama este proceso?",
+    "opciones": [
+      "A) Criminal forensics",
+      "B) E-discovery",
+      "C) Cyber production",
+      "D) Civil tort"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. El e-discovery es el proceso de producción de evidencia electrónica (correos, archivos, mensajes) para su uso en procedimientos legales."
+  },
+  {
+    "id": 69,
+    "pregunta": "69. Mientras Mika estudia el manual de informática forense de su empresa, nota que se requiere que los investigadores forenses utilicen un formulario de cadena de custodia. ¿Cuál de las siguientes opciones describe mejor la información que debe registrar en ese formulario si estuviera realizando una investigación forense?",
+    "opciones": [
+      "A) La lista de individuos que tuvieron contacto con los archivos que llevaron a la investigación.",
+      "B) La lista de antiguos propietarios u operadores de la PC involucrada en la investigación.",
+      "C) Todos los individuos que trabajan con evidencia en la investigación.",
+      "D) Los oficiales de policía que toman posesión de la evidencia."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El formulario de cadena de custodia registra meticulosamente a toda persona que entra en contacto con la evidencia, garantizando su integridad desde la recolección hasta la presentación en juicio."
+  },
+  {
+    "id": 70,
+    "pregunta": "70. Scott necesita asegurarse de que el sistema que acaba de reconstruir después de un incidente sea seguro. ¿Qué tipo de escaneo le proporcionará la información más útil para alcanzar su objetivo?",
+    "opciones": [
+      "A) Un escaneo de vulnerabilidades autenticado desde una red interna confiable.",
+      "B) Un escaneo de vulnerabilidades no autenticado desde una red interna confiable.",
+      "C) Un escaneo autenticado desde una red externa no confiable.",
+      "D) Un escaneo no autenticado desde una red externa no confiable."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Un escaneo autenticado permite a la herramienta acceder al sistema con permisos de usuario, lo que le permite verificar configuraciones internas, parches instalados y vulnerabilidades profundas que un escaneo externo o no autenticado no podría detectar."
+  },
+  {
+    "id": 71,
+    "pregunta": "71. ¿Cuál es el papel principal de la gerencia en el proceso de respuesta a incidentes?",
+    "opciones": [
+      "A) Liderar el CSIRT.",
+      "B) Actuar como la interfaz principal con las fuerzas del orden.",
+      "C) Proporcionar autoridad y recursos.",
+      "D) Evaluar el impacto en las partes interesadas (stakeholders)."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El rol de la gerencia es proporcionar los recursos y la autoridad necesaria para el manejo del incidente, además de tomar decisiones críticas sobre el negocio y comunicación externa."
+  },
+  {
+    "id": 72,
+    "pregunta": "72. Max quiere mejorar la efectividad del proceso de análisis de incidentes del cual es responsable como líder del CSIRT de su organización. ¿Cuál de las siguientes no es una mejor práctica comúnmente recomendada según las directrices del NIST?",
+    "opciones": [
+      "A) Perfilar redes y sistemas para medir las características de la actividad esperada.",
+      "B) Realizar correlación de eventos para combinar información de múltiples fuentes.",
+      "C) Mantener copias de seguridad de cada sistema y dispositivo.",
+      "D) Capturar tráfico de red tan pronto como se sospeche de un incidente."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El NIST no recomienda respaldar absolutamente todo el sistema por el costo prohibitivo; en su lugar, sugiere mantener una base de conocimientos organizacional sobre sistemas críticos y restaurar el resto desde configuraciones."
+  },
+  {
+    "id": 73,
+    "pregunta": "73. NIST describe cuatro fases principales en el ciclo de respuesta a incidentes. ¿Cuál de las siguientes no es una de las cuatro?",
+    "opciones": [
+      "A) Contención, erradicación y recuperación",
+      "B) Notificación y comunicación",
+      "C) Detección y análisis",
+      "D) Preparación"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. El ciclo de vida de respuesta a incidentes del NIST se divide en cuatro fases: preparación; detección y análisis; contención, erradicación y recuperación; y actividad posterior al incidente."
+  },
+  {
+    "id": 74,
+    "pregunta": "74. Charles quiere realizar análisis forense de memoria en un sistema Windows y desea acceder al archivo pagefile.sys. Cuando intenta copiarlo, recibe el siguiente error (Archivo en uso). ¿Qué método de acceso se requiere para acceder al archivo de paginación?",
+    "opciones": [
+      "A) Ejecutar el Explorador de archivos de Windows como administrador y repetir la copia.",
+      "B) Abrir el archivo usando fmem.",
+      "C) Ejecutar cmd.exe como administrador y repetir la copia.",
+      "D) Apagar el sistema, retirar la unidad y copiarlo desde otro sistema."
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Para obtener una copia intacta del archivo de paginación (page file), que está bloqueado durante la ejecución, a menudo es necesario apagar el sistema abruptamente, ya que Windows podría purgar este archivo durante un apagado normal."
+    ,"imagen": "pregunta74.png"
+  },
+  {
+    "id": 75,
+    "pregunta": "75. ¿Dónde se encuentra el espacio de holgura (slack space) en el siguiente mapa de particiones de Windows? (Un mapa de particiones de Windows).",
+    "opciones": [
+      "A) La partición reservada del sistema (System Reserved)",
+      "B) Las particiones reservada del sistema y sin asignar (Unallocated)",
+      "C) Las particiones reservada del sistema y C:",
+      "D) Las particiones C: y sin asignar"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El espacio de holgura (slack space) existe dentro de las particiones (como la reservada del sistema y C:) al final de los archivos que no ocupan el clúster completo. El espacio sin asignar es una entidad separada, no holgura."
+    ,"imagen": "pregunta75.png"
+  
+  },
+  {
+    "id": 76,
+    "pregunta": "76. Ty necesita determinar la política de retención adecuada para los datos de incidentes de su organización. Si quiere seguir las prácticas comunes de la industria y no tiene obligaciones legales o contractuales específicas que deba cumplir, ¿qué plazo debería seleccionar?",
+    "opciones": [
+      "A) 30 días",
+      "B) 90 días",
+      "C) 1 a 2 años",
+      "D) 7 años"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. A falta de requisitos específicos, muchas organizaciones eligen un periodo de retención de uno a dos años. Esto permite suficiente tiempo para investigaciones sin acumular datos inmanejables. Lo más importante es establecer una política y seguirla consistentemente."
+  },
+  {
+    "id": 77,
+    "pregunta": "77. El sistema que Alice ha identificado como la fuente del tráfico de señalización (beaconing) es uno de los servidores de comercio electrónico críticos de su organización. Para mantener las operaciones de su organización, necesita restaurar rápidamente el servidor a su estado original, no comprometido. ¿Qué criterio es más probable que se vea afectado por esta acción?",
+    "opciones": [
+      "A) Daño al sistema o servicio",
+      "B) Disponibilidad del servicio",
+      "C) Capacidad para preservar evidencia",
+      "D) Tiempo y recursos necesarios para implementar la estrategia"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Si el objetivo es una restauración rápida, la preservación de evidencia será limitada en comparación con un proceso forense completo. Priorizar la restauración reduce el tiempo de implementación pero sacrifica la profundidad de la investigación."
+  },
+  {
+    "id": 78,
+    "pregunta": "78. Piper quiere crear una imagen forense que los investigadores externos puedan utilizar, pero no sabe qué herramienta utilizará el equipo de investigación que su empresa pretende contratar. ¿Cuál de los siguientes formatos forenses debería elegir si quiere que casi cualquier herramienta forense pueda acceder a la imagen?",
+    "opciones": [
+      "A) E01",
+      "B) AFF",
+      "C) RAW",
+      "D) AD1"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Una imagen RAW (como las creadas con dd) es la mejor opción por su compatibilidad universal entre herramientas forenses, ya que no incluye metadatos propietarios que otras herramientas podrían no reconocer."
+  },
+  {
+    "id": 79,
+    "pregunta": "79. Como parte de su investigación forense, Scott pretende hacer una imagen forense de un recurso compartido de red (network share) que está montado por la PC que es el foco de su investigación. ¿Qué información será incapaz de capturar?",
+    "opciones": [
+      "A) Fechas de creación de archivos",
+      "B) Archivos eliminados",
+      "C) Datos de permisos de archivos",
+      "D) Metadatos de archivos"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Al capturar un recurso compartido de red o una unidad montada desde el sistema que lo utiliza, no se obtiene acceso a nivel de disco físico (como espacio no asignado o archivos eliminados). Para eso, se requiere una imagen forense directa desde el host servidor."
+  },
+  {
+    "id": 80,
+    "pregunta": "80. ¿Qué actividad común de seguimiento de respuesta a incidentes incluye hacer preguntas como “¿Qué herramientas o recursos adicionales se necesitan para detectar o analizar eventos futuros?”",
+    "opciones": [
+      "A) Preparación",
+      "B) Revisión de lecciones aprendidas (Lessons learned review)",
+      "C) Recopilación de evidencia",
+      "D) Análisis procedimental"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. La fase de revisión de lecciones aprendidas se centra en identificar qué funcionó, qué falló y cómo mejorar los recursos y capacidades para futuros incidentes."
+  },
+  {
+    "id": 81,
+    "pregunta": "81. Suki ha recibido el encargo de capturar datos forenses de una PC con Windows y necesita asegurarse de capturar los datos en su orden de volatilidad. ¿Qué orden es correcto, de más a menos volátil?",
+    "opciones": [
+      "A) Tráfico de red, caché de CPU, unidades de disco, medios ópticos",
+      "B) Caché de CPU, tráfico de red, unidades de disco, medios ópticos",
+      "C) Medios ópticos, unidades de disco, tráfico de red, caché de CPU",
+      "D) Tráfico de red, caché de CPU, medios ópticos, unidades de disco"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. El orden de volatilidad es fundamental para preservar evidencia. Siempre se debe recolectar en este orden: Memoria volátil (caché de CPU, registros, procesos, RAM), tráfico de red, discos duros y finalmente respaldos, impresiones o medios ópticos."
+  },
+  {
+    "id": 82,
+    "pregunta": "82. Durante un proceso de respuesta a incidentes, Suki se dirige a un sistema comprometido y desconecta su cable de red. ¿Qué fase del proceso de respuesta a incidentes está realizando Suki?",
+    "opciones": [
+      "A) Preparación",
+      "B) Detección y análisis",
+      "C) Contención, erradicación y recuperación",
+      "D) Actividad posterior al incidente"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Aislar un sistema de la red es una acción clásica de contención. El sistema no debe regresar a la red hasta que se haya erradicado la amenaza y se completen las fases de recuperación."
+  },
+  {
+    "id": 83,
+    "pregunta": "83. Scott necesita verificar que la imagen forense que ha creado es un duplicado exacto de la unidad original. ¿Cuál de los siguientes métodos se considera forensemente sólido?",
+    "opciones": [
+      "A) Crear un hash MD5",
+      "B) Crear un hash SHA-1",
+      "C) Crear un hash SHA-2",
+      "D) Todas las anteriores"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Aunque MD5 y SHA-1 tienen debilidades criptográficas, siguen siendo estándares aceptados en informática forense para verificar la integridad de los datos, ya que la probabilidad de que un atacante genere una colisión intencional para falsificar evidencia es despreciable."
+  },
+  {
+    "id": 84,
+    "pregunta": "84. ¿Qué estrategia sugiere el NIST para identificar a los atacantes durante un proceso de respuesta a incidentes?",
+    "opciones": [
+      "A) Usar rastreo IP geográfico para identificar la ubicación del atacante.",
+      "B) Contactar a los ISP ascendentes para obtener ayuda en el rastreo del atacante.",
+      "C) Contactar a las fuerzas del orden locales para que puedan usar herramientas específicas de la policía.",
+      "D) Identificar a los atacantes no es una parte importante del proceso de respuesta a incidentes."
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. NIST enfatiza que el esfuerzo dedicado a rastrear o identificar al atacante a menudo distrae al equipo de la remediación y es con frecuencia infructuoso. No es una parte central del manejo de incidentes."
+  },
+  {
+    "id": 85,
+    "pregunta": "85. Mientras realiza un análisis forense de una copia de seguridad de un iPhone, Cynthia descubre que solo tiene parte de la información que espera que contenga el teléfono. ¿Cuál es el escenario más probable que resultaría en que la copia de seguridad que está usando tenga información parcial?",
+    "opciones": [
+      "A) La copia de seguridad fue interrumpida.",
+      "B) La copia de seguridad está cifrada.",
+      "C) La copia de seguridad es una copia diferencial.",
+      "D) La copia de seguridad está almacenada en iCloud."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Si la copia de seguridad es incremental o diferencial, solo contendrá los cambios realizados desde la última copia completa, lo que explica por qué no contiene el historial completo de datos del dispositivo."
+  },
+  {
+    "id": 86,
+    "pregunta": "86. Cullen quiere asegurarse de que su documentación de cadena de custodia resista el examen en un tribunal. ¿Cuál de las siguientes opciones le proporcionará la mejor prueba documental de sus acciones?",
+    "opciones": [
+      "A) Un segundo examinador actuando como testigo y refrendando todas las acciones.",
+      "B) Un libro de registro forense completo firmado y sellado por un notario público.",
+      "C) Un proceso forense documentado con las firmas requeridas.",
+      "D) Tomar fotos de todas las acciones forenses independientes."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Contar con un segundo examinador como testigo que firme la documentación aumenta drásticamente la fiabilidad y aceptabilidad de la evidencia en un tribunal, ya que ofrece una corroboración independiente de los procedimientos seguidos."
+  },
+  {
+    "id": 87,
+    "pregunta": "87. Cynthia está revisando el proceso de recuperación de respuesta a incidentes de su organización, el cual se describe aquí. ¿Cuál de las siguientes recomendaciones debería hacer para garantizar que no ocurran más problemas durante el proceso de restauración? (Un diagrama de flujo: 1. Restaurar desde copias de seguridad limpias, 2. Instalar parches, 3. Cambiar todas las contraseñas, 4. Evaluar la seguridad del sistema).",
+    "opciones": [
+      "A) Cambiar las contraseñas antes de restaurar desde la copia de seguridad.",
+      "B) Aislar el sistema antes de restaurar desde las copias de seguridad.",
+      "C) Limpiar (wipe) de forma segura la unidad antes de la restauración.",
+      "D) Escaneo de vulnerabilidades antes de aplicar parches."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Es crucial mantener el sistema aislado durante su reconstrucción, ya que el riesgo de una reinfección es muy real si el entorno de red aún contiene la amenaza activa que causó el compromiso original."
+    ,"imagen": "pregunta87.png"
+  },
+  {
+    "id": 88,
+    "pregunta": "88. Saria está revisando el contenido de una unidad como parte de un esfuerzo forense y nota que el archivo que está revisando ocupa más espacio en el disco que su tamaño real, como se muestra aquí. ¿Qué ha descubierto? (Un cuadro de diálogo que muestra la configuración general: tamaño en disco vs. tamaño de archivo).",
+    "opciones": [
+      "A) Espacio de holgura (Slack space)",
+      "B) Contenido oculto",
+      "C) Archivos dispersos (Sparse files)",
+      "D) Sobrecarga de cifrado (Encryption overhead)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. El espacio de holgura (slack space) es el espacio entre el final de los datos reales del archivo y el límite del clúster asignado en el sistema de archivos, lo que provoca que el tamaño \"en disco\" sea mayor que el tamaño lógico del archivo."
+    ,"imagen": "pregunta88.png"
+  },
+  {
+    "id": 89,
+    "pregunta": "89. Kathleen está restaurando un sistema comercial crítico a su funcionamiento después de un compromiso mayor y necesita validar que los archivos del sistema operativo y de la aplicación sean legítimos y no tengan código malicioso incluido. ¿Qué tipo de herramienta debería usar para validar esto?",
+    "opciones": [
+      "A) Un kit de binarios de sistema confiables (Trusted system binary kit)",
+      "B) Análisis dinámico de código",
+      "C) Análisis estático de código",
+      "D) Tablas arcoíris de archivos (File rainbow tables)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. La National Software Reference Library (NSRL) provee hashes conocidos de archivos legítimos (binarios de confianza), permitiendo validar la integridad de los archivos del sistema y descartar archivos modificados maliciosamente mediante comparación."
+  },
+  {
+    "id": 90,
+    "pregunta": "90. Mel está creando el registro de evidencia para una computadora que fue parte de un ataque a un sistema externo de terceros. ¿Qué información relacionada con la red debería incluir en ese registro si quiere seguir las recomendaciones del NIST?",
+    "opciones": [
+      "A) Máscara de subred, servidor DHCP, nombre de host, dirección MAC",
+      "B) Direcciones IP, direcciones MAC, nombre de host",
+      "C) Dominio, nombre de host, direcciones MAC, direcciones IP",
+      "D) Fabricante de la NIC, direcciones MAC, direcciones IP, configuración DHCP"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Según las recomendaciones del NIST para la documentación de evidencia digital, es fundamental registrar la identificación del sistema en la red, lo que incluye obligatoriamente la dirección IP, la dirección MAC y el nombre de host para asegurar la trazabilidad del incidente."
+  },
+  {
+    "id": 91,
+    "pregunta": "91. Ryan cree que los sistemas en su red han sido comprometidos por un actor de amenazas persistentes avanzadas (APT). Ha observado una serie de transferencias de archivos grandes salientes a sitios remotos a través de sesiones HTTP protegidas por TLS desde sistemas que normalmente no envían datos a esas ubicaciones. ¿Cuál de las siguientes técnicas es más probable que detecte las infecciones APT?",
+    "opciones": [
+      "A) Análisis de tráfico de red",
+      "B) Informática forense de red (Network forensics)",
+      "C) Análisis de comportamiento del endpoint",
+      "D) Informática forense del endpoint (Endpoint forensics)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. El tráfico de APTs suele ir cifrado, por lo que el análisis de tráfico ayuda a identificar hosts infectados, pero para localizar las herramientas del atacante, persistencia y actividad real dentro del host, es obligatorio realizar forense de endpoints (endpoint forensics)."
+  },
+  {
+    "id": 92,
+    "pregunta": "92. Ben está investigando una posible infección de malware en una computadora portátil que pertenece a un gerente senior de la empresa donde trabaja. Cuando el gerente abre un documento, sitio web u otra aplicación que requiere entrada del usuario, las palabras comienzan a aparecer como si estuvieran siendo escritas. ¿Cuál es el primer paso que debe tomar Ben en su investigación?",
+    "opciones": [
+      "A) Ejecutar un escaneo antivirus.",
+      "B) Desconectar el sistema de la red.",
+      "C) Limpiar (wipe) el sistema y reinstalar.",
+      "D) Observar y registrar lo que se está escribiendo."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Ante una señal clara de acceso remoto o control activo por parte de un atacante, el primer paso en la fase de contención es aislar el sistema para detener el comando y control (C2) y prevenir la exfiltración de datos."
+  },
+  {
+    "id": 93,
+    "pregunta": "93. El análisis forense de Kathleen de una computadora portátil, que se cree que fue utilizada para acceder a datos corporativos sensibles, muestra que el sospechoso intentó sobrescribir los datos que descargó como parte de sus actividades antiforenses, eliminando los archivos originales y luego copiando otros archivos a la unidad. ¿Dónde es más probable que Kathleen encuentre evidencia de los archivos originales?",
+    "opciones": [
+      "A) El MBR (Master Boot Record)",
+      "B) Espacio no asignado (Unallocated space)",
+      "C) Espacio de holgura (Slack space)",
+      "D) El FAT (File Allocation Table)"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Sobrescribir archivos no elimina completamente la información; los remanentes de datos pueden persistir en el slack space del clúster si el archivo nuevo es más pequeño que el original o si la sobrescritura no fue perfectamente alineada, lo cual puede ser utilizado para probar la existencia previa de archivos."
+  },
+  {
+    "id": 94,
+    "pregunta": "94. Angela quiere acceder a la clave de descifrado para un sistema cifrado con BitLocker, pero el sistema está actualmente apagado. ¿Cuál de los siguientes métodos es un método viable si un sistema Windows está apagado?",
+    "opciones": [
+      "A) Análisis del archivo de hibernación",
+      "B) Análisis de memoria",
+      "C) Análisis del sector de arranque",
+      "D) Descifrado por fuerza bruta (Brute-force cracking)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Si un sistema con volumen cifrado entra en hibernación, la clave de BitLocker puede extraerse analizando el archivo de hibernación. Esta es una ruta específica cuando el sistema está apagado pero conserva el estado previo al volcado de memoria en el disco."
+  },
+  {
+    "id": 95,
+    "pregunta": "95. Adam cree que un sistema en su red está infectado pero no sabe cuál. Para detectarlo, crea una consulta para su software de monitoreo de red basada en el siguiente pseudocódigo: destip: [*] and duration < 10 packets and destbytes < 3000 and flowcompleted = true and application = http or https or tcp or unknown and content != uripath:* and content != contentencoding:*. ¿Qué tipo de tráfico es más probable que esté intentando detectar?",
+    "opciones": [
+      "A) Usuarios navegando por sitios maliciosos",
+      "B) Adware",
+      "C) Señalización (Beaconing)",
+      "D) Escaneo de puertos saliente"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El pseudocódigo descrito busca conexiones breves, con bajo volumen de datos, que se completan rápidamente y que no contienen patrones de navegación web normales (como rutas URI estándar). Estos son indicadores clásicos de 'beaconing' o comunicación de retorno de un malware hacia un servidor de control."
+    ,"tabla":"pregunta95.txt"
+  },
+  {
+    "id": 96,
+    "pregunta": "96. Como empleada del gobierno de los EE. UU., Megan debe usar las categorías de impacto de información del NIST para clasificar los incidentes de seguridad. Durante un incidente reciente, se modificó información propietaria. ¿Cómo debería clasificar este incidente?",
+    "opciones": [
+      "A) Como una violación de privacidad",
+      "B) Como una pérdida de integridad",
+      "C) Como una violación propietaria",
+      "D) Como una violación de disponibilidad"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. NIST clasifica la modificación o eliminación no autorizada de información (lo que afecta su exactitud y confiabilidad) como una pérdida de integridad, independientemente de si la información es pública o propietaria."
+  },
+  {
+    "id": 97,
+    "pregunta": "97. ¿Durante qué etapa de un evento se maneja normalmente la preservación de la evidencia?",
+    "opciones": [
+      "A) Preparación",
+      "B) Detección y análisis",
+      "C) Contención, erradicación y recuperación",
+      "D) Actividad posterior al incidente"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Aunque la contención es la prioridad, los respondedores deben preservar la evidencia forense y los registros (logs) simultáneamente durante la fase de contención, antes de realizar cambios destructivos para la recuperación."
+  },
+  {
+    "id": 98,
+    "pregunta": "98. Lukas quiere purgar (purge) una unidad para asegurar que los datos no puedan ser extraídos cuando se envíe fuera del sitio. ¿Cuál de las siguientes no es una opción válida para purgar discos duros en un sistema Windows?",
+    "opciones": [
+      "A) Usar la línea de comandos integrada de Windows sdelete.",
+      "B) Usar Eraser.",
+      "C) Usar DBAN.",
+      "D) Cifrar la unidad y luego eliminar la clave."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Sdelete es una utilidad de Sysinternals (desarrollada por terceros, aunque propiedad de Microsoft), no es un componente nativo preinstalado en la línea de comandos estándar de Windows. Además, el borrado seguro de unidades modernas requiere técnicas más avanzadas que la simple sobrescritura."
+  },
+  {
+    "id": 99,
+    "pregunta": "99. ¿Cuál de los siguientes no es un caso de uso válido para la creación de imágenes forenses en vivo?",
+    "opciones": [
+      "A) Análisis de malware",
+      "B) Unidades cifradas",
+      "C) Informática forense post-mortem",
+      "D) Sistemas de archivos no soportados"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El análisis forense post-mortem implica apagar el sistema y realizar una copia del disco; no se clasifica como una técnica de \"imagen en vivo\". La imagen en vivo es necesaria específicamente cuando el sistema debe estar encendido para acceder a datos volátiles, cifrados o sistemas no soportados nativamente por las herramientas forenses de análisis offline."
+  },
+  {
+    "id": 100,
+    "pregunta": "100. Mientras revisa las acciones tomadas durante un proceso de respuesta a incidentes, a Mei le informa el personal de soporte de escritorio local que la máquina infectada fue devuelta al servicio utilizando un punto de Restauración del Sistema de Windows. ¿Cuál de los siguientes elementos devolverá una Restauración del Sistema de Windows a un estado anterior?",
+    "opciones": [
+      "A) Archivos personales",
+      "B) Malware",
+      "C) Archivos del sistema Windows",
+      "D) Todas las aplicaciones instaladas"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La Restauración del Sistema de Windows está diseñada específicamente para revertir archivos del sistema, configuraciones del Registro y controladores. No está diseñada para revertir archivos personales (como documentos) y es altamente ineficaz para eliminar malware persistente, ya que este suele esconderse en otras áreas que la restauración no abarca."
+  },
+  {
+    "id": 101,
+    "pregunta": "101. Durante un esfuerzo importante de respuesta a incidentes, Kobe descubre evidencia de que un servidor de aplicaciones crítico pudo haber sido el repositorio de datos y el punto de salida en el compromiso que está investigando. Si no puede desconectar el sistema, ¿cuál de las siguientes opciones le proporcionará los mejores datos forenses?",
+    "opciones": [
+      "A) Reiniciar el servidor y montar la unidad del sistema usando una suite forense arrancable por USB.",
+      "B) Crear una imagen usando una herramienta como FTK Imager Lite.",
+      "C) Capturar la memoria del sistema usando una herramienta como Volatility.",
+      "D) Instalar y ejecutar una herramienta de creación de imágenes en el servidor en vivo."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Herramientas portátiles como FTK Imager Lite permiten capturar imágenes de disco en vivo desde medios extraíbles sin instalar software en el sistema objetivo ni detener los servicios, minimizando la huella forense mientras se preserva el estado del disco."
+  },
+  {
+    "id": 102,
+    "pregunta": "102. Manish encuentra las siguientes entradas en un sistema Linux en /var/log/auth.log (entradas que muestran uso de sudo o cambios de usuario). Si él es el único usuario con privilegios de root, requiere autenticación de dos factores para iniciar sesión como root y no realizó las acciones mostradas, ¿qué debería buscar?",
+    "opciones": [
+      "A) Una cuenta root hackeada.",
+      "B) Un ataque de escalada de privilegios desde una cuenta o servicio con privilegios más bajos.",
+      "C) Una infección de malware.",
+      "D) Un RAT (Remote Access Trojan)."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Si Manish es el único con acceso root legítimo y 2FA está activo, es muy improbable un acceso directo. La aparición de registros de sudo o cambios de usuario indica que un atacante ha comprometido un proceso, cuenta o servicio con menores privilegios y está intentando elevarlos."
+    ,"imagen": "pregunta102.png"
+  },
+  {
+    "id": 103,
+    "pregunta": "103. Como parte de su análisis forense de una serie de fotos, John ejecuta exiftool para cada foto. Recibe el siguiente listado de una foto (mostrando etiquetas EXIF específicas). ¿Qué información forense útil puede obtener de esta foto?",
+    "opciones": [
+      "A) La fecha de creación original, el tipo de dispositivo, la ubicación GPS y el nombre del creador.",
+      "B) El orden endian del archivo, el tipo de archivo, la ubicación GPS y el tipo de escena.",
+      "C) La fecha de creación original, el tipo de dispositivo, la ubicación GPS y el fabricante del dispositivo.",
+      "D) El tipo MIME, la hora GPS, la ubicación GPS y el nombre del creador."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Los metadatos EXIF proporcionan información valiosa como la marca temporal de creación original, el modelo y fabricante del dispositivo utilizado y, muy a menudo, las coordenadas geográficas (GPS) donde se capturó la imagen, facilitando la reconstrucción de la escena."
+    ,"imagen": "pregunta103.png"
+  },
+  {
+    "id": 104,
+    "pregunta": "104. Durante la fase de preparación del proceso de respuesta a incidentes de su organización, Oscar reúne una computadora portátil con software útil (incluyendo un sniffer y herramientas forenses), unidades thumb y discos duros externos, equipo de red y una variedad de cables. ¿Cómo se llama comúnmente a este tipo de equipo prepreparado?",
+    "opciones": [
+      "A) A grab bag",
+      "B) A jump kit",
+      "C) A crash cart",
+      "D) A first responder kit"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Un kit de emergencia o \"jump kit\" es esencial en la planificación de respuesta para asegurar que los técnicos dispongan de todo el hardware y software necesario listo para actuar inmediatamente ante una crisis sin perder tiempo valioso."
+  },
+  {
+    "id": 105,
+    "pregunta": "105. Mientras John continúa con una investigación forense que involucra numerosas imágenes, encuentra un directorio etiquetado \"Downloaded from Facebook\". Las imágenes parecen relevantes para su investigación, por lo que las procesa para obtener metadatos utilizando exiftool. La siguiente imagen muestra los datos proporcionados. ¿Qué información útil desde el punto de vista forense puede obtener John de este resultado?",
+    "opciones": [
+      "A) La fecha y hora de creación original del archivo.",
+      "B) El dispositivo utilizado para capturar la imagen.",
+      "C) El digest (hash) original del archivo, permitiendo compararlo con el original.",
+      "D) Ninguna; Facebook elimina casi todos los metadatos útiles de las imágenes."
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Por motivos de privacidad y optimización, plataformas como Facebook, Instagram y otras redes sociales eliminan sistemáticamente casi todos los metadatos EXIF (incluyendo coordenadas GPS, modelos de cámara y fechas originales) al momento en que el usuario sube la imagen."
+    ,"imagen": "pregunta105.png"
+  },
+  {
+    "id": 106,
+    "pregunta": "106. ¿Cuál de las siguientes opciones enumera correctamente el orden de volatilidad de menos a más volátil?",
+    "opciones": [
+      "A) Impresiones, archivos de intercambio (swap files), caché de CPU, RAM",
+      "B) Discos duros, medios USB, DVD, CD-RW",
+      "C) DVD, discos duros, memoria virtual, cachés",
+      "D) RAM, archivos de intercambio, SSD, impresiones"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El orden de volatilidad mide cuánto tiempo persisten los datos tras la pérdida de energía. De menos a más volátil: medios de respaldo (como DVD/cintas), almacenamiento persistente (discos duros), memoria virtual (archivos de intercambio) y finalmente la memoria volátil (RAM, registros y cachés de CPU)."
+  },
+  {
+    "id": 107,
+    "pregunta": "107. Durante una revisión forense de un sistema involucrado en una brecha de datos, Alex descubre varios archivos de Microsoft Word, incluyendo archivos con nombres como critical_data.docx y sales_estimates_2023.docx. Cuando intenta revisar los archivos usando un editor de texto para obtener información útil, solo encuentra datos ilegibles. ¿Qué ha ocurrido?",
+    "opciones": [
+      "A) Los archivos de Microsoft Word se almacenan en formato ZIP.",
+      "B) Los archivos de Microsoft Word están cifrados.",
+      "C) Los archivos de Microsoft Word solo pueden ser abiertos por Microsoft Word.",
+      "D) El usuario ha utilizado técnicas antiforenses para codificar los datos."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Los archivos modernos de Microsoft Office (.docx, .xlsx) son contenedores basados en el estándar Open XML, que internamente utilizan compresión ZIP. Al intentar abrirlos como texto plano, se ven caracteres ilegibles debido a esta estructura comprimida."
+  },
+  {
+    "id": 108,
+    "pregunta": "108. Lukas cree que uno de sus usuarios ha intentado utilizar comandos integrados de Windows para sondear servidores en la red de la que es responsable. ¿Cómo puede recuperar el historial de comandos de ese usuario si el sistema se ha reiniciado desde que ocurrió el reconocimiento?",
+    "opciones": [
+      "A) Revisar el historial de Bash.",
+      "B) Abrir una ventana de símbolo del sistema y presionar F7.",
+      "C) Abrir manualmente el historial de comandos desde el directorio de perfil del usuario.",
+      "D) El símbolo del sistema de Windows no almacena el historial de comandos."
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. A diferencia de shells en Linux como Bash que guardan el historial en archivos (.bash_history), el Símbolo del sistema (cmd.exe) de Windows mantiene el historial solo en memoria mientras la ventana está abierta. Al cerrarla o reiniciar el sistema, la información se pierde permanentemente."
+  },
+  {
+    "id": 109,
+    "pregunta": "109. Angela está realizando un ejercicio de respuesta a incidentes y necesita evaluar el impacto económico en su organización de un gasto de $500,000 relacionado con un incidente de seguridad de la información. ¿Cómo debería categorizar esto?",
+    "opciones": [
+      "A) Impacto bajo.",
+      "B) Impacto medio.",
+      "C) Impacto alto.",
+      "D) Angela no puede evaluar el impacto con los datos proporcionados."
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. La categorización de impacto es subjetiva y depende del contexto de la organización. $500,000 puede ser un impacto menor para una empresa Fortune 500, pero devastador para una PYME. Sin conocer el presupuesto total o la tolerancia al riesgo de la organización, no se puede asignar una etiqueta de impacto precisa."
+  },
+  {
+    "id": 110,
+    "pregunta": "110. ¿Qué paso sigue a la sanitización de medios de acuerdo con las directrices del NIST para el manejo seguro de medios?",
+    "opciones": [
+      "A) Reutilización (Reuse)",
+      "B) Validación (Validation)",
+      "C) Destrucción (Destruction)",
+      "D) Documentación (Documentation)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Según el NIST SP 800-88, tras aplicar un proceso de sanitización (Clear, Purge o Destroy), es indispensable realizar una validación para asegurar que el proceso fue efectivo y que los datos ya no son recuperables antes de pasar a la disposición final o reutilización."
+  },
+  {
+    "id": 111,
+    "pregunta": "111. Latisha quiere crear una cadena de custodia documentada para los sistemas que está manejando como parte de una investigación forense. ¿Cuál de las siguientes le proporcionará evidencia de que los sistemas no fueron manipulados mientras ella no estaba trabajando con ellos?",
+    "opciones": [
+      "A) Un registro de cadena de custodia",
+      "B) Sellos a prueba de manipulaciones (Tamper-proof seals)",
+      "C) Registros del sistema",
+      "D) Ninguna de las anteriores"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Los sellos a prueba de manipulaciones (tamper-proof seals) sirven para asegurar físicamente que los dispositivos no fueron accedidos. Son vitales cuando se sospecha de acceso físico no autorizado, ya que cualquier intento de abrir el equipo romperá el sello, dejando evidencia clara de manipulación."
+  },
+  {
+    "id": 112,
+    "pregunta": "112. El equipo de respuesta a incidentes de Matt ha recopilado información de registros y está trabajando en la identificación de los atacantes utilizando esa información. ¿En qué dos etapas del proceso de respuesta a incidentes del NIST está trabajando su equipo?",
+    "opciones": [
+      "A) Preparación y contención, erradicación y recuperación",
+      "B) Preparación y actividad posterior al incidente",
+      "C) Detección y análisis, y contención, erradicación y recuperación",
+      "D) Contención, erradicación y recuperación, y actividad posterior al incidente"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La recolección y análisis de registros ocurren principalmente en la fase de detección y análisis, mientras que la correlación de estos eventos y la conexión de los ataques con actores específicos suele continuar durante la fase de contención, erradicación y recuperación, conforme se profundiza en la investigación."
+  },
+  {
+    "id": 113,
+    "pregunta": "113. Raj descubre que la imagen forense que intentó crear ha fallado. ¿Cuál es la razón más probable de este fallo?",
+    "opciones": [
+      "A) Los datos fueron modificados.",
+      "B) El disco de origen está cifrado.",
+      "C) El disco de destino tiene sectores defectuosos.",
+      "D) Los datos no pueden copiarse en formato RAW."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Si el medio de destino tiene espacio suficiente y la copia falla, lo más probable es que el medio de almacenamiento físico de destino (o en ocasiones el origen) tenga sectores defectuosos (bad media). La copia en formato RAW es una copia bit a bit que no debería fallar por el contenido lógico (como cifrado) del disco."
+  },
+  {
+    "id": 114,
+    "pregunta": "114. Liam nota las siguientes entradas en su consola web Squert (una consola web para datos de Sguil IDS). ¿Qué debería hacer a continuación para determinar qué ocurrió? (Una ilustración expone las entradas en la consola web Squert).",
+    "opciones": [
+      "A) Revisar los registros SSH.",
+      "B) Deshabilitar SSH y luego investigar más a fondo.",
+      "C) Desconectar el servidor de Internet y luego investigar.",
+      "D) Cambiar su contraseña inmediatamente."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Ante una alerta de IDS, lo primero es verificar el contexto mediante los registros del servicio involucrado (en este caso SSH). Investigar los registros permite confirmar si la alerta es un falso positivo o un intento de intrusión real antes de tomar medidas drásticas como desconectar el servidor."
+    ,"imagen": "pregunta114.png"
+  },
+  {
+    "id": 115,
+    "pregunta": "115. ¿Cuál de las siguientes actividades no es parte del proceso de contención y restauración?",
+    "opciones": [
+      "A) Minimizar la pérdida",
+      "B) Identificar al atacante",
+      "C) Limitar la interrupción del servicio",
+      "D) Reconstruir sistemas comprometidos"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. La identificación del atacante suele gestionarse durante la etapa de detección o como parte de las actividades posteriores al incidente. El proceso de respuesta a incidentes (IR) en las etapas de contención y restauración se centra en la mitigación de daños, la continuidad operativa y la limpieza/reconstrucción de sistemas."
+  },
+  {
+    "id": 116,
+    "pregunta": "116. Samantha ha ocupado recientemente un nuevo puesto como la primera analista de seguridad de personal que su empleador ha tenido. Durante su primera semana, descubre que no existe una política de seguridad de la información y que el personal de TI no sabe qué hacer durante un incidente de seguridad. Samantha planea iniciar un CSIRT para manejar la respuesta a incidentes. ¿Qué tipo de documentación debería proporcionar para describir los procedimientos específicos que utilizará el CSIRT durante eventos como infecciones de malware y compromiso de servidores?",
+    "opciones": [
+      "A) Una política de respuesta a incidentes",
+      "B) Un manual de operaciones",
+      "C) Un programa de respuesta a incidentes",
+      "D) Un manual de procedimientos (Playbook)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Los \"playbooks\" describen procedimientos detallados que ayudan a asegurar que las organizaciones y las personas tomen las medidas correctas durante el estrés de un incidente. Las guías de operaciones cubren generalmente los procedimientos operativos normales, mientras que una política de respuesta a incidentes describe la dirección y autoridad organizativa de alto nivel para la respuesta ante incidentes."
+  },
+  {
+    "id": 117,
+    "pregunta": "117. ¿Cómo se llama el espacio entre el último sector que contiene datos lógicos y el final del clúster?",
+    "opciones": [
+      "A) Espacio no asignado (Unallocated space)",
+      "B) Espacio efímero (Ephemeral space)",
+      "C) Espacio de holgura (Slack space)",
+      "D) Espacio sin formato (Unformatted space)"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El slack space (espacio de holgura) es el espacio que queda entre el final de un archivo y el final de un clúster. Este espacio queda abierto, pero los atacantes pueden ocultar datos allí, y los analistas forenses pueden recuperar datos de este espacio si se almacenaron previamente archivos más grandes en el clúster y el espacio no fue sobrescrito antes de su reutilización."
+  },
+  {
+    "id": 118,
+    "pregunta": "118. Jack se está preparando para llevar una PC actualmente en funcionamiento a su laboratorio forense para su análisis. Mientras Jack considera su proceso forense, uno de sus colegas le recomienda simplemente desconectar el cable de alimentación en lugar de realizar un apagado basado en software. ¿Por qué Jack podría elegir seguir este consejo?",
+    "opciones": [
+      "A) Creará un registro de fallos (crash log), proporcionando información forense de memoria útil.",
+      "B) Evitará que se ejecuten scripts de apagado.",
+      "C) Creará un volcado de memoria, proporcionando información forense útil.",
+      "D) Causará que el malware residente en memoria sea capturado, permitiendo su análisis."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Si el sistema contiene algún script de apagado (que podría borrar registros o archivos temporales) o si hay archivos que se eliminarían automáticamente durante un apagado normal, simplemente desconectar el cable de alimentación dejará estos archivos en su lugar para el análisis forense."
+  },
+  {
+    "id": 119,
+    "pregunta": "119. Rick quiere validar sus esfuerzos de recuperación y tiene la intención de escanear un servidor web del que es responsable con una herramienta de escaneo. ¿Qué herramienta debería usar para obtener la información más útil sobre las vulnerabilidades del sistema?",
+    "opciones": [
+      "A) Wapiti",
+      "B) Nmap",
+      "C) OpenVAS",
+      "D) ZAP"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. De las herramientas listadas, solo OpenVAS es un escáner de vulnerabilidades de sistema completo. Wapiti es un escáner de aplicaciones web, ZAP es un proxy de ataque utilizado para probar aplicaciones web, y Nmap es principalmente un escáner de puertos y descubrimiento de servicios."
+  },
+  {
+    "id": 120,
+    "pregunta": "120. ¿Cuál es el objetivo clave de la etapa de contención de un proceso de respuesta a incidentes?",
+    "opciones": [
+      "A) Limitar las filtraciones a la prensa o a los clientes.",
+      "B) Limitar que ocurran más daños.",
+      "C) Prevenir la exfiltración de datos.",
+      "D) Restaurar los sistemas a su funcionamiento normal."
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. La etapa de contención de la respuesta a incidentes tiene como objetivo general limitar el daño y evitar que ocurra cualquier daño adicional al sistema o a la red. Esto puede incluir detener la exfiltración de datos, pero el objetivo es prevenir todo tipo de daños, incluidos exploits o compromisos laterales adicionales."
+  },
+  {
+    "id": 121,
+    "pregunta": "121. ¿Qué nivel de extracción de datos forenses será más probable y razonable para un examinador forense corporativo que trata con teléfonos modernos que proporcionan cifrado del sistema de archivos?",
+    "opciones": [
+      "A) Nivel 1: Extracción manual",
+      "B) Nivel 2: Extracción lógica",
+      "C) Nivel 3: Volcado JTAG o HEX",
+      "D) Nivel 4: Extracción de chip"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Las copias lógicas de datos y volúmenes desde un dispositivo desbloqueado o descifrado son, en muchos casos, el escenario forense móvil más probable. La mayoría de los examinadores forenses no tienen acceso a capacidades forenses a nivel de chip que retiren físicamente la memoria flash de la placa de circuito, y la adquisición a nivel de JTAG puede implicar técnicas de adquisición invasivas."
+  },
+  {
+    "id": 122,
+    "pregunta": "122. Wang cree que un sistema Windows del que es responsable está comprometido y quiere monitorear el tráfico hacia y desde él. ¿Cuál de las siguientes no es una opción de captura típica en circunstancias como estas?",
+    "opciones": [
+      "A) Una herramienta de captura de paquetes instalada en el sistema",
+      "B) Una herramienta de captura de paquetes en otro sistema en la misma red",
+      "C) Captura de paquetes en el borde de la red",
+      "D) Captura de paquetes en el núcleo de la red"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Wang debe evitar instalar software adicional en el sistema comprometido para capturar tráfico, ya que esto puede alterar la integridad de la evidencia, modificar el entorno de ejecución o alertar al atacante de que está siendo monitoreado."
+  },
+  {
+    "id": 123,
+    "pregunta": "123. Carol ha descubierto un ataque que parece seguir el flujo de proceso que se muestra aquí (Identificar objetivo, preparar ataque, intrusión inicial, expandir acceso, exfiltrar datos, ocultar evidencia y retener acceso). ¿Qué tipo de ataque debería identificar?",
+    "opciones": [
+      "A) Phishing",
+      "B) Explotación de día cero (Zero-day)",
+      "C) Whaling",
+      "D) Amenaza persistente avanzada (APT)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. El flujo de procesos descrito es característico de una Amenaza Persistente Avanzada (APT). A diferencia de ataques como el phishing o el whaling, que son vectores de entrada específicos, una APT implica una campaña prolongada, organizada y multietapa diseñada para mantener el acceso y extraer datos de forma sigilosa."
+    ,"imagen": "pregunta123.png"
+  },
+  {
+    "id": 124,
+    "pregunta": "124. Durante un proceso de e-discovery (descubrimiento electrónico), Carol revisa la solicitud de la parte contraria y construye una lista de todos los individuos identificados. Luego contacta al personal de TI que apoya a cada persona para solicitar una lista de sus activos de TI. ¿En qué fase del flujo EDRM se encuentra?",
+    "opciones": [
+      "A) Gobernanza de la información (Information governance)",
+      "B) Identificación",
+      "C) Preservación",
+      "D) Recolección (Collection)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Ella está en la fase de identificación del Modelo de Referencia de Descubrimiento Electrónico (EDRM). Esta fase consiste en determinar qué datos, sistemas y personas (custodios) son relevantes para el caso antes de proceder a la preservación y recolección formal."
+    ,"imagen": "pregunta124.png"
+  },
+  {
+    "id": 125,
+    "pregunta": "125. Durante la fase de preservación de su trabajo, Carol descubre que la información solicitada como parte de la solicitud de descubrimiento (discovery request) ha sido eliminada como parte de una limpieza de datos programada regularmente, según lo requieren las políticas de su organización. ¿Qué debería hacer Carol?",
+    "opciones": [
+      "A) Realizar una recuperación forense de los datos.",
+      "B) Crear datos sintéticos para reemplazar los datos faltantes.",
+      "C) Informar el problema al asesor legal.",
+      "D) Purgar cualquier otro dato relacionado con la solicitud basado en la misma política."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Carol debe notificar al asesor legal y proporcionar información detallada sobre la política y el calendario que resultaron en la eliminación. Es el asesor legal quien debe evaluar la situación jurídica y decidir los pasos necesarios ante la ausencia de esa información."
+  },
+  {
+    "id": 126,
+    "pregunta": "126. ¿En qué fase debería Carol esperar pasar la mayor cantidad de horas-hombre?",
+    "opciones": [
+      "A) Identificación",
+      "B) Recolección y preservación",
+      "C) Procesamiento, revisión y análisis",
+      "D) Producción"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. En la mayoría de los casos de descubrimiento electrónico (e-discovery), revisar los grandes volúmenes de datos para asegurar que solo se presente la información necesaria y que se pongan a disposición todos los datos requeridos es lo que más tiempo consume al personal. Muchas organizaciones con mayores necesidades de e-discovery tienen personal dedicado o externalizan esfuerzos como este."
+  },
+  {
+    "id": 127,
+    "pregunta": "127. El kit de respuesta a incidentes que Cassandra está construyendo se basa en una computadora portátil potente para que pueda realizar adquisiciones y análisis de discos en el sitio. Si espera necesitar adquirir datos de unidades SATA, SSD y flash, ¿qué artículo debería incluir en su kit?",
+    "opciones": [
+      "A) Un bloqueador de escritura (write blocker)",
+      "B) Un disco duro USB",
+      "C) Un adaptador de unidades de múltiples interfaces",
+      "D) Un cable USB-C"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Cassandra debe asegurarse de tener al menos un adaptador de unidad USB de interfaz múltiple que pueda conectarse a todos los tipos comunes de unidades de almacenamiento (SATA, SSD, IDE, etc.). Aunque un bloqueador de escritura es indispensable para la integridad forense, el adaptador es el componente físico necesario para la conectividad de los diversos tipos de unidades mencionadas."
+  },
+  {
+    "id": 128,
+    "pregunta": "128. ¿Cuál de los siguientes artículos no se encuentra típicamente en los kits forenses corporativos?",
+    "opciones": [
+      "A) Bloqueadores de escritura",
+      "B) Cinta de escena del crimen",
+      "C) Etiquetadoras",
+      "D) Herramientas de descifrado"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. La cinta de escena del crimen no es una parte típica de un kit forense corporativo, ya que esta es una herramienta propia de las fuerzas del orden. Las empresas se enfocan en herramientas técnicas como bloqueadores de escritura para la adquisición de datos, etiquetadoras para la cadena de custodia y herramientas de descifrado para el análisis."
+  },
+  {
+    "id": 129,
+    "pregunta": "129. ¿Qué herramienta de respuesta a incidentes debería construir Kai antes de un incidente para asegurar que el personal pueda contactar a los respondedores críticos cuando sea necesario?",
+    "opciones": [
+      "A) Un triángulo de triaje",
+      "B) Una lista de llamadas (call list)",
+      "C) Una rotación de llamadas",
+      "D) Una matriz de responsabilidades"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. Una lista de llamadas (o lista de escalada) proporciona los nombres y números de contacto del personal crítico que debe ser alertado durante un incidente. Mientras que la rotación gestiona quién está de guardia, la lista de llamadas es la herramienta directa para iniciar la comunicación en una emergencia."
+  },
+  {
+    "id": 130,
+    "pregunta": "130. Greg encuentra una serie de entradas de registro en sus registros de servidor web que muestran cadenas largas \"AAAAAAAAAAAAAAAAAAAAAAA\", seguidas de cadenas de caracteres. ¿Qué tipo de ataque ha descubierto más probablemente?",
+    "opciones": [
+      "A) Un ataque de inyección SQL",
+      "B) Un ataque de denegación de servicio (DoS)",
+      "C) Un ataque de desbordamiento de búfer (buffer overflow)",
+      "D) Un ataque de cadena de caracteres PHP"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Desbordar una ubicación de memoria colocando una cadena más larga de lo que el programa espera en una variable es una forma de ataque de desbordamiento de búfer (buffer overflow). Los atacantes suelen usar una cadena repetitiva de caracteres (como 'A's) para sobrescribir intencionalmente la memoria contigua y controlar el flujo de ejecución del programa."
+  },
+  {
+    "id": 131,
+    "pregunta": "131. Durante un incidente de seguridad, Joanna realiza una serie de cambios en los sistemas de producción para contener el daño. ¿Qué tipo de cambio debería presentar en el proceso de control de cambios de su organización cuando el esfuerzo de respuesta está concluyendo?",
+    "opciones": [
+      "A) Cambio de rutina",
+      "B) Cambio prioritario",
+      "C) Cambio de emergencia",
+      "D) Cambio preaprobado"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Este es un ejemplo de un cambio de emergencia porque el cambio se realizó sin ninguna aprobación previa. Fue necesario para cumplir con requisitos de seguridad urgentes, y Joanna debe hacer un seguimiento lo antes posible mediante la presentación de un aviso de cambio de emergencia para documentar y formalizar las acciones tomadas."
+  },
+  {
+    "id": 132,
+    "pregunta": "132. ¿Cuál de los siguientes tipos de prueba de respuesta a incidentes proporciona un ejercicio interactivo para todo el equipo pero no corre el riesgo de interrumpir la actividad comercial normal?",
+    "opciones": [
+      "A) Prueba de interrupción completa",
+      "B) Revisión de lista de verificación (checklist review)",
+      "C) Revisión de gestión",
+      "D) Ejercicio de mesa (tabletop exercise)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Los ejercicios de mesa (tabletop exercises) permiten probar el proceso de respuesta a incidentes sin interrumpir la actividad comercial normal. Este enfoque reúne al equipo para recorrer un escenario de incidente hipotético, fomentando la discusión y la resolución de problemas de forma segura."
+  },
+  {
+    "id": 133,
+    "pregunta": "133. ¿Cuál de los siguientes entornos de servicio en la nube es probable que proporcione la mejor información disponible para el análisis forense?",
+    "opciones": [
+      "A) SaaS (Software as a Service)",
+      "B) IaaS (Infrastructure as a Service)",
+      "C) PaaS (Platform as a Service)",
+      "D) IDaaS (Identity as a Service)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Incident Response Management",
+    "explicacion": "B. En términos generales, los analistas pueden obtener más información forense cuando su organización tiene un mayor control sobre los recursos subyacentes. IaaS proporciona el mayor nivel de control sobre los sistemas operativos, redes y almacenamiento, lo que facilita el acceso a registros detallados e imágenes forenses."
+  },
+  {
+    "id": 134,
+    "pregunta": "134. Ken está ayudando a su organización a prepararse para futuros esfuerzos de respuesta a incidentes y desea asegurarse de que realicen ejercicios de capacitación regulares. ¿Cuál de los siguientes ejercicios podría usar para recordar a los respondedores de incidentes sus responsabilidades con el menor impacto en otras prioridades organizacionales?",
+    "opciones": [
+      "A) Revisión de lista de verificación",
+      "B) Recorrido estructurado (structured walk-through)",
+      "C) Captura de la bandera (Capture the flag)",
+      "D) Ejercicio de mesa"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Las revisiones de listas de verificación tienen el menor impacto en la organización porque son métodos rápidos y eficientes que pueden realizarse de forma asíncrona por los empleados individuales para verificar que conocen sus tareas asignadas, sin requerir una reunión grupal extensa como los recorridos o ejercicios de mesa."
+  },
+  {
+    "id": 135,
+    "pregunta": "135. Al analizar el tráfico de red en busca de indicadores de compromiso, ¿cuál de los siguientes pares de servicio/puerto indicaría un protocolo común ejecutándose en un puerto no estándar?",
+    "opciones": [
+      "A) HTTPS en puerto TCP 443",
+      "B) RDP en puerto TCP 3389",
+      "C) SSH en puerto TCP 1433",
+      "D) HTTP en puerto TCP 80"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. SSH normalmente se ejecuta en el puerto TCP 22, mientras que el puerto 1433 es el estándar para Microsoft SQL Server. Encontrar SSH en el puerto 1433 es un indicador claro de tráfico en un puerto no estándar, algo frecuentemente utilizado por atacantes para evadir reglas de firewall o intentar confundir el monitoreo."
+  },
+  {
+    "id": 136,
+    "pregunta": "136. Camilla está participando en la etapa de erradicación y recuperación de un proceso de respuesta a incidentes. ¿Cuál de las siguientes actividades normalmente no ocurriría durante esta fase?",
+    "opciones": [
+      "A) Mitigación de vulnerabilidades",
+      "B) Restauración de permisos",
+      "C) Verificación del registro/comunicación al monitoreo de seguridad",
+      "D) Análisis del consumo de capacidad del disco"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. La mitigación de vulnerabilidades, la restauración de permisos y la verificación del registro son actividades de la fase de erradicación y recuperación. El análisis del consumo de capacidad del disco es una actividad de análisis técnico que se realiza principalmente durante la fase de detección y análisis para identificar indicadores de compromiso."
+  },
+  {
+    "id": 137,
+    "pregunta": "137. ¿Qué tipo de ejercicio activa realmente el plan de respuesta a incidentes de una organización pero tiene la menor probabilidad de interrumpir las actividades normales?",
+    "opciones": [
+      "A) Revisión de lista de verificación",
+      "B) Ejercicio de mesa",
+      "C) Prueba de interrupción completa",
+      "D) Prueba paralela"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Las pruebas paralelas implican ejecutar el plan de respuesta a incidentes en un entorno separado sin detener las operaciones normales de la empresa. Esto activa el plan real (a diferencia de un ejercicio de mesa o lista de verificación) pero evita el riesgo de interrupción que conlleva una prueba de interrupción completa."
+  },
+  {
+    "id": 138,
+    "pregunta": "138. ¿Cuál de los siguientes eventos es menos probable que desencadene la revisión del programa de seguridad de la información de una organización?",
+    "opciones": [
+      "A) Incidente de seguridad",
+      "B) Cambios en las obligaciones de cumplimiento",
+      "C) Cambios en los miembros del equipo",
+      "D) Cambios en los procesos de negocio"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. Los incidentes de seguridad, los cambios regulatorios (cumplimiento) y los cambios en los procesos de negocio son factores críticos que afectan directamente la postura de riesgo. Si bien los cambios en los miembros del equipo pueden ser relevantes, no suelen ser el motor principal para una revisión completa del programa de seguridad a menos que afecten roles de alto impacto."
+  },
+  {
+    "id": 139,
+    "pregunta": "139. El Manual de Metodología de Pruebas de Seguridad de Código Abierto (OSSTMM) se centra en las pruebas en tres áreas principales. ¿Cuál de las siguientes no es una de esas áreas?",
+    "opciones": [
+      "A) Ubicaciones físicas",
+      "B) Comunicaciones",
+      "C) Servidores web",
+      "D) Interacciones humanas"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. El OSSTMM, publicado por el ISECOM, define su metodología en torno a ubicaciones físicas, interacciones humanas y comunicaciones. Aunque la seguridad de servidores web es un objetivo importante en la industria, no constituye una de las tres categorías principales de pruebas según esta metodología específica."
+  },
+  {
+    "id": 140,
+    "pregunta": "140. Kevin está realizando una evaluación de una aplicación web utilizando la Guía de Pruebas de OWASP. Está buscando vulnerabilidades XSS en la aplicación y le gustaría usar un enfoque que equilibre el tiempo necesario para realizar la prueba y la efectividad de la misma. ¿Qué enfoque sería el más apropiado?",
+    "opciones": [
+      "A) Usar una herramienta de prueba automatizada.",
+      "B) Realizar una prueba de penetración.",
+      "C) Probar cada campo de entrada manualmente.",
+      "D) Entrevistar a los desarrolladores de software."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Para un equilibrio entre exhaustividad y tiempo, las herramientas automatizadas son el enfoque más eficiente para realizar un escaneo inicial en todos los campos de entrada. Aunque las pruebas manuales (C) son más precisas, consumen demasiado tiempo para una cobertura completa, y las otras opciones no proporcionan resultados de vulnerabilidad directos."
+  },
+  {
+    "id": 141,
+    "pregunta": "141. ¿Cuál es el intervalo mínimo en el que una organización debe realizar capacitación de actualización del plan de continuidad del negocio para aquellos con roles específicos de continuidad del negocio?",
+    "opciones": [
+      "A) Semanalmente",
+      "B) Mensualmente",
+      "C) Semestralmente",
+      "D) Anualmente"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. Las personas con funciones específicas de continuidad del negocio deben recibir capacitación al menos anualmente. Aunque siempre es preferible ofrecer capacitación más frecuente, la capacitación anual es el estándar aceptado para cumplir con los requisitos de la mayoría de las organizaciones y marcos de gobernanza."
+  },
+  {
+    "id": 142,
+    "pregunta": "142. ¿Cuál de los siguientes programas tiene el objetivo principal de garantizar que una organización sea capaz de mantener operaciones normales durante un desastre u otra interrupción?",
+    "opciones": [
+      "A) Recuperación ante desastres",
+      "B) Respuesta a incidentes",
+      "C) Gestión de riesgos",
+      "D) Continuidad del negocio"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. El objetivo del programa de Continuidad del Negocio (BCP) es asegurar que la organización sea capaz de mantener las operaciones críticas incluso durante un evento inesperado. Se enfoca en la resiliencia operativa y la protección de las funciones centrales del negocio."
+  },
+  {
+    "id": 143,
+    "pregunta": "143. ¿Cuál de los siguientes programas tiene el objetivo principal de ayudar a la organización a recuperar rápidamente las operaciones normales si se ven interrumpidas?",
+    "opciones": [
+      "A) Recuperación ante desastres",
+      "B) Respuesta a incidentes",
+      "C) Gestión de riesgos",
+      "D) Continuidad del negocio"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. El objetivo del programa de Recuperación ante Desastres (DRP) es ayudar a la organización a restaurar sus operaciones tecnológicas y procesos críticos a un estado operativo normal tan pronto como sea posible después de una interrupción significativa o un desastre."
+  },
+  {
+    "id": 144,
+    "pregunta": "144. ¿Durante qué fase del proceso de respuesta a incidentes implementaría una organización defensas diseñadas para reducir la probabilidad de un incidente de seguridad?",
+    "opciones": [
+      "A) Preparación",
+      "B) Detección y análisis",
+      "C) Contención, erradicación y recuperación",
+      "D) Actividad posterior al incidente"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Las organizaciones deben construir enfoques sólidos de defensa en profundidad durante la fase de Preparación. Los controles, configuraciones y parches implementados en esta etapa sirven específicamente para reducir la probabilidad y el impacto de futuros incidentes antes de que estos ocurran."
+  },
+  {
+    "id": 145,
+    "pregunta": "145. Después de concluir una investigación de respuesta a incidentes, Chris está intentando determinar qué salió mal para poder implementar nuevos controles de seguridad que eviten incidentes similares en el futuro. ¿Qué término describe mejor su trabajo?",
+    "opciones": [
+      "A) Revisión de lecciones aprendidas",
+      "B) Actividad posterior al incidente",
+      "C) Gestión de incidentes",
+      "D) Análisis de causa raíz"
+    ],
+    "respuesta": "D",
+    "objetivo": "Incident Response Management",
+    "explicacion": "D. El Análisis de Causa Raíz (RCA) es el término más específico que describe la actividad de investigar profundamente para descubrir el origen exacto y la falla que permitió el incidente, lo cual es fundamental para implementar controles correctivos efectivos."
+  },
+  {
+    "id": 146,
+    "pregunta": "146. ¿Qué crítica común se dirige al Cyber Kill Chain?",
+    "opciones": [
+      "A) No todas las amenazas tienen como objetivo una \"destrucción\" (kill).",
+      "B) Es demasiado detallado.",
+      "C) Incluye acciones fuera de la red defendida.",
+      "D) Se centra demasiado en las amenazas internas."
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La Cyber Kill Chain incluye acciones que ocurren fuera del perímetro de la red defendida, sobre las cuales los defensores a menudo tienen poca o ninguna capacidad de control, lo que limita su utilidad operativa para el personal de seguridad interno."
+  },
+  {
+    "id": 147,
+    "pregunta": "147. Tamara es una analista de ciberseguridad para una empresa privada que está sufriendo una brecha de seguridad. Ella cree que los atacantes han comprometido una base de datos que contiene información sensible. ¿Cuál de las siguientes actividades debería ser la primera prioridad de Tamara?",
+    "opciones": [
+      "A) Identificar la fuente del ataque",
+      "B) Erradicación",
+      "C) Contención",
+      "D) Recuperación"
+    ],
+    "respuesta": "C",
+    "objetivo": "Incident Response Management",
+    "explicacion": "C. La contención es siempre la primera prioridad ante un incidente confirmado o probable, especialmente si hay datos sensibles en riesgo. El objetivo es detener la propagación del atacante y limitar cualquier exfiltración adicional antes de proceder con el análisis o la erradicación."
+  },
+  {
+    "id": 148,
+    "pregunta": "148. Robert está terminando un borrador de una propuesta de política de respuesta a incidentes para su organización. ¿Quién sería la persona más apropiada para firmar la política?",
+    "opciones": [
+      "A) CEO",
+      "B) Director de seguridad",
+      "C) CIO",
+      "D) Líder del CSIRT"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. Una política de respuesta a incidentes otorga al CSIRT la autoridad legal y operativa para tomar decisiones críticas, como aislar sistemas de producción. Por tanto, requiere el respaldo del nivel más alto de autoridad en la organización (CEO o Junta Directiva) para garantizar su cumplimiento y efectividad."
+  },
+  {
+    "id": 149,
+    "pregunta": "149. ¿Cuál de los siguientes no es un objetivo de la fase de contención, erradicación y recuperación de la respuesta a incidentes?",
+    "opciones": [
+      "A) Detectar un incidente en curso.",
+      "B) Implementar una estrategia de contención.",
+      "C) Identificar a los atacantes.",
+      "D) Erradicar los efectos del incidente."
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. La detección de un incidente es el objetivo principal de la fase de 'Detección y Análisis'. Una vez que el incidente ha sido detectado y analizado, comienza la fase de contención, erradicación y recuperación."
+  },
+  {
+    "id": 150,
+    "pregunta": "150. ¿Cuál de las siguientes no es una fase del ciclo de vida de la amenaza abordada en el modelo MITRE ATT&CK?",
+    "opciones": [
+      "A) Dominación (Domination)",
+      "B) Exfiltración",
+      "C) Ejecución",
+      "D) Escalada de privilegios"
+    ],
+    "respuesta": "A",
+    "objetivo": "Incident Response Management",
+    "explicacion": "A. MITRE ATT&CK enumera tácticas tácticas como la ejecución, la escalada de privilegios y la exfiltración como parte del ciclo de vida de un atacante. \"Dominación\" no es una táctica estándar definida dentro de la matriz de ATT&CK."
+  }
+]
+

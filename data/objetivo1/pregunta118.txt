@@ -1,0 +1,2 @@
+select  *  from  network - events  where  data.process.image.file  =  ‘cmd.exe’  AND  data.process.parentImage.file  !=  ‘explorer.exe’  AND  data.process.action  =  ‘launch’ 
+

@@ -1,0 +1,5 @@
+[minesweeper.exe] 
+127.0.0.1:62522         dynamo:0       LISTENING 
+
+[minesweeper.exe] 
+TCP     192.168.1.100         151.101.2.69:https   ESTABLISHED

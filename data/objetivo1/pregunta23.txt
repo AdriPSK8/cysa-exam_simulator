@@ -1,0 +1,5 @@
+Date  flow  start      Duration  Proto           Src    IP  Addr:Port    Dst  IP  Addr:Port    Packets     Bytes     Flows 
+
+2017 - 07 - 11           13:06:46.343  21601804    TCP    10.1.1.1:1151 - >10.2.2.3:443        9473640     9.1  G     1 
+
+2017 - 07 - 11           13:06:46.551  21601804    TCP    10.2.2.3:443 - >10.1.1.1:1151        8345101     514  M     1

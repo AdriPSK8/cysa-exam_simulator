@@ -1,0 +1,1126 @@
+[
+  {
+    "id": 1,
+    "pregunta": "1. Mientras revisa los registros de flujo de red (network flow logs), John observa que el flujo de red en un segmento particular cayó repentinamente a cero. ¿Cuál es la causa más probable de esto?",
+    "opciones": [
+      "A) Un ataque de denegación de servicio (DoS).",
+      "B) Una falla de enlace (link failure).",
+      "C) Consumo elevado de ancho de banda.",
+      "D) Beaconing (señalización de comunicación de malware)."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. La caída repentina a cero es muy probable que sea un ejemplo de falla de enlace. Un ataque de denegación de servicio (DoS) podría dar como resultado este tipo de caída, pero es menos probable para la mayoría de las organizaciones. Tanto el alto consumo de ancho de banda como el beaconing muestran patrones de tráfico diferentes a los mostrados en este ejemplo."
+  },
+  {
+    "id": 2,
+    "pregunta": "2. Saanvi está llevando a cabo el proceso de recuperación después de que su organización experimentara un incidente de seguridad. Durante ese proceso, planea aplicar parches a todos los sistemas de su entorno. ¿Cuál de los siguientes debería ser su mayor prioridad para aplicar parches?",
+    "opciones": [
+      "A) Sistemas Windows.",
+      "B) Sistemas involucrados en el incidente.",
+      "C) Sistemas Linux.",
+      "D) Servidores web."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Durante un esfuerzo de recuperación de incidentes, se debe dar prioridad de parcheo a los sistemas que estuvieron directamente involucrados en el incidente. Este es un componente para remediar problemas conocidos que fueron explotados activamente."
+  },
+  {
+    "id": 3,
+    "pregunta": "3. La organización de Susan sufrió una brecha importante atribuida a una amenaza persistente avanzada (APT) que utilizó exploits de vulnerabilidades de día cero para obtener el control de sistemas en la red de su empresa. ¿Cuál de las siguientes es la solución menos apropiada para que Susan recomiende con el fin de ayudar a prevenir futuros ataques de este tipo?",
+    "opciones": [
+      "A) Métodos de detección de ataques basados en heurística.",
+      "B) Métodos de detección de ataques basados en firmas.",
+      "C) Segmentación.",
+      "D) Aprovechar la inteligencia de amenazas (threat intelligence)."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Los métodos de detección de ataques basados en firmas se basan en saber cómo se ve un ataque o un malware. Es poco probable que los ataques de día cero tengan una firma existente, lo que los convierte en una mala opción para prevenirlos. Los métodos de detección heurística (comportamiento) pueden indicar compromisos a pesar de la falta de firmas para el exploit específico."
+  },
+  {
+    "id": 4,
+    "pregunta": "4. Durante su investigación de un sistema Windows, Eric descubrió que se eliminaron archivos y quiere determinar si un archivo específico existió previamente en la computadora. ¿Cuál de las siguientes es la ubicación menos probable para descubrir evidencia que respalde esa teoría?",
+    "opciones": [
+      "A) Registro de Windows.",
+      "B) Tabla Maestra de Archivos (MFT).",
+      "C) Archivos INDX.",
+      "D) Registros de eventos (Event logs)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. El registro de Windows, las Tablas Maestras de Archivos (MFT) y los archivos INDX contienen información sobre los archivos, a menudo incluyendo archivos eliminados o borrados. Es mucho menos probable que los registros de eventos contengan información sobre la ubicación de un archivo específico."
+  },
+  {
+    "id": 5,
+    "pregunta": "5. Como parte de sus funciones como analista de SOC, Emily tiene la tarea de monitorear sistemas de detección de intrusos (IDS) que cubren la red de la sede corporativa de su empleador. Durante su turno, las alarmas de su IDS reportan que ha ocurrido un escaneo de red desde un sistema con la dirección IP 10.0.11.19 en la red inalámbrica WPA3 Enterprise de la organización dirigido a sistemas en la división de finanzas. ¿Qué fuente de datos debería verificar primero?",
+    "opciones": [
+      "A) Registros del firewall de host.",
+      "B) Registros de autenticación de AD.",
+      "C) Registros de autenticación inalámbrica.",
+      "D) Registros de WAF (Firewall de aplicaciones web)."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Dado que la organización de Emily utiliza WPA3 Enterprise, los usuarios deben autenticarse para usar la red inalámbrica. Asociar el escaneo con un usuario autenticado ayudará a los analizadores de incidentes a identificar el dispositivo que realizó el escaneo."
+  },
+  {
+    "id": 6,
+    "pregunta": "6. El proceso de respuesta a incidentes de Casey la lleva a un servidor de producción que debe permanecer en línea para que el negocio de su empresa siga operativo. ¿Qué método debería utilizar para capturar los datos que necesita?",
+    "opciones": [
+      "A) Imagen en vivo (Live image) a una unidad externa.",
+      "B) Imagen en vivo a la unidad principal del sistema.",
+      "C) Desconectar el sistema y realizar una imagen a una unidad externa.",
+      "D) Desconectar el sistema, instalar un bloqueador de escritura (write blocker) en la unidad principal del sistema y luego realizar una imagen a una unidad externa."
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Normalmente, las imágenes forenses se recolectan de sistemas que están fuera de línea para garantizar que se realice una copia completa. En casos como este, donde mantener el sistema en línea es más importante que la integridad de la imagen forense, una imagen en vivo en una unidad externa utilizando una herramienta forense portátil como FTK Imager Lite, dd o similar es la opción correcta."
+  },
+  {
+    "id": 7,
+    "pregunta": "7. ¿Qué significa la respuesta \"filtered\" (filtrado) de Nmap en los resultados de un escaneo de puertos?",
+    "opciones": [
+      "A) Nmap no puede saber si el puerto está abierto o cerrado.",
+      "B) Se detectó un firewall.",
+      "C) Se detectó un IPS.",
+      "D) No hay ninguna aplicación escuchando, pero podría haber una en cualquier momento."
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Cuando Nmap devuelve una respuesta de \"filtered\" (filtrado), indica que Nmap no puede determinar si el puerto está abierto o cerrado. Los resultados filtrados a menudo son el resultado de un firewall u otro dispositivo de red, pero una respuesta de filtrado no indica que se haya detectado un firewall o un IPS. Cuando Nmap devuelve un resultado \"closed\" (cerrado), significa que no hay ninguna aplicación escuchando en ese momento."
+  },
+  {
+    "id": 8,
+    "pregunta": "8. Durante su revisión de los registros de incidentes (incident logs), Deepa descubre la entrada inicial vía SSH en un bastion host (A) expuesto al público a las 8:02 a.m. Si la red de la cual Deepa es responsable está diseñada como se muestra aquí, ¿cuál es el diagnóstico más probable si la segunda intrusión aparece en el host B a las 7:15 a.m.?",
+    "opciones": [
+      "A) El host interno B fue comprometido previamente.",
+      "B) El host A fue comprometido; luego el host B fue comprometido.",
+      "C) Ni el host B ni el host A están sincronizados correctamente con NTP.",
+      "D) Una amenaza interna comprometió el host B y luego el host A."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. El problema más probable es un problema con la sincronización del Protocolo de Tiempo de Red (NTP) para ambos hosts, debido a una zona horaria configurada incorrectamente u otro problema de tiempo. La regla solo permite el tráfico iniciado por el host A, lo que hace imposible que el host B sea el origen de un compromiso de A. Las otras opciones son posibles, pero el problema más probable es un problema de NTP."
+    ,"imagen": "pregunta8.png"
+  },
+  {
+    "id": 9,
+    "pregunta": "9. Matt ejecutó recientemente un escaneo de vulnerabilidades de la red de su organización y recibió los resultados mostrados aquí. Le gustaría remediar primero el servidor con el mayor número de vulnerabilidades más graves. ¿Cuál de los siguientes servidores debería estar en su lista de mayor prioridad?",
+    "opciones": [
+      "A) Servidor A",
+      "B) Servidor B",
+      "C) Servidor C",
+      "D) Servidor D"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Las vulnerabilidades más graves que se muestran en este informe son vulnerabilidades de severidad media. El servidor D tiene el mayor número (8) de vulnerabilidades en ese nivel de severidad."
+    ,"imagen": "pregunta9.png"
+  },
+  {
+    "id": 10,
+    "pregunta": "10. Saanvi ha recibido la tarea de realizar una evaluación de riesgos para el banco de tamaño mediano en el que trabaja debido a un compromiso reciente de su aplicación web de banca en línea. Saanvi ha elegido utilizar el marco de evaluación de riesgos NIST 800-30 mostrado aquí. ¿Qué probabilidad de ocurrencia debería asignar a las brechas de la aplicación web?",
+    "opciones": [
+      "A) Baja (Low)",
+      "B) Media (Medium)",
+      "C) Alta (High)",
+      "D) No se puede determinar con la información proporcionada."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Cuando ha ocurrido un evento del tipo que se está analizando dentro del pasado reciente (a menudo definido como un año), las evaluaciones que revisan ese evento normalmente clasificarán la probabilidad de ocurrencia como alta, ya que ya ha ocurrido."
+    ,"imagen": "pregunta10.png"
+  },
+  {
+    "id": 11,
+    "pregunta": "11. El jefe de Hank regresó recientemente de un evento de cumbre de directores ejecutivos (CEO) donde aprendió sobre la importancia de la ciberseguridad y el papel del escaneo de vulnerabilidades. Le preguntó a Hank sobre los escaneos de vulnerabilidades realizados por la organización y sugirió que, en lugar de realizar escaneos semanales, configuren el escáner para iniciar un nuevo escaneo inmediatamente después de que finalice el anterior. ¿Cómo debería reaccionar Hank ante esta solicitud?",
+    "opciones": [
+      "A) Hank debería informar al CEO que esto tendría un impacto negativo en el rendimiento del sistema y no es recomendable.",
+      "B) Hank debería implementar inmediatamente la sugerencia del CEO.",
+      "C) Hank debería considerar la solicitud y trabajar con los equipos de redes e ingeniería en su posible implementación.",
+      "D) Hank debería informar al CEO que no hay un beneficio de seguridad incremental con este enfoque y que no lo recomienda."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. La sugerencia del CEO es un enfoque razonable para el escaneo de vulnerabilidades que se utiliza en algunas organizaciones, a menudo bajo el término de escaneo continuo. Él debe considerar la solicitud y el impacto en los sistemas y redes para determinar un curso de acción razonable."
+  },
+  {
+    "id": 12,
+    "pregunta": "12. La organización de Selah sufre una interrupción de su VPN cifrada punto a punto debido a un compromiso del sistema en su proveedor de servicios de Internet (ISP). ¿Qué tipo de problema es este?",
+    "opciones": [
+      "A) Confidencialidad",
+      "B) Disponibilidad (Availability)",
+      "C) Integridad",
+      "D) Responsabilidad (Accountability)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Este es un ejemplo de un problema de disponibilidad. Si los datos se hubieran modificado, habría sido un problema de integridad, mientras que la exposición de los datos habría sido un problema de confidencialidad. La rendición de cuentas (accountability) por parte del proveedor externo no se discute en la pregunta."
+  },
+  {
+    "id": 13,
+    "pregunta": "13. Garrett está trabajando con un administrador de bases de datos (DBA) para corregir problemas de seguridad en varios servidores administrados por el equipo de bases de datos. Él desea extraer un informe para el DBA que proporcione información útil para asistir en el esfuerzo de remediación. De las plantillas de informe mostradas aquí, ¿cuál sería la más útil para el equipo de DBA?",
+    "opciones": [
+      "A) Qualys Top 20 Report (Informe de los 20 principales de Qualys)",
+      "B) Payment Card Industry (PCI) Technical Report (Informe técnico de la industria de tarjetas de pago)",
+      "C) Executive Report (Informe ejecutivo)",
+      "D) Technical Report (Informe técnico)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. El Informe Técnico contendrá información detallada sobre un host específico y está diseñado para un ingeniero que busca remediar el sistema. El Informe Técnico de PCI se centraría en problemas de cumplimiento de tarjetas de crédito, y no hay indicios de que este servidor se utilice para el procesamiento de tarjetas de crédito. El Informe Qualys Top 20 y el Informe Ejecutivo contendrían información resumida más apropiada para una audiencia gerencial y cubrirían una red completa, en lugar de proporcionar información detallada sobre un solo sistema."
+    ,"imagen": "pregunta13.png"
+  },
+  {
+    "id": 14,
+    "pregunta": "14. Las herramientas de monitoreo de red SolarWinds de Jiang proporcionan datos sobre un sistema alojado en el entorno AWS de Amazon. Cuando Jiang revisa el tiempo de respuesta promedio de su servidor, ve los resultados mostrados aquí. ¿Qué acción debería tomar Jiang basándose en esta información?",
+    "opciones": [
+      "A) Debería aumentar la velocidad de su enlace de red.",
+      "B) Debería verificar si hay tareas programadas en los momentos en que ve los picos (spikes).",
+      "C) Debería asegurarse de que su tarjeta de red tenga la configuración de latencia adecuada.",
+      "D) Debería realizar diagnósticos adicionales para determinar la causa de la latencia."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Jiang necesita realizar diagnósticos adicionales para determinar la causa de la latencia. Desafortunadamente para Jiang, este gráfico no proporciona suficiente información para determinar por qué el tiempo máximo de respuesta aumenta a niveles altos de forma periódica. Dado que los eventos no ocurren en intervalos regulares, es relativamente poco probable que una tarea programada esté causando el problema."
+    ,"imagen": "pregunta14.png"
+  },
+  {
+    "id": 15,
+    "pregunta": "15. Alex nota el tráfico que se muestra aquí durante una captura de paquetes con Wireshark. ¿Qué es lo que probablemente está haciendo el host con la dirección IP 10.0.2.11?",
+    "opciones": [
+      "A) Escaneo de puertos basado en UDP.",
+      "B) Descubrimiento de red vía TCP.",
+      "C) Escaneo de puertos basado en SYN.",
+      "D) Descubrimiento basado en DNS."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Esta imagen muestra un escaneo de puertos basado en SYN. El tráfico se compone principalmente de paquetes TCP SYN dirigidos a una variedad de puertos comunes, lo cual es típico de un escaneo de puertos basado en SYN."
+    ,"imagen": "pregunta15.png"
+  },
+  {
+    "id": 16,
+    "pregunta": "16. Jake está creando una imagen forense de una unidad comprometida utilizando el comando dd con su configuración predeterminada. Encuentra que el proceso de creación de imágenes es muy lento. ¿Qué parámetro debería ajustar primero?",
+    "opciones": [
+      "A) if (input file)",
+      "B) bs (block size)",
+      "C) of (output file)",
+      "D) count"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. La causa más probable de esta lentitud es un tamaño de bloque incorrecto. El tamaño del bloque se establece mediante la bandera bs y se define en bytes. Por defecto, dd utiliza un tamaño de bloque de 512 bytes, que es mucho más pequeño que el tamaño de bloque de la mayoría de los discos modernos. El uso de un tamaño de bloque más grande normalmente será mucho más rápido."
+  },
+  {
+    "id": 17,
+    "pregunta": "17. ¿Qué propósito tiene un sistema honeypot cuando se coloca en una red?",
+    "opciones": [
+      "A) Evita que los atacantes apunten a los servidores de producción.",
+      "B) Proporciona información sobre las técnicas que están utilizando los atacantes.",
+      "C) Ralentiza a los atacantes como la miel pegajosa.",
+      "D) Proporciona información en tiempo real a los IDS e IPS."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Un honeypot es utilizado por investigadores y profesionales de la seguridad para recopilar información sobre las técnicas y herramientas utilizadas por los atacantes. Un honeypot no evitará que los atacantes tengan como objetivo otros sistemas y no está diseñado para ralentizarlos."
+    ,"imagen": "pregunta17.png"
+  },
+  {
+    "id": 18,
+    "pregunta": "18. El equipo de seguridad de Munju ha encontrado evidencia consistente de compromiso del sistema durante un período de semanas, con evidencia adicional que señala que los sistemas que están investigando han estado comprometidos durante años. A pesar de los mejores esfuerzos de su equipo, Munju ha descubierto que su equipo no puede localizar y eliminar por completo el compromiso. ¿Con qué tipo de ataque es probable que Munju esté lidiando?",
+    "opciones": [
+      "A) Un caballo de Troya.",
+      "B) Una APT (Amenaza persistente avanzada).",
+      "C) Un rootkit.",
+      "D) Un ataque de día cero."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Las amenazas persistentes avanzadas (APT) son atacantes altamente capacitados que normalmente se enfocan en objetivos específicos. Para lograr esos objetivos, a menudo obtienen y mantienen acceso a largo plazo a los sistemas y redes utilizando herramientas poderosas que les permiten evadir la detección."
+  },
+  {
+    "id": 19,
+    "pregunta": "19. ¿Cuál de las siguientes métricas sería más útil para determinar la efectividad de un programa de remediación de vulnerabilidades?",
+    "opciones": [
+      "A) Número de vulnerabilidades críticas resueltas.",
+      "B) Tiempo para resolver vulnerabilidades críticas.",
+      "C) Número de nuevas vulnerabilidades críticas por mes.",
+      "D) Tiempo para completar los escaneos de vulnerabilidades."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Esta métrica está completamente bajo el control del programa de remediación de vulnerabilidades y demuestra la capacidad de respuesta de los esfuerzos de remediación y el tiempo que una vulnerabilidad estuvo presente."
+  },
+  {
+    "id": 20,
+    "pregunta": "20. El escaneo Nmap de Mike de un sistema usando el comando nmap 192.168.1.100 no devuelve ningún resultado. ¿Qué sabe Mike sobre el sistema si está seguro de su dirección IP, y por qué?",
+    "opciones": [
+      "A) El sistema no tiene ningún servicio abierto en ejecución.",
+      "B) Todos los servicios están bloqueados por firewall.",
+      "C) No hay servicios TCP alcanzables en los 1000 puertos TCP predeterminados de Nmap.",
+      "D) No hay servicios TCP alcanzables en los 65535 puertos TCP predeterminados de Nmap."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Por defecto, Nmap escanea 1,000 de los puertos TCP más comunes. Mike solo sabe que el sistema que escaneó no tenía puertos TCP alcanzables (abiertos, filtrados o cerrados) en esa lista específica."
+  },
+  {
+    "id": 21,
+    "pregunta": "21. ¿Cuál es el propósito de crear un valor hash para una unidad durante el proceso de creación de imágenes forenses?",
+    "opciones": [
+      "A) Probar que el contenido de la unidad no fue alterado.",
+      "B) Probar que no se eliminaron datos de la unidad.",
+      "C) Probar que no se colocaron archivos en la unidad.",
+      "D) Todas las anteriores."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Una vez que se conectan a través de un bloqueador de escritura, se crea una suma de verificación (utilizando SHA-2, SHA-3 o un algoritmo de hash similar). Si este hash coincide con el hash de las imágenes forenses, coinciden exactamente, lo que significa que el contenido de la unidad no se alteró y que no se agregaron ni eliminaron archivos de la unidad."
+  },
+  {
+    "id": 22,
+    "pregunta": "22. Después de completar su análisis forense fallido del disco duro de una estación de trabajo que fue comprometida por malware, Ben lo envía para que el equipo de soporte de escritorio de su empresa lo vuelva a crear una imagen y lo parche. Poco después de que el sistema vuelve al servicio, el dispositivo se conecta una vez más a la misma botnet. ¿Qué acción debería tomar Ben como parte de su próxima revisión forense si este es el único sistema que muestra síntomas como este?",
+    "opciones": [
+      "A) Verificar que todos los parches estén instalados.",
+      "B) Destruir el sistema.",
+      "C) Validar el hash de la BIOS contra una versión conocida como buena.",
+      "D) Comprobar si hay un sistema con una dirección MAC duplicada."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Algunos tipos de malware se vuelven residentes en el firmware o la BIOS del sistema. Una vez allí, el análisis del disco duro no mostrará la infección. Si el sistema fue parcheado y el problema persiste, Ben debe validar que los elementos del sistema que no verificó antes, como la BIOS, estén intactos."
+  },
+  {
+    "id": 23,
+    "pregunta": "23. Parte de los datos forenses que recibió Susan para su investigación fue una captura de paquetes de Wireshark. La investigación tiene como objetivo determinar qué tipo de medio estaba consumiendo un empleado durante el trabajo. ¿Cuál es el análisis más detallado que puede hacer Susan si se le proporcionan los datos mostrados aquí?",
+    "opciones": [
+      "A) Puede determinar que el usuario estaba viendo un GIF.",
+      "B) Puede revisar manualmente el flujo TCP para ver qué datos se enviaron.",
+      "C) Puede exportar y ver el GIF.",
+      "D) No puede determinar a qué medio se accedió utilizando este conjunto de datos."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Wireshark incluye la capacidad de exportar paquetes. En este caso, Susan puede seleccionar el detalle GIF89a haciendo clic en ese paquete y luego exportar la imagen real a un archivo que pueda visualizar."
+    ,"imagen": "pregunta23.png"
+  },
+  {
+    "id": 24,
+    "pregunta": "24. ¿Cuál de los siguientes modelos traza los pasos que un atacante realizaría comúnmente durante una intrusión?",
+    "opciones": [
+      "A) MITRE ATT&CK",
+      "B) Diamond",
+      "C) Cyber Kill Chain",
+      "D) STIX"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. La Cyber Kill Chain de Lockheed Martin rastrea los pasos utilizados para llevar a cabo un ataque. El modelo Diamond y el modelo MITRE ATT&CK se utilizan para clasificar ataques. STIX es un formato estándar para describir amenazas."
+  },
+  {
+    "id": 25,
+    "pregunta": "25. Mika quiere ejecutar un escaneo de Nmap que incluya todos los puertos TCP y utilice detección de servicios. ¿Cuál de los siguientes comandos de nmap debería ejecutar?",
+    "opciones": [
+      "A) nmap -p0 -all -SC",
+      "B) nmap -p 1-32768 -sVS",
+      "C) nmap -p 1-65535 -sV -sS",
+      "D) nmap -all -sVS"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. El escaneo del rango completo de puertos TCP se puede realizar mediante un escaneo SYN (-sS) y declarando el rango completo de puertos posibles (1-65535). La identificación de la versión del servicio se habilita con la bandera -sV."
+  },
+  {
+    "id": 26,
+    "pregunta": "26. ¿Cuál de los siguientes modelos de servicio en la nube depende de que el proveedor de servicios en la nube implemente la mayor cantidad de controles de seguridad?",
+    "opciones": [
+      "A) SaaS (Software as a Service)",
+      "B) PaaS (Platform as a Service)",
+      "C) FaaS (Function as a Service)",
+      "D) IaaS (Infrastructure as a Service)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. El modelo de software como servicio (SaaS) requiere que el proveedor de servicios en la nube proteja toda la pila de servicios. Otros modelos brindan al cliente un mayor grado de control y responsabilidad sobre la seguridad."
+  },
+  {
+    "id": 27,
+    "pregunta": "27. Dan es un analista de ciberseguridad para una organización de atención médica. Ejecutó un escaneo de vulnerabilidades del servidor VPN utilizado por su organización. Su escaneo se ejecutó desde dentro del centro de datos contra un servidor VPN también ubicado en el centro de datos. El informe completo de vulnerabilidad se muestra aquí. ¿Qué acción debería tomar Dan a continuación?",
+    "opciones": [
+      "A) Dan debería remediar esta vulnerabilidad inmediatamente.",
+      "B) Dan debería programar la vulnerabilidad para su remediación dentro de los próximos 30 días.",
+      "C) Dan debería volver a ejecutar el escaneo porque este es probablemente un informe de falso positivo.",
+      "D) Dan no debería tomar ninguna acción."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Dan no necesita tomar ninguna medida. Esta es una vulnerabilidad de criticidad muy baja (1/5), y probablemente no sea explotable desde fuera del centro de datos. No es necesario remediar esta vulnerabilidad, y no hay indicios de que sea un informe de falso positivo. En general, este es un resultado de escaneo limpio para un servidor VPN."
+    ,"imagen": "pregunta27.png"
+  },
+  {
+    "id": 28,
+    "pregunta": "28. Kwame recibió una alerta de que el SIEM de su organización detectó un posible ataque contra un servidor web en su red. Sin embargo, no está seguro de si el tráfico que generó la alerta entró realmente a la red desde una fuente externa o si provino de dentro de la red. La política de NAT en el firewall perimetral reescribe las direcciones IP públicas, lo que dificulta evaluar esta información basándose en direcciones IP. Kwame quisiera realizar una revisión manual de registros para localizar la fuente del tráfico. ¿A dónde debería acudir para obtener la mejor información?",
+    "opciones": [
+      "A) Registros del servidor de aplicaciones.",
+      "B) Registros del servidor de bases de datos.",
+      "C) Registros del firewall.",
+      "D) Registros de antimalware."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Los registros del firewall estarían en la mejor posición para responder a su pregunta específica sobre el origen del ataque. Dado que el firewall realiza la traducción de direcciones de red (NAT), es muy probable que tenga un registro de la dirección IP de origen original (pre-NAT) del tráfico."
+  },
+  {
+    "id": 29,
+    "pregunta": "29. ¿Cuál de los siguientes tipos de escaneos de vulnerabilidades proporcionaría la menor cantidad de información sobre la configuración de seguridad de un sistema?",
+    "opciones": [
+      "A) Escaneo basado en agentes (Agent-based scan).",
+      "B) Escaneo con credenciales (Credentialed scan).",
+      "C) Escaneo interno sin credenciales (Uncredentialed internal scan).",
+      "D) Escaneo externo sin credenciales (Uncredentialed external scan)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Un escaneo sin credenciales proporciona mucha menos información que un escaneo con credenciales o basado en agentes, ya que tanto los escaneos con credenciales como los basados en agentes pueden recopilar información de configuración de los sistemas objetivos. Los escaneos externos también proporcionan menos información que los internos porque están filtrados por firewalls perimetrales y otros dispositivos de seguridad."
+  },
+  {
+    "id": 30,
+    "pregunta": "30. Después de terminar un caso forense, Sam necesita limpiar un disco duro magnético (HDD) que está utilizando para prepararlo para el siguiente caso. ¿Cuál de los siguientes métodos es el más adecuado para preparar el disco duro si quiere cumplir con la norma NIST SP 800-88?",
+    "opciones": [
+      "A) Desmagnetizar el disco (Degauss).",
+      "B) Sobrescribir con ceros (Zero-write).",
+      "C) Siete rondas: todos unos, todos ceros y cinco rondas de valores aleatorios.",
+      "D) Usar el comando ATA Secure Erase."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. La publicación NIST SP800-88, junto con muchos manuales forenses, requiere un borrado completo a cero (zero wipe) de la unidad, pero no requiere múltiples rondas de borrado. La desmagnetización (degaussing) se utiliza principalmente para medios magnéticos como cintas y es posible que no borre por completo un disco duro (y, de hecho, puede dañarlo). El uso del comando ATA Secure Erase se utiliza comúnmente para unidades SSD."
+  },
+  {
+    "id": 31,
+    "pregunta": "31. Después de leer los estándares NIST para la respuesta a incidentes, Mateo dedica tiempo a configurar el servicio NTP en cada uno de sus servidores, estaciones de trabajo y dispositivos en toda su red. ¿En qué fase del proceso de respuesta a incidentes está trabajando para mejorar?",
+    "opciones": [
+      "A) Preparación (Preparation).",
+      "B) Detección y análisis.",
+      "C) Contención, erradicación y recuperación.",
+      "D) Actividad posterior al incidente."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. El NIST recomienda realizar la sincronización de relojes en todos los dispositivos para mejorar la capacidad de análisis de los encargados de responder a incidentes, lo cual forma parte de la fase de detección y análisis del proceso de respuesta a incidentes del NIST."
+  },
+  {
+    "id": 32,
+    "pregunta": "32. Latisha es la ISO (Oficial de Seguridad de la Información) de su empresa y se le notifica que se ha lanzado un exploit de día cero que puede resultar en ejecución remota de código en todas las estaciones de trabajo Windows de su red debido a un ataque contra los servicios de dominio de Windows. Ella quiere limitar su exposición a este exploit pero necesita que los sistemas continúen siendo capaces de acceder a Internet. ¿Cuál de los siguientes enfoques es el mejor para su respuesta?",
+    "opciones": [
+      "A) Firewalling",
+      "B) Patching",
+      "C) Isolation (Aislamiento)",
+      "D) Segmentation (Segmentación)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Latisha sabe que los servicios de dominio de Windows se pueden bloquear mediante un firewall de red. Siempre que cree el conjunto de reglas correcto, puede evitar que los sistemas externos envíen este tipo de tráfico a sus estaciones de trabajo Windows."
+  },
+  {
+    "id": 33,
+    "pregunta": "33. Cuando Saanvi fue llamado para ayudar con un esfuerzo de recuperación de incidentes, descubrió que el administrador de la red había configurado la red como se muestra aquí. ¿Qué tipo de acción de respuesta a incidentes describe mejor lo que Saanvi ha encontrado?",
+    "opciones": [
+      "A) Segmentación",
+      "B) Isolation (Aislamiento)",
+      "C) Remoción (Removal)",
+      "D) Bloqueo de red (Network locking)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Los sistemas en la red de contención están completamente aislados del resto de la red mediante controles lógicos que impiden cualquier acceso."
+    ,"imagen": "pregunta33.png"
+  },
+  {
+    "id": 34,
+    "pregunta": "34. Como parte de la investigación forense de una estación de trabajo Linux, Alex necesita determinar qué comandos pudieron haber sido ejecutados en el sistema. Si no se han llevado a cabo actividades anti-forenses, ¿cuál es la mejor ubicación para que Alex verifique un historial de los comandos emitidos en el sistema?",
+    "opciones": [
+      "A) /var/log/commands.log",
+      "B) $HOME/.bash_history",
+      "C) $HOME/.commands.sqlite",
+      "D) /var/log/authactions.log"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. En los sistemas Linux que utilizan el shell Bash, $HOME/.bash_history contendrá un registro de las acciones realizadas recientemente."
+  },
+  {
+    "id": 35,
+    "pregunta": "35. Ben completó recientemente un análisis de riesgos y determinó que debería implementar un nuevo conjunto de reglas de firewall para filtrar el tráfico desde direcciones IP sospechosas conocidas. ¿Qué tipo de actividad de gestión de riesgos está realizando?",
+    "opciones": [
+      "A) Evitación de riesgos (Risk avoidance)",
+      "B) Aceptación de riesgos (Risk acceptance)",
+      "C) Transferencia de riesgos (Risk transference)",
+      "D) Mitigación de riesgos (Risk mitigation)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Implementar reglas de firewall es un intento de reducir la probabilidad de que ocurra un riesgo. Por lo tanto, este es un ejemplo de una estrategia de mitigación de riesgos."
+  },
+  {
+    "id": 36,
+    "pregunta": "36. Crystal está tratando de determinar la siguiente tarea que debería realizar de una lista de prioridades de seguridad. Su jefe le dijo que debería centrarse en actividades que tengan la mejor relación costo-beneficio (bang for the buck). De las tareas mostradas aquí, ¿cuál debería abordar primero? (Nota: Priorizar mayor criticidad con menor tiempo de ejecución).",
+    "opciones": [
+      "A) Tarea 1",
+      "B) Tarea 2",
+      "C) Tarea 3",
+      "D) Tarea 4"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. La Tarea 3 logra el mejor equilibrio entre criticidad y dificultad. Permite a Crystal remediar un problema de criticidad media con una inversión de solo 6 horas de tiempo. La Tarea 2 es de mayor criticidad pero tomaría 12 semanas resolverla. La Tarea 1 tiene la misma criticidad pero requeriría un día completo para solucionarse. La Tarea 4 es de menor criticidad pero requeriría la misma cantidad de tiempo para resolverse que la Tarea 1."
+    ,"imagen": "pregunta36.png"
+  },
+  {
+    "id": 37,
+    "pregunta": "37. Durante el análisis de un incidente que tuvo lugar en su red, Sofia descubrió que el atacante utilizó una cookie robada para acceder a una aplicación web. ¿Cuál de los siguientes tipos de ataque es más probable que haya ocurrido?",
+    "opciones": [
+      "A) En ruta (On-path / man-in-the-middle)",
+      "B) Escalada de privilegios",
+      "C) Cross-site scripting (XSS)",
+      "D) Secuestro de sesión (Session hijacking)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. El uso de una cookie robada es la marca distintiva de un ataque de secuestro de sesión (session hijacking). Estos ataques se enfocan en tomar el control de una sesión ya existente, ya sea adquiriendo la clave de sesión o las cookies utilizadas por el servidor remoto para validar la sesión."
+  },
+  {
+    "id": 38,
+    "pregunta": "38. Curt está realizando un análisis forense de un sistema Windows y necesita determinar si un programa estaba configurado para ejecutarse automáticamente. ¿Cuál de las siguientes ubicaciones debería verificar para obtener esta información?",
+    "opciones": [
+      "A) Archivos NTFS INDX",
+      "B) El registro (The registry)",
+      "C) Registros de eventos (Event logs)",
+      "D) Archivos Prefetch"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. El registro contiene claves de ejecución automática (autorun) que se utilizan para hacer que los programas se ejecuten al iniciar el sistema. Además, las tareas programadas, las carpetas de inicio de usuarios individuales y las DLL ubicadas en rutas que serán ejecutadas por programas son lugares donde los archivos se ejecutarán automáticamente."
+  },
+  {
+    "id": 39,
+    "pregunta": "39. ¿Qué concepto mide qué tan fácil es perder datos?",
+    "opciones": [
+      "A) Orden de volatilidad (Order of volatility)",
+      "B) Transitoriedad de datos (Data transience)",
+      "C) Predicción de pérdida de datos (Data loss prediction)",
+      "D) The Volatility Framework"
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. El orden de volatilidad de los datos mide qué tan fácil es que los datos se pierdan. Volatility Framework es una herramienta forense orientada al análisis forense de la memoria, mientras que la transitoriedad de datos y la predicción de pérdida de datos no son términos comunes."
+  },
+  {
+    "id": 40,
+    "pregunta": "40. Los pasos enumerados aquí son un ejemplo de qué tipo de preparación para la respuesta a incidentes: 1. Visitar otx.alienvault.com y la dirección IP del sistema C&C sospechoso en el campo de búsqueda superior. 2. Si la dirección IP está asociada con actividad de C&C de malware, crear un ticket en el sistema de seguimiento de respuesta a incidentes.",
+    "opciones": [
+      "A) Crear un CSIRT",
+      "B) Crear un playbook",
+      "C) Crear un plan de respuesta a incidentes",
+      "D) Crear un IR-FAQ"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Los libros de estrategias (playbooks) contienen procedimientos específicos utilizados durante un tipo particular de incidente de ciberseguridad. En este caso, la entrada del playbook aborda la validación del tráfico de comando y control de malware."
+  },
+  {
+    "id": 41,
+    "pregunta": "41. Mientras analizaba el escaneo de vulnerabilidades de su servidor web, Kristen descubre el problema mostrado aquí (uso de TLS 1.0). ¿Cuál de las siguientes soluciones remediaría mejor la situación?",
+    "opciones": [
+      "A) Cambiar de TLS 1.0 a SSL 3.0.",
+      "B) Requerir conexiones IPsec al servidor.",
+      "C) Deshabilitar el uso de TLS.",
+      "D) Cambiar de TLS 1.0 a TLS 1.3."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Kristen debería actualizar el servidor web a la versión segura más reciente de TLS: TLS 1.3. SSL 3.0 tiene vulnerabilidades similares a las de TLS 1.0 y no es una alternativa adecuada. IPsec no es efectivo para las comunicaciones web."
+    ,"imagen": "pregunta41.png"
+  },
+  {
+    "id": 42,
+    "pregunta": "42. Charles está creando un libro de estrategias (playbook) de respuesta a incidentes para su organización que abordará la detección y respuesta del tráfico cliente-servidor de comando y control (C2). ¿Cuál de las siguientes fuentes de información es la menos probable que sea parte de su libro de estrategias?",
+    "opciones": [
+      "A) Registros de consultas DNS.",
+      "B) Fuentes de inteligencia de amenazas.",
+      "C) Datos de honeypot.",
+      "D) Notificaciones del personal interno sobre comportamiento sospechoso."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Relativamente pocas organizaciones operan honeypots debido al esfuerzo requerido para mantener y analizar los datos que generan. Las consultas DNS, los feeds de inteligencia de amenazas y las notificaciones del personal son fuentes mucho más comunes para una variedad de tipos de detección de incidentes."
+  },
+  {
+    "id": 43,
+    "pregunta": "43. Carol fue víctima recientemente de un ataque de phishing. Cuando hizo clic en el enlace, fue enviada al servicio de autenticación central de su organización e inició sesión correctamente. Ella verificó la URL y el certificado para validar que el servidor fuera genuino. Después de autenticarse, fue enviada a un formulario que recopilaba información personal sensible que fue enviada a un atacante. ¿Qué tipo de vulnerabilidad explotó más probablemente el atacante?",
+    "opciones": [
+      "A) Desbordamiento de búfer (Buffer overflow).",
+      "B) Secuestro de sesión (Session hijacking).",
+      "C) Suplantación de IP (IP spoofing).",
+      "D) Redirección abierta (Open redirect)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. En un ataque de redirección abierta (open redirect), los usuarios pueden ser enviados a un servidor de autenticación legítimo y luego ser redirigidos a un servidor no confiable a través del flujo de OAuth. Esto ocurre cuando el servidor de autenticación no valida las solicitudes del servidor OAuth antes de la redirección."
+  },
+  {
+    "id": 44,
+    "pregunta": "44. Como evaluador de penetración, Max utiliza Wireshark para capturar todo el tráfico de sus pruebas. ¿Cuál de las siguientes no es una razón por la que Max capturaría paquetes durante las pruebas de penetración?",
+    "opciones": [
+      "A) Para documentar la prueba de penetración.",
+      "B) Para escanear vulnerabilidades.",
+      "C) Para recopilar información adicional sobre sistemas y servicios.",
+      "D) Para solucionar problemas encontrados al conectarse a los objetivos."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Aunque la captura de paquetes puede ayudar a Max a documentar su prueba, recopilar información y solucionar problemas de conexión, los sniffers (analizadores de paquetes) no son herramientas diseñadas para escanear vulnerabilidades activamente."
+  },
+  {
+    "id": 45,
+    "pregunta": "45. Rich configuró nuevos escaneos de vulnerabilidades que impactan negativamente los trabajos de ETL nocturnos de otro equipo. ¿Cómo debería manejar Rich esta situación?",
+    "opciones": [
+      "A) Rich debería informar al equipo que necesitan ejecutar los trabajos ETL en un horario diferente.",
+      "B) Rich debería reconfigurar los escaneos para que se ejecuten durante el horario comercial.",
+      "C) Rich debería informar al equipo que deben redimensionar el hardware.",
+      "D) Rich debería trabajar con el equipo para encontrar una solución mutuamente aceptable."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Rich no debería intentar resolver este problema por su cuenta ni dictar una solución específica. En su lugar, debería trabajar con el equipo de inteligencia de negocios para encontrar una manera de cumplir con sus requisitos comerciales y, al mismo tiempo, lograr los objetivos de seguridad."
+  },
+  {
+    "id": 46,
+    "pregunta": "46. Javier ejecutó un escaneo de vulnerabilidades de una nueva aplicación web creada por desarrolladores de su equipo y recibió el informe que se muestra aquí. Los desarrolladores inspeccionaron cuidadosamente su código y no creen que el problema exista. Tienen un conocimiento sólido de los problemas de inyección SQL y han corregido vulnerabilidades similares en otras aplicaciones. ¿Cuál es el escenario más probable en este caso?",
+    "opciones": [
+      "A) Javier configuró mal el escaneo.",
+      "B) El código es deficiente y requiere corrección.",
+      "C) La vulnerabilidad está en una aplicación web diferente que se ejecuta en el mismo servidor.",
+      "D) El resultado es un falso positivo."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Las vulnerabilidades de inyección SQL a ciegas (Blind SQL injection) son difíciles de detectar y son una fuente notoria de informes de falsos positivos. Javier debería verificar los resultados de las pruebas realizadas por los desarrolladores, pero debe estar abierto a la posibilidad de que este sea un informe de falso positivo, ya que ese es el escenario más probable."
+    ,"imagen": "pregunta46.png"
+  },
+  {
+    "id": 47,
+    "pregunta": "47. Durante una investigación de incidentes, Mateo puede identificar la dirección IP del sistema que se utilizó para comprometer múltiples sistemas pertenecientes a su empresa. ¿Qué puede determinar Mateo a partir de esta información?",
+    "opciones": [
+      "A) La identidad del atacante.",
+      "B) El país de origen del atacante.",
+      "C) El nombre de dominio del atacante.",
+      "D) Ninguna de las anteriores."
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Aunque puede ser tentador asignar la culpa basándose en una dirección IP, los atacantes utilizan con frecuencia sistemas comprometidos para realizar sus ataques. Por lo tanto, conocer la dirección IP de donde se originó un ataque normalmente no proporcionará información sobre la identidad del atacante."
+  },
+  {
+    "id": 48,
+    "pregunta": "48. Después de un compromiso importante que involucra lo que parece ser una APT, Jaime necesita realizar un examen forense de los sistemas comprometidos. ¿Qué método de contención debería recomendar para asegurarse de que pueda investigar completamente los sistemas involucrados mientras minimiza el riesgo para los otros sistemas de producción de su organización?",
+    "opciones": [
+      "A) Sandboxing (Caja de arena).",
+      "B) Removal (Eliminación).",
+      "C) Isolation (Aislamiento).",
+      "D) Segmentation (Segmentación)."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Eliminar por completo (removal) los sistemas involucrados en el compromiso garantizará que no puedan afectar a los demás sistemas de producción de la organización. Aunque los atacantes puedan detectar este cambio, proporciona la mejor protección posible para los sistemas de la organización."
+  },
+  {
+    "id": 49,
+    "pregunta": "49. Piper está intentando remediar una vulnerabilidad de seguridad y debe aplicar un parche a un servidor de base de datos de producción. El equipo de administración de bases de datos le preocupa que el parche interrumpa las operaciones comerciales. ¿Cómo debería proceder Piper?",
+    "opciones": [
+      "A) Debería implementar el parche inmediatamente en el sistema de producción.",
+      "B) Debería esperar 60 días para implementar el parche y determinar si se informan errores.",
+      "C) Debería implementar el parche en un entorno de sandbox para probarlo antes de aplicarlo en producción.",
+      "D) Debería comunicarse con el proveedor para determinar un marco de tiempo seguro para implementar el parche en producción."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Piper debería implementar el parche en un entorno de laboratorio aislado (sandbox) y luego probarlo minuciosamente antes de lanzarlo a producción. Esto reduce el riesgo de que el parche no funcione bien en su entorno."
+  },
+  {
+    "id": 50,
+    "pregunta": "50. Kent realizó un escaneo de vulnerabilidades de un servidor CRM interno que es utilizado rutinariamente por los empleados, y el escaneo informó que no había servicios accesibles en el servidor. Los empleados continuaron utilizando la aplicación CRM a través de la web sin dificultad durante el escaneo. ¿Cuál es la fuente más probable del resultado de Kent?",
+    "opciones": [
+      "A) El servidor requiere autenticación fuerte.",
+      "B) El servidor utiliza cifrado.",
+      "C) El escaneo se ejecutó desde una perspectiva de red diferente a la del tráfico de los usuarios.",
+      "D) La configuración predeterminada del escáner no verifica los puertos utilizados por la aplicación CRM."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. El escenario más probable es que Kent ejecutara el escaneo desde una red que no tiene acceso al servidor CRM. Incluso si el servidor requiere autenticación fuerte y/o cifrado, esto no evitaría que los puertos aparezcan como abiertos en el escaneo de vulnerabilidades."
+  },
+  {
+    "id": 51,
+    "pregunta": "51. Steve necesita realizar un escaneo Nmap de una red remota y quiere ser lo más sigiloso posible. ¿Cuál de los siguientes comandos de nmap proporcionará el enfoque más sigiloso para su escaneo?",
+    "opciones": [
+      "A) nmap -P0 -sT 10.0.10.0/24",
+      "B) nmap -sT -T0 10.0.10.0/24",
+      "C) nmap -P0 -sS 10.0.10.0/24",
+      "D) nmap -P0 -sS -T0 10.0.10.0/24"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Nmap proporciona múltiples modos de escaneo, incluido un escaneo TCP SYN (-sS), que es más sigiloso que el escaneo completo (-sT). Desactivar pings (-P0) y configurar la velocidad de escaneo (-T0, modo 'paranoico') ayuda a evadir la detección de muchos sistemas IDS al caer por debajo de sus umbrales de alerta."
+  },
+  {
+    "id": 52,
+    "pregunta": "52. Después de realizar una búsqueda de amenazas (threat hunting), Lakshman determina que sería apropiado deshabilitar algunos servicios en los servidores de bases de datos de su organización. ¿En qué actividad está participando Lakshman?",
+    "opciones": [
+      "A) Establecer una hipótesis",
+      "B) Recopilar evidencia",
+      "C) Reducir la superficie de ataque",
+      "D) Análisis de procesos ejecutables"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Deshabilitar los servicios innecesarios reduce la superficie de ataque al disminuir la cantidad de posibles vectores de ataque (puertos o servicios abiertos) que un atacante podría utilizar para obtener acceso a un servidor."
+  },
+  {
+    "id": 53,
+    "pregunta": "53. Jenna está configurando la frecuencia de escaneo para el programa de escaneo de vulnerabilidades de su organización. ¿Cuál de los siguientes es el criterio menos importante para que Jenna considere?",
+    "opciones": [
+      "A) Sensibilidad de la información almacenada en los sistemas.",
+      "B) Criticidad de los procesos de negocio manejados por los sistemas.",
+      "C) Sistema operativo instalado en los sistemas.",
+      "D) Exposición del sistema a redes externas."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. De los criterios enumerados, el sistema operativo es el menos probable que tenga un impacto significativo en la decisión de frecuencia, ya que todos los sistemas operativos, independientemente de cuál sea, son susceptibles a problemas de seguridad y requieren un escaneo periódico."
+  },
+  {
+    "id": 54,
+    "pregunta": "54. Donna está interpretando un escaneo de vulnerabilidades de la red de su organización. Ella quiere determinar qué vulnerabilidad remediar primero, enfocándose en la de mayor impacto potencial. Suponiendo que el firewall está configurado correctamente, ¿cuál de las siguientes vulnerabilidades debería darle la mayor prioridad?",
+    "opciones": [
+      "A) Vulnerabilidad de gravedad 5 en el servidor de archivos.",
+      "B) Vulnerabilidad de gravedad 3 en el servidor de archivos.",
+      "C) Vulnerabilidad de gravedad 4 en el servidor web.",
+      "D) Vulnerabilidad de gravedad 2 en el servidor de correo."
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Donna busca la vulnerabilidad más crítica. En los sistemas de calificación de gravedad, las vulnerabilidades de nivel 5 son las más críticas. Por lo tanto, debe priorizar la vulnerabilidad de gravedad 5, independientemente de la ubicación o función del servidor en este contexto."
+    ,"imagen": "pregunta54.png"
+  },
+  {
+    "id": 55,
+    "pregunta": "55. ¿Cuál de las siguientes categorías de documentos proporciona la autoridad de más alto nivel para el programa de ciberseguridad de una organización?",
+    "opciones": [
+      "A) Política (Policy)",
+      "B) Estándar (Standard)",
+      "C) Procedimiento (Procedure)",
+      "D) Marco de trabajo (Framework)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Las políticas son el componente de más alto nivel en la gobernanza; se establecen a nivel ejecutivo para dictar la estrategia y dirección. Los estándares y procedimientos derivan su autoridad directamente de las políticas."
+  },
+  {
+    "id": 56,
+    "pregunta": "56. Mateo está planeando un programa de escaneo de vulnerabilidades para su organización y está programando escaneos semanales de todos los servidores en su entorno. Un grupo de administradores de sistemas se le acercó y le pidió que les diera acceso directo a los informes de escaneo sin pasar por el equipo de seguridad. ¿Cómo debería responder Mateo?",
+    "opciones": [
+      "A) Mateo debería proporcionar acceso a los administradores.",
+      "B) Mateo debería denegar el acceso a los administradores porque la información puede revelar problemas de seguridad críticos.",
+      "C) Mateo debería ofrecer proporcionar a los administradores copias del informe después de que pasen por una revisión de seguridad.",
+      "D) Mateo debería denegar el acceso a los administradores porque les permitiría corregir problemas de seguridad antes de que sean analizados por el equipo de seguridad."
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. La información del escaneo de vulnerabilidades es más efectiva en manos de las personas que pueden corregir los problemas. El objetivo de los escaneos no es \"atrapar\" a las personas que cometieron errores. Mateo debería proporcionar acceso a los administradores. El equipo de seguridad siempre puede monitorear el sistema en busca de vulnerabilidades no remediadas, pero no debe actuar como un guardián de la información crítica."
+  },
+  {
+    "id": 57,
+    "pregunta": "57. Mientras revisaba un informe de un escaneo de vulnerabilidades de un servidor web, Paul encontró una vulnerabilidad de listado de directorios (directory listing). ¿Cuál es la forma más fácil para que Paul corrija esta vulnerabilidad con un impacto mínimo en el negocio?",
+    "opciones": [
+      "A) Bloquear los puertos 80 y 443.",
+      "B) Ajustar los permisos del directorio.",
+      "C) Bloquear el puerto 80 solo para requerir el uso de cifrado.",
+      "D) Eliminar CGI del servidor."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Esta vulnerabilidad da como resultado un problema de divulgación de información. Paul puede corregirlo fácilmente desactivando el permiso de listado de directorios en el directorio cgi-bin. Es poco probable que esto afecte cualquier otro uso del servidor porque no está alterando los permisos de los scripts CGI en sí mismos."
+    ,"imagen": "pregunta57.png"
+  },
+  {
+    "id": 58,
+    "pregunta": "58. ¿Un registro que muestra una autenticación de usuario exitosa se clasifica como qué tipo de ocurrencia en las definiciones del NIST?",
+    "opciones": [
+      "A) Un incidente de seguridad",
+      "B) Un evento de seguridad",
+      "C) Un evento",
+      "D) Un evento adverso"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Las ocurrencias observables se clasifican como eventos en el esquema del NIST. Los eventos con consecuencias negativas se consideran eventos adversos, mientras que las violaciones (o incluso las amenazas inminentes de violaciones) se clasifican como incidentes de seguridad."
+  },
+  {
+    "id": 59,
+    "pregunta": "59. Fran está tratando de ejecutar un escaneo de vulnerabilidades de un servidor web desde una red externa, y el escáner informa que no hay servicios ejecutándose en el servidor web. Verificó la configuración del escaneo e intentó acceder al sitio web utilizando un navegador web desde una computadora en la misma red externa y no tuvo dificultades. ¿Cuál es el problema más probable con el escaneo?",
+    "opciones": [
+      "A) Un firewall de host está bloqueando el acceso al servidor.",
+      "B) Un firewall de red está bloqueando el acceso al servidor.",
+      "C) Un sistema de prevención de intrusiones (IPS) está bloqueando el acceso al servidor.",
+      "D) Fran está escaneando la dirección IP incorrecta."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. El problema más probable es que un sistema de prevención de intrusiones (IPS) esté detectando el escaneo como un ataque y bloqueando al escáner. Si esto fuera un problema del firewall del host o de la red, lo más probable es que Fran tampoco pudiera acceder al servidor utilizando un navegador web."
+  },
+  {
+    "id": 60,
+    "pregunta": "60. Durante una evaluación de cumplimiento normativo, Manish descubre que su organización ha implementado un requisito de autenticación multifactor para sistemas que manejan datos altamente sensibles. El sistema requiere que los usuarios proporcionen tanto una contraseña como un PIN de cuatro dígitos. ¿Qué debería señalar Manish en sus hallazgos sobre este sistema?",
+    "opciones": [
+      "A) El sistema multifactor proporciona dos factores independientes y es un control de seguridad efectivo.",
+      "B) Los factores utilizados son ambos del mismo tipo de factor, lo que hace que el control sea menos efectivo.",
+      "C) El sistema utiliza solo dos factores y no es un sistema multifactor verdadero. Para calificar como multifactor, debería incluir al menos tres factores.",
+      "D) El uso de un PIN de cuatro dígitos por parte del sistema multifactor no proporciona suficiente complejidad, y se debería requerir una longitud adicional para cualquier PIN en entornos seguros."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. El mayor problema en este escenario es que ambos factores son factores basados en el conocimiento. Un verdadero sistema multifactor se basa en más de un tipo de factor distinto (algo que sabes, algo que tienes o algo que eres). Este sistema se basa en dos cosas que sabes, y es probable que los atacantes adquieran ambas de la misma ubicación en un ataque exitoso."
+  },
+  {
+    "id": 61,
+    "pregunta": "61. ¿Cuál de los siguientes mecanismos puede utilizarse para mejorar la seguridad en un sistema de autenticación basado en el contexto?",
+    "opciones": [
+      "A) Hora del día",
+      "B) Ubicación",
+      "C) Huella digital del dispositivo (Device fingerprint)",
+      "D) Todas las anteriores"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. La autenticación basada en el contexto puede aprovechar una amplia variedad de información. Los atributos potenciales incluyen la hora del día, la ubicación, la huella digital del dispositivo, la frecuencia de acceso, los roles de usuario, las membresías de grupos de usuarios y la dirección IP/reputación."
+  },
+  {
+    "id": 62,
+    "pregunta": "62. La organización de Latisha se ha enfrentado a un aumento significativo en los ataques de phishing exitosos, lo que ha resultado en cuentas comprometidas. Ella sabe que necesita implementar controles técnicos adicionales para prevenir ataques exitosos. ¿Cuál de los siguientes controles será el más efectivo y a la vez relativamente simple y económico de implementar?",
+    "opciones": [
+      "A) Mayores requisitos de complejidad de contraseñas",
+      "B) Autenticación multifactor basada en aplicaciones o tokens",
+      "C) Autenticación multifactor basada en biometría",
+      "D) Inicio de sesión único (SSO) basado en OAuth"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. La autenticación multifactor basada en aplicaciones o tokens garantiza que la exposición de una contraseña debido a un correo electrónico de phishing exitoso no resulte en el compromiso de la credencial. Los aumentos en la complejidad de las contraseñas no logran agregar seguridad efectiva contra el phishing; la biometría suele ser costosa de implementar y requiere procesos de inscripción, y el SSO basado en OAuth no evita el phishing."
+  },
+  {
+    "id": 63,
+    "pregunta": "63. Lauren descarga una nueva herramienta de seguridad y verifica su MD5. ¿Qué sabe ella sobre el software que descargó si recibe el siguiente mensaje: 'demo.txt: FAILED md5sum: WARNING: 1 computed checksum did not match'?",
+    "opciones": [
+      "A) El archivo está corrupto.",
+      "B) Los atacantes han modificado el archivo.",
+      "C) Los archivos no coinciden.",
+      "D) La prueba falló y no proporcionó una respuesta."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Lauren sabe que el archivo que descargó no coincide con la suma de verificación MD5 proporcionada por el proveedor. Ella no puede confirmar si el archivo está simplemente dañado o si fue modificado intencionalmente por atacantes, pero definitivamente no debería ejecutar ni confiar en dicho archivo."
+    ,"tabla": "pregunta63.txt"
+  },
+  {
+    "id": 64,
+    "pregunta": "64. Peter trabaja para una organización que se está uniendo a un consorcio de organizaciones similares que utilizan un sistema de gestión de identidades federadas (FIM). Él está configurando su sistema de gestión de identidades para participar en la federación. Específicamente, quiere asegurarse de que los usuarios de su organización puedan usar sus credenciales para acceder a servicios federados. ¿Qué rol está configurando Peter?",
+    "opciones": [
+      "A) Relying party (Parte confiante)",
+      "B) Service provider (Proveedor de servicios)",
+      "C) Identity provider (Proveedor de identidad)",
+      "D) Consumer (Consumidor)"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Los proveedores de identidad (IdP) proporcionan identidades, realizan afirmaciones sobre esas identidades ante las partes confiantes y liberan información a las partes confiantes sobre los titulares de la identidad."
+  },
+  {
+    "id": 65,
+    "pregunta": "65. Mika utiliza un token de seguridad y una contraseña para autenticarse en su cuenta de PayPal. ¿Qué dos tipos de factores está utilizando?",
+    "opciones": [
+      "A) Algo que sabe y algo que tiene.",
+      "B) Algo que sabe y algo que es.",
+      "C) Algo que es y algo que tiene.",
+      "D) Mika está utilizando solo un tipo de factor porque conoce el código del token y su contraseña."
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Mika está utilizando tanto un factor basado en el conocimiento (su contraseña) como algo que posee físicamente (el token). La posesión del token es el factor 'algo que tiene'."
+    ,"imagen": "pregunta65.png"
+  },
+  {
+    "id": 66,
+    "pregunta": "66. Durante la configuración de la cuenta de su banco, a Deepa se le pide que responda una serie de preguntas sobre sus direcciones anteriores, transacciones financieras y su historial crediticio. ¿Qué tipo de factor de autenticación se le está pidiendo a Deepa?",
+    "opciones": [
+      "A) Factor de ubicación",
+      "B) Factor de conocimiento",
+      "C) Factor de posesión",
+      "D) Factor biométrico"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Las preguntas que se basan en el conocimiento que debe tener una persona específica son un ejemplo de un factor de conocimiento. Cuando las instituciones quieren verificar que un nuevo usuario es quien dice ser, a veces utilizan información que es poco probable que sea adquirida por terceros, como los ejemplos que se dan aquí."
+  },
+  {
+    "id": 67,
+    "pregunta": "67. Charles está preocupado por los usuarios que realizan ataques de inyección SQL. ¿Cuál de las siguientes soluciones abordará mejor sus preocupaciones?",
+    "opciones": [
+      "A) Utilizar una gestión de sesiones segura",
+      "B) Habilitar el registro en la base de datos",
+      "C) Realizar la validación de las entradas del usuario",
+      "D) Implementar TLS"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Charles debe realizar la validación de las entradas del usuario para eliminar cualquier código SQL u otra entrada no deseada. La gestión segura de sesiones puede ayudar a prevenir el secuestro de sesiones, el registro de eventos puede proporcionar información útil para la investigación de incidentes y la implementación de TLS puede ayudar a proteger el tráfico de red, pero solo la validación de entradas ayuda con el problema descrito."
+  },
+  {
+    "id": 68,
+    "pregunta": "68. ¿Cuál de los siguientes riesgos se asocia más comúnmente con las actividades de escaneo de vulnerabilidades?",
+    "opciones": [
+      "A) Los atacantes pueden aprender sobre las vulnerabilidades.",
+      "B) Los servicios pueden colapsar debido al escáner.",
+      "C) El escáner de vulnerabilidades puede ser explotado por atacantes.",
+      "D) Se pueden detectar demasiadas vulnerabilidades."
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. La preocupación más común con el escaneo de vulnerabilidades es que puede tener un impacto en el servicio debido a la explotación de un riesgo o al causar una condición de denegación de servicio. En entornos sensibles, los escaneos a veces se ejecutan contra versiones de servicios que no son de producción para ayudar a prevenir esto, pero la respuesta más común es que si el servicio no puede sobrevivir a ser escaneado, ¡no está listo para ser utilizado!"
+  },
+  {
+    "id": 69,
+    "pregunta": "69. Adam encuentra entradas en sus registros de autenticación para muchos de los sistemas en su red que tienen inicios de sesión para el mismo ID de usuario con una variedad de contraseñas. ¿Qué tipo de ataque ha descubierto?",
+    "opciones": [
+      "A) Un ataque de secuestro de sesión",
+      "B) Un ataque en ruta (man-in-the-middle)",
+      "C) Un ataque de credential stuffing",
+      "D) Un ataque de password spraying"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Los ataques de password spraying (inyección de contraseñas) prueban muchas contraseñas en un número limitado de cuentas. Los ataques de credential stuffing prueban usuarios y contraseñas ya comprometidos en muchos sitios para intentar usarlos en otros lugares. El secuestro de sesión requiere una sesión válida, y un ataque en la ruta requeriría redirigir el tráfico a través de un sistema que el atacante controla."
+  },
+  {
+    "id": 70,
+    "pregunta": "70. Está revisando los métodos que utiliza su organización para comunicarse con los medios durante un esfuerzo de respuesta a incidentes. ¿Cuál de las siguientes no es una práctica comúnmente aceptada?",
+    "opciones": [
+      "A) Informar a los medios inmediatamente sobre los desarrollos en la investigación.",
+      "B) Realizar sesiones de práctica para los respondedores de incidentes que se comunican con los medios.",
+      "C) Establecer procedimientos de sesión informativa para los medios antes de un incidente.",
+      "D) Mantener un documento de estado de respuesta a incidentes."
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Las comunicaciones con los medios deben planificarse y programarse cuidadosamente para compartir información relevante en el momento adecuado. Las organizaciones no deben tener una política predeterminada de compartir inmediatamente toda la información, ya que eso podría dar lugar a una publicidad adversa, crear riesgos legales o dificultar la investigación."
+  },
+  {
+    "id": 71,
+    "pregunta": "71. Charles revisa el código fuente de una aplicación web en busca de vulnerabilidades. ¿Qué tipo de evaluación de software es esta?",
+    "opciones": [
+      "A) Análisis dinámico",
+      "B) Fuzzing",
+      "C) Análisis estático",
+      "D) Ingeniería inversa"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. La revisión manual o automatizada del código fuente en lugar de una aplicación en ejecución es un análisis estático. Esto puede ayudar a encontrar errores que no se pueden ver en la aplicación en ejecución o que de otro modo podrían pasarse por alto, pero tampoco prueba el código en vivo."
+  },
+  {
+    "id": 72,
+    "pregunta": "72. Isaac ve la siguiente entrada en sus registros web: \"../etc/shadow\". ¿Qué tipo de ataque se ha intentado?",
+    "opciones": [
+      "A) Un ataque de desbordamiento de búfer (buffer overflow)",
+      "B) Un ataque en el heap (montículo)",
+      "C) Un ataque de secuestro de sesión",
+      "D) Un ataque de recorrido de directorios (directory traversal)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. Esta consulta intenta realizar un recorrido de directorios desde el directorio en el que se ejecuta el servidor web hasta que puede acceder a /etc/shadow. Si la aplicación web no dispone de los filtros adecuados o el sistema no tiene configurados los permisos apropiados para evitarlo, el atacante podrá descargar /etc/shadow, el archivo que contiene los hashes de las contraseñas de los sistemas Linux."
+    ,"tabla": "pregunta72.txt"
+  },
+  {
+    "id": 73,
+    "pregunta": "73. Las sentencias SQL precompiladas que solo requieren la entrada de variables son un ejemplo de qué tipo de control de seguridad de aplicaciones?",
+    "opciones": [
+      "A) Consultas parametrizadas (Parameterized queries)",
+      "B) Codificación de datos",
+      "C) Validación de entradas",
+      "D) Controles de acceso adecuados"
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Una consulta parametrizada (a veces llamada sentencia preparada o prepared statement) utiliza una sentencia SQL preconstruida para evitar ataques basados en SQL. Las variables de la aplicación se introducen en la consulta, en lugar de construir una consulta personalizada cuando la aplicación necesita datos."
+  },
+  {
+    "id": 74,
+    "pregunta": "74. Rob desea realizar un análisis de causa raíz después de un incidente. Incluirá los resultados en su informe. ¿Qué acción debe tomar primero?",
+    "opciones": [
+      "A) Documentar el análisis.",
+      "B) Diferenciar entre cada uno de los eventos y los factores causales.",
+      "C) Identificar los problemas y eventos que ocurrieron.",
+      "D) Establecer una línea de tiempo."
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Rob debe llevar a cabo estos pasos en una secuencia lógica: 1. Identificar los problemas y eventos que ocurrieron, 2. Establecer una línea de tiempo, 3. Diferenciar entre eventos y factores causales, y 4. Documentar el análisis."
+  },
+  {
+    "id": 75,
+    "pregunta": "75. ¿Cómo se conocen en el contexto de la caza de amenazas (threat hunting) actividades como deshabilitar procesos innecesarios, mover sistemas a direcciones IP internas y usar firewalls para proteger hosts?",
+    "opciones": [
+      "A) Establecer una hipótesis",
+      "B) Realizar un bloqueo de seguridad (security lockdown)",
+      "C) Reducir las áreas de superficie de ataque",
+      "D) Agrupar activos críticos (bundling)"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Una parte importante del threat hunting es reducir el área de la superficie de ataque de su propia organización. Esto implica cualquier actividad que disminuya los sistemas o servicios que un atacante puede potencialmente mapear o atacar."
+  },
+  {
+    "id": 76,
+    "pregunta": "76. Bob está creando un informe para la dirección que resume el resultado de un reciente escaneo de vulnerabilidades. Le gustaría priorizar los resultados. ¿Cuál de las siguientes herramientas proporcionaría la evaluación más completa del riesgo que plantea cada vulnerabilidad?",
+    "opciones": [
+      "A) Puntuación CVSS (CVSS score)",
+      "B) Calificación de confidencialidad",
+      "C) Calificación de impacto",
+      "D) Calificación de probabilidad"
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. El Sistema de Puntuación de Vulnerabilidades Comunes (CVSS) es un enfoque estandarizado para evaluar el riesgo que plantea una vulnerabilidad. Combina las calificaciones de probabilidad e impacto (confidencialidad, integridad y disponibilidad) en una sola medida y, por lo tanto, es el más completo de estos enfoques."
+  },
+  {
+    "id": 77,
+    "pregunta": "77. La organización de Kelly sufrió recientemente un incidente de seguridad donde el atacante estuvo presente en su red durante varios meses antes de que el SOC identificara el ataque. Una vez que vieron evidencia, reaccionaron rápidamente para contener el incidente. ¿Qué métrica de respuesta a incidentes se vería más afectada como resultado de este desempeño?",
+    "opciones": [
+      "A) Tiempo medio de respuesta",
+      "B) Tiempo medio de remediación",
+      "C) Volumen de alertas",
+      "D) Tiempo medio de detección"
+    ],
+    "respuesta": "D",
+    "objetivo": "Practica1",
+    "explicacion": "D. El problema en este caso es que el SOC no detectó el incidente durante varios meses. Esto afectaría negativamente a la métrica del tiempo medio de detección (MTTD). Respondieron y remediaron rápidamente el incidente una vez que fue detectado."
+  },
+  {
+    "id": 78,
+    "pregunta": "78. Seth está tratando de identificar actividades en su organización que podrían automatizarse para mejorar la eficiencia. ¿Cuál de las siguientes actividades tiene menos probabilidades de beneficiarse de la automatización?",
+    "opciones": [
+      "A) Threat hunting (Caza de amenazas)",
+      "B) Análisis de intrusiones",
+      "C) Evaluación de riesgos cualitativa",
+      "D) Respaldo de datos"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Es probable que la organización encuentre eficiencias al agregar automatización a sus actividades técnicas, como la caza de amenazas, el análisis de intrusiones y el respaldo de datos. La evaluación de riesgos cualitativa es una actividad subjetiva que se centra en el juicio y pensamiento humano, por lo que es la menos apta para la automatización."
+  },
+  {
+    "id": 79,
+    "pregunta": "79. Rae quiere detectar direcciones de remitente falsificadas para disminuir la cantidad de spam que recibe su organización. ¿Cuál de las siguientes técnicas o métodos se ajusta más directamente a sus necesidades?",
+    "opciones": [
+      "A) Spamhaus",
+      "B) DKIM",
+      "C) SPF",
+      "D) RBL"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. DomainKeys Identified Mail (DKIM) utiliza firmas digitales para validar que el dominio reclamado por el remitente es el dominio real. Mientras que SPF identifica los servidores de correo autorizados, DKIM es la técnica que mejor valida la integridad del origen del remitente."
+  },
+  {
+    "id": 80,
+    "pregunta": "80. Su organización sufrió recientemente una serie de vulnerabilidades graves debido al uso de software heredado que ya no cuenta con soporte del proveedor. Este software es crítico y no puede eliminarse durante al menos seis meses más. ¿Qué plan de acción abordaría mejor este riesgo durante ese período?",
+    "opciones": [
+      "A) Concientización, capacitación y educación",
+      "B) Controles compensatorios",
+      "C) Gestión de parches",
+      "D) Cambio de requisitos de negocio"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. Debe implementar controles compensatorios (como aislar el sistema en una red segmentada) que mitiguen el riesgo, ya que el software no recibe parches y no puede ser retirado del servicio inmediatamente."
+  },
+  {
+    "id": 81,
+    "pregunta": "81. Yolanda recibió un informe de inteligencia de amenazas y lo está evaluando para determinar si su organización utiliza alguno de los softwares afectados por la amenaza. ¿Qué tipo de confianza está intentando obtener Yolanda?",
+    "opciones": [
+      "A) Oportunidad (Timeliness)",
+      "B) Precisión (Accuracy)",
+      "C) Relevancia (Relevancy)",
+      "D) Superficial"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Los tres tipos de confianza en un informe de inteligencia de amenazas son la oportunidad, la relevancia y la precisión. Yolanda está evaluando si esta amenaza afecta específicamente a su organización, lo cual es una medida de relevancia."
+  },
+  {
+    "id": 82,
+    "pregunta": "82. La organización de Gabby captura información confidencial de clientes, y los empleados a menudo trabajan con esos datos en computadoras locales. Tras una brecha reciente donde un empleado envió accidentalmente una hoja de cálculo con información de clientes a otro cliente, la organización busca una solución tecnológica para prevenir problemas similares. ¿Qué debería recomendar Gabby?",
+    "opciones": [
+      "A) IDS",
+      "B) FSB",
+      "C) DLP",
+      "D) FDE"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. La Prevención de Pérdida de Datos (DLP) puede etiquetar datos sensibles y escanear las comunicaciones salientes en busca de esos datos. Si se detectan datos marcados o patrones sensibles, DLP puede alertar o bloquear la transmisión, lo que lo hace ideal para este caso."
+  },
+  {
+    "id": 83,
+    "pregunta": "83. Fred está revisando una lista de verificación utilizada en la automatización de su programa de seguridad y ve el siguiente código: <config><server>web01</server></config>. ¿Qué tipo de archivo de la siguiente lista es el que más probablemente está revisando?",
+    "opciones": [
+      "A) Texto plano (Plaintext)",
+      "B) JSON",
+      "C) XML",
+      "D) HTML"
+    ],
+    "respuesta": "C",
+    "objetivo": "Practica1",
+    "explicacion": "C. Lo más probable es que Fred esté revisando un archivo XML. XML, al igual que HTML, utiliza corchetes angulares (< y >) para definir elementos, pero a diferencia de HTML, XML permite etiquetas personalizadas, lo que lo hace muy común en archivos de configuración."
+    ,"imagen": "pregunta83.png"
+  },
+  {
+    "id": 84,
+    "pregunta": "84. La organización de Cynthia recibe una carta de una empresa para la que prestan servicios, notificándoles de un caso legal pendiente y ordenándoles no eliminar ni descartar documentos relacionados con el caso. ¿Qué término describe esto?",
+    "opciones": [
+      "A) Retención legal (Legal hold)",
+      "B) Prioridad de litigio",
+      "C) Suspensión penal",
+      "D) Una citación de datos"
+    ],
+    "respuesta": "A",
+    "objetivo": "Practica1",
+    "explicacion": "A. Las retenciones legales (legal holds) son notificaciones enviadas para informar a una organización o individuo que no deben eliminar datos ni destruir registros que puedan ser relevantes para un caso legal nuevo o pendiente."
+  },
+  {
+    "id": 85,
+    "pregunta": "85. Como parte de su investigación forense, Alex firma y anota en su registro cuándo se transfiere la copia de la unidad que preparó al asesor legal. ¿Cómo se conoce este proceso?",
+    "opciones": [
+      "A) Documentación de entrega",
+      "B) Seguimiento de la cadena de custodia",
+      "C) Seguimiento de activos",
+      "D) Certificación forense"
+    ],
+    "respuesta": "B",
+    "objetivo": "Practica1",
+    "explicacion": "B. El seguimiento de la cadena de custodia (chain of custody tracking) determina quién tiene acceso y autoridad sobre las unidades, dispositivos y datos forenses a lo largo de su ciclo de vida. Este es un elemento crítico en investigaciones que pueden terminar en un tribunal."
+  }
+]

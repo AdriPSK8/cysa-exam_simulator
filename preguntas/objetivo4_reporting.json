@@ -1,0 +1,1176 @@
+[
+{
+    "id": 1,
+    "pregunta": "1. Kyong gestiona los escaneos de vulnerabilidades de su organización. El director senior que supervisa el grupo de Kyong entrega un informe mensual al CIO sobre la actividad operativa, incluyendo el número de vulnerabilidades críticas abiertas. Él quisiera proporcionar esta información a su director de la manera más sencilla posible cada mes. ¿Qué debería hacer Kyong?",
+    "opciones": [
+      "A) Proporcionar al director acceso al sistema de escaneo.",
+      "B) Revisar el sistema cada mes para obtener el número correcto y enviarlo por correo electrónico al director.",
+      "C) Configurar un informe que proporcione la información para enviarla automáticamente al correo electrónico del director en el momento adecuado cada mes.",
+      "D) Pedir a un asistente administrativo que revise el sistema y proporcione la información al director."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Aunque todas estas opciones son viables, la solución más sencilla es diseñar un informe que proporcione la información y luego configurar el sistema para enviar automáticamente este reporte al director cada mes."
+  },
+  {
+    "id": 2,
+    "pregunta": "2. Carla está diseñando un flujo de trabajo para el escaneo de vulnerabilidades y se le ha asignado la tarea de seleccionar a la persona responsable de remediar dichas vulnerabilidades. ¿Cuál de las siguientes personas estaría normalmente en la mejor posición para remediar una vulnerabilidad de servidor?",
+    "opciones": [
+      "A) Analista de ciberseguridad",
+      "B) Administrador de sistemas",
+      "C) Ingeniero de redes",
+      "D) Gerente de TI"
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Los administradores de sistemas normalmente están en la mejor posición para remediar vulnerabilidades porque son responsables de mantener la configuración del servidor. Los ingenieros de red, analistas de seguridad y gerentes pueden proporcionar información, pero a menudo carecen de los privilegios o el conocimiento necesarios para remediar con éxito un servidor."
+  },
+  {
+    "id": 3,
+    "pregunta": "3. Durante un escaneo de vulnerabilidades, Patrick descubrió que el agente de gestión de configuración instalado en todos los servidores Windows de su organización contiene una vulnerabilidad grave. El fabricante está al tanto de este problema y hay un parche disponible. ¿Qué proceso debería seguir Patrick para corregir este problema?",
+    "opciones": [
+      "A) Implementar el parche inmediatamente en todos los sistemas afectados.",
+      "B) Implementar el parche en un solo servidor de producción para realizar pruebas y luego implementarlo en todos los servidores si la prueba es exitosa.",
+      "C) Implementar el parche en un entorno de prueba y luego realizar un despliegue gradual en producción.",
+      "D) Deshabilitar todo el acceso externo a los sistemas hasta que se implemente el parche."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Patrick debe ser extremadamente cuidadoso. Si el parche causa que los servicios fallen, podría deshabilitar todos los servidores Windows de su organización. Esto requiere pruebas previas. La mejor acción es implementar el parche en un entorno de prueba y luego realizar un despliegue gradual en producción. Implementar directamente en producción puede causar fallos, y deshabilitar el acceso externo es una reacción exagerada con impacto crítico al negocio."
+  },
+  {
+    "id": 4,
+    "pregunta": "4. Ben se está preparando para realizar un escaneo de vulnerabilidades para un nuevo cliente de su organización de consultoría de seguridad. ¿Cuál de los siguientes pasos debería realizar Ben primero?",
+    "opciones": [
+      "A) Realizar pruebas de penetración.",
+      "B) Ejecutar un escaneo de evaluación de vulnerabilidades.",
+      "C) Ejecutar un escaneo de descubrimiento.",
+      "D) Obtener permiso para los escaneos."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Ben debe obtener permiso del cliente para realizar escaneos antes de cualquier otra actividad. No hacerlo puede infringir la ley o molestar al cliente."
+  },
+  {
+    "id": 5,
+    "pregunta": "5. Katherine coordina la remediación de vulnerabilidades de seguridad en su organización y está intentando trabajar con un ingeniero de sistemas en la aplicación de parches a un servidor para corregir una vulnerabilidad de impacto moderado. El ingeniero se niega a parchear el servidor debido a la posible interrupción de un proceso comercial crítico que se ejecuta en él. ¿Cuál sería el curso de acción más razonable para que Katherine lo tome?",
+    "opciones": [
+      "A) Programar la aplicación del parche para que ocurra durante un ciclo de mantenimiento regular.",
+      "B) Eximir al servidor de la aplicación de parches debido al impacto comercial crítico.",
+      "C) Exigir que el servidor sea parcheado inmediatamente para corregir la vulnerabilidad.",
+      "D) Informar al ingeniero que si no aplica el parche dentro de una semana, Katherine presentará una queja ante su gerente."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. El hecho de que el servidor ejecute un proceso crítico aumenta la importancia del parche. Katherine debe trabajar con el ingeniero para programar la aplicación durante una ventana de mantenimiento regular. Es razonable esperar a esa ventana debido al impacto relativamente bajo de la vulnerabilidad."
+  },
+  {
+    "id": 6,
+    "pregunta": "6. Grace ejecutó un escaneo de vulnerabilidades y detectó una vulnerabilidad urgente en un servidor web público. Esta vulnerabilidad es fácilmente explotable y podría resultar en el compromiso total del servidor. Grace quiere seguir las mejores prácticas de control de cambios mientras mitiga esta amenaza lo más rápido posible. ¿Cuál sería el mejor curso de acción para Grace?",
+    "opciones": [
+      "A) Iniciar un cambio de alta prioridad a través del proceso de gestión de cambios de su organización y esperar a que el cambio sea aprobado.",
+      "B) Implementar una solución inmediatamente y documentar el cambio después del hecho.",
+      "C) Programar un cambio para el próximo ciclo trimestral de parches.",
+      "D) Iniciar un cambio estándar a través del proceso de gestión de cambios de su organización."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Grace enfrenta una emergencia real: una vulnerabilidad crítica expuesta al exterior. Debe corregir el problema de inmediato, informar a los interesados y documentar la acción como una emergencia en el proceso de gestión de cambios. Otras opciones introducen retrasos inaceptables."
+  },
+  {
+    "id": 7,
+    "pregunta": "7. Joe descubrió una vulnerabilidad crítica en el servidor de base de datos de su organización y recibió permiso de su supervisor para implementar un cambio de emergencia después del cierre de actividades. Tiene ocho horas antes de la ventana de cambio planificada. Además de planificar los aspectos técnicos del cambio, ¿qué más debería hacer Joe para prepararse?",
+    "opciones": [
+      "A) Asegurarse de que todas las partes interesadas estén informadas de la interrupción planificada.",
+      "B) Documentar el cambio en el sistema de gestión de cambios de su organización.",
+      "C) Identificar cualquier riesgo potencial asociado con el cambio.",
+      "D) Todas las anteriores."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Joe tiene tiempo antes de la ventana de mantenimiento. Debe aprovecharlo para comunicarse con las partes interesadas, realizar una evaluación de riesgos e iniciar los procesos de gestión de cambios (aunque sean versiones abreviadas)."
+  },
+  {
+    "id": 8,
+    "pregunta": "8. Sally descubrió durante un escaneo de vulnerabilidades que un sistema que ella administra tiene una vulnerabilidad de alta prioridad que requiere un parche. El sistema está detrás de un firewall y no hay una amenaza inminente, pero Sally quiere resolver la situación lo más rápido posible. ¿Cuál sería su mejor curso de acción?",
+    "opciones": [
+      "A) Iniciar un cambio de alta prioridad a través del proceso de gestión de cambios de su organización.",
+      "B) Implementar una solución inmediatamente y luego documentar el cambio después del hecho.",
+      "C) Implementar una solución inmediatamente e informar a su supervisor sobre su acción y la justificación.",
+      "D) Programar un cambio para el próximo ciclo trimestral de parches."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Sally reconoce que no hay una amenaza inminente, por lo que no es necesario un proceso de emergencia. Sin embargo, no debe esperar tres meses al ciclo trimestral. La mejor opción es iniciar un cambio de alta prioridad a través del proceso estándar."
+  },
+  {
+    "id": 9,
+    "pregunta": "9. Gene ejecuta un escaneo de vulnerabilidades del centro de datos de su organización y produce un informe resumido para compartir con su equipo de gestión. El informe incluye un gráfico. Cuando la gerente de Gene lee el informe, señala que el informe oculta detalles importantes porque está resaltando demasiados problemas sin importancia. ¿Qué debería hacer Gene para resolver este problema?",
+    "opciones": [
+      "A) Decirle a su gerente que todas las vulnerabilidades son importantes y deben aparecer en el informe.",
+      "B) Crear una versión revisada del gráfico usando Excel.",
+      "C) Modificar el nivel de sensibilidad del escaneo.",
+      "D) Dejar de compartir informes con el equipo de gestión."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. La mejor opción es alterar el nivel de sensibilidad del escaneo para excluir vulnerabilidades de baja importancia. Esto evita información superflua sin necesidad de ediciones manuales constantes en los informes."
+    ,"imagen":"pregunta9.png"
+    },
+  {
+    "id": 10,
+    "pregunta": "10. Glenda realiza habitualmente escaneos de vulnerabilidades de los servidores en su organización. Ella tiene dificultades con un administrador de sistemas que se niega a corregir vulnerabilidades en un servidor utilizado como jump box por otro personal de TI. El servidor ha tenido docenas de vulnerabilidades durante semanas y requeriría tiempo de inactividad para repararlas. Una mañana, su escaneo informa que todas las vulnerabilidades desaparecieron repentinamente de la noche a la mañana, mientras que otros sistemas en el mismo escaneo reportan problemas. Ella revisa el panel de estado del servicio y el servicio parece ejecutarse correctamente sin interrupciones reportadas en la última semana. ¿Cuál es la causa más probable de este resultado?",
+    "opciones": [
+      "A) El administrador del sistema corrigió las vulnerabilidades.",
+      "B) El servidor está caído.",
+      "C) El administrador del sistema bloqueó el escáner.",
+      "D) El escaneo no se ejecutó."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. La causa más probable es que el administrador haya bloqueado el escáner mediante una regla de firewall de host. Es poco probable que haya corregido decenas de vulnerabilidades de la noche a la mañana. Si el servidor estuviera caído, otros lo habrían reportado; si el escaneo no se ejecutara, no habría entradas en los registros."
+  },
+  {
+    "id": 11,
+    "pregunta": "11. Tom está planificando una serie de escaneos de vulnerabilidades y quiere asegurarse de que la organización esté cumpliendo con sus compromisos con los clientes respecto al impacto en el rendimiento de los escaneos. ¿Qué dos documentos debería consultar Tom para encontrar estas obligaciones?",
+    "opciones": [
+      "A) SLAs y MOUs.",
+      "B) SLAs y DRPs.",
+      "C) DRPs y BIAs.",
+      "D) BIAs y MOUs."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Tom debe consultar los Acuerdos de Nivel de Servicio (SLA) y los Memorandos de Entendimiento (MOU), ya que contienen todos los compromisos de rendimiento con los clientes. Los DRP y BIA no suelen contener esta información operativa."
+  },
+  {
+    "id": 12,
+    "pregunta": "12. Zhang Wei está evaluando el éxito de su programa de gestión de vulnerabilidades y le gustaría incluir algunas métricas. ¿Cuál de las siguientes sería la métrica menos útil?",
+    "opciones": [
+      "A) Tiempo para resolver vulnerabilidades críticas.",
+      "B) Número de vulnerabilidades críticas abiertas a lo largo del tiempo.",
+      "C) Número total de vulnerabilidades reportadas.",
+      "D) Número de sistemas que contienen vulnerabilidades críticas."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Zhang Wei debe enfocarse en vulnerabilidades de alta prioridad. Las métricas de tiempo de resolución, cantidad de vulnerabilidades críticas abiertas y sistemas afectados son útiles. El número total de vulnerabilidades reportadas es menos útil al carecer de información sobre severidad."
+  },
+  {
+    "id": 13,
+    "pregunta": "13. Donna está trabajando con un ingeniero de sistemas que desea remediar vulnerabilidades en un servidor que él administra. De las plantillas de informe mostradas aquí, ¿cuál sería la más útil para el ingeniero?",
+    "opciones": [
+      "A) Qualys Top 20 Report (Informe de los 20 principales de Qualys)",
+      "B) PCI Technical Report (Informe técnico de PCI)",
+      "C) Executive Report (Informe ejecutivo)",
+      "D) Technical Report (Informe técnico)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. El Technical Report proporciona los detalles específicos del sistema que el ingeniero necesita para realizar la remediación. Los informes ejecutivos o los de cumplimiento (como PCI) tienen objetivos distintos (resúmenes o cumplimiento normativo específico)."
+  ,"imagen":"pregunta13.png"
+    },
+  {
+    "id": 14,
+    "pregunta": "14. Abdul recibió el informe de vulnerabilidad mostrado aquí para un servidor en su organización. El servidor ejecuta una aplicación heredada (legacy) que no puede actualizarse fácilmente. ¿Qué riesgos presenta esta vulnerabilidad?",
+    "opciones": [
+      "A) Acceso no autorizado a archivos almacenados en el servidor.",
+      "B) Robo de credenciales.",
+      "C) Interceptación (eavesdropping) de comunicaciones.",
+      "D) Todas las anteriores."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. El uso de protocolos inseguros (como FTP) no es seguro. Si no se tuneliza, no está cifrado, lo que permite interceptar comunicaciones y robar credenciales. Además, esta vulnerabilidad específica permite acceso al servidor sin necesidad de credenciales válidas."
+    ,"imagen":"pregunta14.png"
+    },
+  {
+    "id": 15,
+    "pregunta": "15. William está preparando un acuerdo legal para que su organización adquiera servicios de un proveedor. Él quisiera documentar los requisitos de disponibilidad del sistema, incluyendo el tiempo de inactividad permitido para la aplicación de parches. ¿Qué tipo de acuerdo debería utilizar William para incorporar este requisito?",
+    "opciones": [
+      "A) MOU (Memorando de Entendimiento)",
+      "B) SLA (Acuerdo de Nivel de Servicio)",
+      "C) BPA (Acuerdo de Asociación Comercial)",
+      "D) BIA (Análisis de Impacto al Negocio)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Los SLA especifican parámetros técnicos y la disponibilidad requerida. Los MOU son documentos menos formales de relación. Los BPA cubren temas comerciales y los BIA son evaluaciones de riesgos, no acuerdos legales de disponibilidad."
+  },
+  {
+    "id": 16,
+    "pregunta": "16. Raul está reemplazando el escáner de vulnerabilidades existente de su organización con un producto nuevo. A medida que comienza a crear la política, nota algunos conflictos en la configuración del escaneo entre diferentes documentos. ¿A cuál de las siguientes fuentes de documentos debería dar Raul la mayor prioridad al resolver estos conflictos?",
+    "opciones": [
+      "A) Documentos de guía del NIST",
+      "B) Mejores prácticas del proveedor",
+      "C) Política corporativa",
+      "D) Configuraciones del sistema anterior"
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. La política corporativa es el único documento vinculante para Raul. Aunque otras fuentes brindan buenas prácticas, la política es el marco obligatorio que debe seguir su configuración."
+  },
+  {
+    "id": 17,
+    "pregunta": "17. Pietro es responsable de distribuir informes de escaneo de vulnerabilidades a los ingenieros de sistemas que remediarán dichas vulnerabilidades. ¿Cuál sería la forma más efectiva y segura para que Pietro distribuya los informes?",
+    "opciones": [
+      "A) Pietro debe configurar los informes para que se generen automáticamente y proporcionen una notificación inmediata y automatizada de los resultados a los administradores.",
+      "B) Pietro debe ejecutar los informes manualmente y enviar notificaciones automáticas después de revisarlos por motivos de seguridad.",
+      "C) Pietro debe ejecutar los informes de forma automatizada y luego notificar manualmente a los administradores sobre los resultados después de revisarlos.",
+      "D) Pietro debe ejecutar los informes manualmente y luego notificar manualmente a los administradores sobre los resultados después de revisarlos."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. No hay razón para que Pietro revise los informes antes de entregarlos. Para maximizar la transparencia y eficiencia, debe configurar notificaciones automatizadas para que los administradores reciban los resultados de inmediato y procedan a la remediación."
+  },
+  {
+    "id": 18,
+    "pregunta": "18. Nitesh desea identificar los sistemas de su red que no están registrados en su sistema de gestión de activos, ya que le preocupa que no cumplan con la configuración base de seguridad. Mira la consola de su escáner y ve las siguientes opciones. ¿Cuál de los siguientes tipos de reporte sería su mejor punto de partida?",
+    "opciones": [
+      "A) Technical Report (Informe técnico)",
+      "B) High Severity Report (Informe de alta severidad)",
+      "C) Qualys Patch Report (Informe de parches)",
+      "D) Unknown Device Report (Informe de dispositivo desconocido)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. El Informe de Dispositivo Desconocido (Unknown Device Report) se centra en sistemas detectados que no están registrados en el sistema de gestión de activos. Los informes de alta severidad o técnicos no identifican específicamente la falta de registro de un dispositivo desconocido."
+    ,"imagen":"pregunta18.png"
+    },
+  {
+    "id": 19,
+    "pregunta": "19. Nabil es el gerente de vulnerabilidades de su organización y es responsable de dar seguimiento a la remediación. Existe una vulnerabilidad crítica en un dispositivo de red que Nabil entregó al administrador del dispositivo, pero no se ha resuelto tras recordatorios constantes. ¿Qué debe hacer Nabil a continuación?",
+    "opciones": [
+      "A) Amenazar al ingeniero con medidas disciplinarias.",
+      "B) Corregir la vulnerabilidad él mismo.",
+      "C) Marcar la vulnerabilidad como una excepción.",
+      "D) Escalar el problema al gerente del administrador de red."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. El escenario no indica que Nabil tenga control operativo o administrativo sobre el dispositivo o el administrador, por lo que el siguiente paso debe ser escalar el problema a un gerente apropiado para su resolución. Nabil no debe amenazar al ingeniero, ya que no tiene autoridad para ello. Tampoco debe intentar corregir la vulnerabilidad él mismo ni marcarla como excepción sin un proceso formal."
+  },
+  {
+    "id": 20,
+    "pregunta": "20. Maria descubrió una vulnerabilidad en su red. Tras rastrear la dirección IP, descubrió que se trata de un dispositivo de búsqueda propietario. Consultó al ingeniero responsable, quien le informó que no tiene acceso al sistema operativo subyacente. ¿Cuál es el mejor curso de acción para Maria?",
+    "opciones": [
+      "A) Contactar al proveedor para obtener un parche.",
+      "B) Intentar acceder al sistema operativo subyacente e instalar el parche.",
+      "C) Marcar la vulnerabilidad como un falso positivo.",
+      "D) Esperar 30 días y volver a ejecutar el escaneo para ver si el proveedor corrigió la vulnerabilidad."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Maria debe contactar al proveedor para determinar si hay un parche disponible. No debe intentar modificar el dispositivo por su cuenta, ya que podría causar problemas operativos. No hay evidencia de un falso positivo ni razones para esperar 30 días a que el problema se resuelva solo."
+  },
+  {
+    "id": 21,
+    "pregunta": "21. Trevor trabaja con un equipo de aplicaciones en la remediación de una vulnerabilidad crítica de SQL Injection en un servicio público. El equipo teme que aplicar la solución requiera varias horas de inactividad y bloquee las transacciones de los clientes. ¿Cuál es el curso de acción más razonable que Trevor puede sugerir?",
+    "opciones": [
+      "A) Esperar a la próxima ventana de mantenimiento programada.",
+      "B) Exigir que la vulnerabilidad se remedie inmediatamente.",
+      "C) Programar un mantenimiento de emergencia en un horario de baja actividad durante el día.",
+      "D) Convocar a un grupo de trabajo para evaluar la situación."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Esta es una vulnerabilidad crítica en un servicio orientado al público y debe parchearse con urgencia. Es razonable programar un mantenimiento de emergencia para la tarde e informar a los clientes con antelación. Por tanto, Trevor debe monitorear los sistemas en busca de signos de compromiso mientras trabaja para programar el mantenimiento lo antes posible."
+  },
+  {
+    "id": 22,
+    "pregunta": "22. Thomas descubre una vulnerabilidad en una aplicación web que es parte de un sistema propietario desarrollado por un tercero y no tiene acceso al código fuente. ¿Cuál de las siguientes acciones puede tomar para mitigar la vulnerabilidad sin involucrar al proveedor?",
+    "opciones": [
+      "A) Aplicar un parche.",
+      "B) Actualizar el código fuente.",
+      "C) Implementar un firewall de aplicaciones web (WAF).",
+      "D) Realizar pruebas dinámicas."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Thomas puede implementar un firewall de aplicaciones web (WAF) para bloquear los intentos de explotación. Aunque aplicar un parche o actualizar el código resolvería el problema, Thomas no tiene acceso al código fuente. Las pruebas dinámicas identifican vulnerabilidades, pero no las corrigen."
+  },
+  {
+    "id": 23,
+    "pregunta": "23. Walt está diseñando el programa de gestión de vulnerabilidades de su organización e intenta identificar posibles inhibidores. Ha escuchado la preocupación de los líderes funcionales de que remediar vulnerabilidades afectará la capacidad de un nuevo sistema para cumplir con las solicitudes de los usuarios. ¿Cuál de los siguientes inhibidores no se aplica a esta situación?",
+    "opciones": [
+      "A) Degradación de la funcionalidad.",
+      "B) Gobernanza organizacional.",
+      "C) Sistemas heredados (Legacy systems).",
+      "D) Interrupción de procesos de negocio."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Walt enfrenta una situación común: líderes de negocio preocupados por el impacto operativo de la remediación. Esto puede resolverse mejor mediante un proceso robusto de gobernanza organizacional. Como el sistema es de reciente implementación, no es un sistema heredado (legacy system)."
+  },
+  {
+    "id": 24,
+    "pregunta": "24. La empresa donde trabaja Brian procesa tarjetas de crédito y debe cumplir con PCI DSS. Si la empresa experimenta una brecha de datos de tarjetas, ¿qué tipo de divulgación estarán obligados a proporcionar?",
+    "opciones": [
+      "A) Notificación a las autoridades locales.",
+      "B) Notificación a su banco adquiriente.",
+      "C) Notificación a las fuerzas del orden federales.",
+      "D) Notificación a Visa y MasterCard."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Las organizaciones que procesan tarjetas de crédito trabajan con bancos adquirientes para manejar el procesamiento, no directamente con los emisores de tarjetas. La notificación al banco es parte del esfuerzo de respuesta. Es poco probable que se requiera notificar a las fuerzas del orden en este caso, y los proveedores listados en la pregunta no coinciden con los que requieren notificación."
+  },
+  {
+    "id": 25,
+    "pregunta": "25. A medida que Lauren prepara las prácticas y políticas de seguridad de su organización, quiere abordar tantos vectores de amenaza como pueda mediante un programa de concienciación. ¿Cuál de las siguientes amenazas puede abordarse con mayor eficacia mediante la concienciación?",
+    "opciones": [
+      "A) Desgaste (Attrition).",
+      "B) Suplantación (Impersonation).",
+      "C) Uso inapropiado (Improper usage).",
+      "D) Ataques web (Web)."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. El uso inapropiado (improper usage), derivado de violaciones a las políticas por parte de usuarios autorizados, se reduce mediante un programa de concienciación. Esto garantiza que los usuarios conozcan las reglas. Los ataques de desgaste (attrition) son de fuerza bruta, la suplantación (impersonation) incluye spoofing y los ataques web se enfocan en aplicaciones web."
+  },
+  {
+    "id": 26,
+    "pregunta": "26. Laura quiere asegurar que su equipo pueda comunicarse durante un incidente. ¿Qué debería preparar el equipo para estar listo ante un incidente?",
+    "opciones": [
+      "A) Un segundo sistema de mensajería con autenticación empresarial.",
+      "B) Un sistema VoIP empresarial cifrado.",
+      "C) Correo electrónico empresarial con TLS habilitado.",
+      "D) Una capacidad de mensajería que pueda funcionar si la autenticación empresarial no está disponible."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Un sistema de mensajería independiente que funcione si los servicios empresariales fallan es crítico para los equipos de respuesta a incidentes (IR). Ya sea un árbol telefónico o un sistema de colaboración con autenticación separada, los equipos de IR necesitan canales aislados durante incidentes graves."
+  },
+  {
+    "id": 27,
+    "pregunta": "27. ¿Cuál de las siguientes no es una parte importante del proceso de comunicación de respuesta a incidentes?",
+    "opciones": [
+      "A) Limitar la comunicación a partes de confianza.",
+      "B) Divulgación basada en comentarios públicos.",
+      "C) Utilizar un método seguro de comunicación.",
+      "D) Prevenir la divulgación accidental de información relacionada con el incidente."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. La divulgación basada en requisitos regulatorios es común en la respuesta a incidentes, pero la retroalimentación pública suele guiar la liberación de información. Limitar la comunicación a partes de confianza y asegurar que la información del incidente esté protegida es crítico para evitar divulgaciones accidentales."
+  },
+  {
+    "id": 28,
+    "pregunta": "28. Tras una investigación forense por posible actividad criminal, las autoridades incautaron tres servidores. ¿Cuándo puede Joe esperar que le devuelvan sus servidores?",
+    "opciones": [
+      "A) Después de 30 días, tiempo suficiente para un proceso de imagen.",
+      "B) Después de 6 meses, según lo exige la ley.",
+      "C) Después de 1 año, ya que la mayoría de los casos se resuelven en ese tiempo.",
+      "D) Joe no debería planificar un plazo para la devolución."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Las investigaciones criminales pueden tardar mucho tiempo en resolverse. En la mayoría de los casos, Joe debe asegurarse de poder continuar operando sin sus servidores durante el futuro previsible."
+  },
+  {
+    "id": 29,
+    "pregunta": "29. La guía NIST SP 800-61 identifica seis partes externas con las que un equipo de respuesta a incidentes se comunicará típicamente. ¿Cuál de las siguientes no es una de esas partes?",
+    "opciones": [
+      "A) Clientes, constituyentes y medios de comunicación.",
+      "B) Proveedores de servicios de Internet.",
+      "C) Agencias de aplicación de la ley.",
+      "D) Asesoría legal (Legal counsel)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. NIST identifica a clientes, medios, otros equipos de IR, proveedores de servicios de Internet, informantes, agencias de aplicación de la ley y proveedores de software como las partes externas con las que se comunica un equipo de IR."
+  },
+  {
+    "id": 30,
+    "pregunta": "30. Ben trabaja en una agencia federal de EE. UU. que sufrió una brecha de datos. Bajo la ley FISMA, ¿a qué organización debe reportar este incidente?",
+    "opciones": [
+      "A) US-CERT.",
+      "B) La Autoridad Nacional de Ciberseguridad.",
+      "C) El Centro Nacional de Ciberseguridad.",
+      "D) CERT/CC."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. FISMA requiere que las agencias federales de EE. UU. reporten incidentes a US-CERT. Las otras opciones (CERT/CC, Autoridad Nacional de Ciberseguridad o Centro Nacional de Ciberseguridad) son centros de coordinación distintos o específicos de otros países (Israel y Reino Unido)."
+  },
+  {
+    "id": 31,
+    "pregunta": "31. ¿Cuál de las siguientes organizaciones no suele participar en las comunicaciones posteriores a un incidente?",
+    "opciones": [
+      "A) Desarrolladores.",
+      "B) Marketing.",
+      "C) Relaciones públicas.",
+      "D) Asesoría legal."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. La comunicación posterior a un incidente involucra a personal de marketing y relaciones públicas para proteger la imagen, mientras que el departamento legal limita la responsabilidad. Los desarrolladores no suelen participar directamente en la comunicación externa, ya que están trabajando en la seguridad de los sistemas."
+  },
+  {
+    "id": 32,
+    "pregunta": "32. Tom está formando su equipo de respuesta a incidentes y le preocupa cómo abordará la organización las amenazas internas. ¿Qué función empresarial sería la más capaz de ayudar con el desarrollo de políticas disciplinarias?",
+    "opciones": [
+      "A) Seguridad de la información.",
+      "B) Recursos humanos.",
+      "C) Asesoría legal.",
+      "D) Alta dirección."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Aunque varias funciones pueden dar consejos, el equipo de Recursos Humanos tiene la responsabilidad principal de las relaciones laborales y es el grupo ideal para desarrollar políticas disciplinarias."
+  },
+  {
+    "id": 33,
+    "pregunta": "33. Craig está revisando el plan de respuesta a incidentes de su organización y quiere asegurarse de que el plan incluya la coordinación con todas las entidades internas y externas relevantes. ¿Con cuál de las siguientes partes interesadas debería ser más cauteloso al coordinar?",
+    "opciones": [
+      "A) Organismos reguladores",
+      "B) Alta dirección",
+      "C) Legal",
+      "D) Recursos humanos"
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Todas estas partes deben incluirse en la planificación de RI, pero Craig debe ser cauteloso con las entidades externas (organismos reguladores) debido a su rol de cumplimiento y sanción. La coordinación interna puede ser más libre."
+  },
+  {
+    "id": 34,
+    "pregunta": "34. El plan de acción de gestión de vulnerabilidades que recibió Jacinda señala que una aplicación crítica que usa su organización depende de una versión insegura de un paquete de software debido a un requisito de flujo de trabajo de larga data. Las mejores prácticas de la organización de Jacinda establecen que la organización seleccionará la opción más segura que también permita realizar negocios. ¿Qué debería hacer Jacinda?",
+    "opciones": [
+      "A) Marcar la vulnerabilidad como 'ignorada'.",
+      "B) Cambiar los requisitos comerciales para permitir que se maneje la vulnerabilidad.",
+      "C) Deshabilitar el servicio.",
+      "D) Instalar un parche de terceros para el servicio."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Jacinda debe revisar si los procesos de negocio pueden cambiar para usar una versión segura del software. Ignorar la vulnerabilidad no es seguro, apagar el servicio interrumpe el negocio y los parches de terceros rara vez existen o son preferibles."
+  },
+  {
+    "id": 35,
+    "pregunta": "35. ¿Qué sección de un informe de respuesta a incidentes proporciona un resumen breve y claro del incidente, las actividades de respuesta y el estado actual del incidente?",
+    "opciones": [
+      "A) La línea de tiempo (Timeline)",
+      "B) La declaración de alcance (Scope statement)",
+      "C) El resumen ejecutivo (Executive summary)",
+      "D) La documentación de evidencia (Documentation of evidence)"
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Los resúmenes ejecutivos son breves y claros, diseñados para permitir que los líderes comprendan rápidamente los elementos clave del informe sin leer el documento completo."
+  },
+  {
+    "id": 36,
+    "pregunta": "36. Ian quiere preparar a su organización para las comunicaciones con los medios como parte de las relaciones públicas relacionadas con incidentes. ¿Qué debería recomendar que haga su organización para prepararse?",
+    "opciones": [
+      "A) Crear una lista de frases y temas a evitar.",
+      "B) Contratar una firma de defensa de reputación.",
+      "C) Involucrar a la asesoría legal.",
+      "D) Realizar capacitación en medios (Media training)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. La capacitación en medios (media training) es una preparación común para equipos que deben responder ante la prensa durante un incidente. Crear listas de frases prohibidas antes de un incidente es difícil, y el asesoramiento legal es una medida de apoyo, no de preparación para la interacción directa con los medios."
+  },
+  {
+    "id": 37,
+    "pregunta": "37. Jason debe notificar a la empresa que proporciona servicios de procesamiento de tarjetas de crédito a su organización si ocurre un incidente que afecte los datos de tarjetas de crédito. ¿Qué tipo de comunicaciones necesita realizar?",
+    "opciones": [
+      "A) Informes regulatorios",
+      "B) Comunicaciones con clientes",
+      "C) Comunicaciones con las fuerzas del orden",
+      "D) Ninguna de las anteriores (Dado que el requisito de PCI es contractual, no regulatorio o de reporte a fuerzas del orden por defecto)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Los requisitos de la industria de tarjetas de pago (PCI) son contractuales, no regulatorios. La organización de Jason es el cliente, y la comunicación con las fuerzas del orden no es un requisito de PCI."
+  },
+  {
+    "id": 38,
+    "pregunta": "38. El informe de respuesta a incidentes que Kathleen ha preparado incluye la siguiente declaración: 'Los servicios innecesarios, incluidos HTTP y FTP, deben deshabilitarse en todos los dispositivos de este tipo que estén implementados'. ¿Qué componente de informe de respuesta a incidentes incluirá más comúnmente este tipo de declaración?",
+    "opciones": [
+      "A) Alcance (Scope)",
+      "B) Resumen ejecutivo",
+      "C) Recomendaciones",
+      "D) Línea de tiempo"
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. La sección de recomendaciones de un informe de respuesta a incidentes incluirá sugerencias específicas para realizar cambios que ayuden a prevenir o limitar el impacto de incidentes futuros. Esta sección proporciona más detalle que el resumen ejecutivo. Las líneas de tiempo especifican cuándo sucedió algo y el alcance detalla la magnitud y los sistemas afectados."
+  },
+  {
+    "id": 39,
+    "pregunta": "39. ¿Qué puntuación común se utiliza para ayudar con la priorización de la remediación de vulnerabilidades en muchas organizaciones?",
+    "opciones": [
+      "A) CVE",
+      "B) ATT&CK",
+      "C) CVSS",
+      "D) PASTA"
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. El Sistema de Puntuación de Vulnerabilidades Comunes (CVSS) proporciona una puntuación numérica que refleja la gravedad de una vulnerabilidad, siendo útil para la priorización. CVE es un catálogo de vulnerabilidades. ATT&CK es un marco para tácticas adversarias y PASTA es un proceso de modelado de amenazas."
+  },
+  {
+    "id": 40,
+    "pregunta": "40. Olivia ha sido notificada de que una vulnerabilidad ha reaparecido en un servidor después de haber sido marcada como remediada mediante un control compensatorio por parte de un administrador. ¿Cuál de las siguientes es la razón más probable por la que una vulnerabilidad puede recurrir en esta circunstancia?",
+    "opciones": [
+      "A) Un atacante ha eliminado el parche para exponer la vulnerabilidad.",
+      "B) El sistema ha sido reinstalado por el administrador.",
+      "C) Un parche ha causado que el control compensatorio falle.",
+      "D) El servicio ha sido habilitado nuevamente por un usuario."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Un escenario común para los controles compensatorios es que un parche de seguimiento invalide la solución temporal. Esto ocurre cuando la configuración cambia o el sistema se modifica de formas que el control compensatorio no anticipó. Es menos probable que un atacante elimine un parche o que el sistema se reinstale sin aplicar la remediación."
+  },
+  {
+    "id": 41,
+    "pregunta": "41. El informe de respuesta a incidentes que Brian está leyendo incluye una declaración que dice: 'Los sistemas impactados se limitaron a los que se encuentran en la VPC de AWS de la organización'. ¿Qué parte de un informe de respuesta a incidentes contendrá normalmente este tipo de información?",
+    "opciones": [
+      "A) La línea de tiempo",
+      "B) La declaración de evidencia",
+      "C) El enunciado de impacto",
+      "D) La declaración de alcance (Scope statement)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Las declaraciones de alcance (scope statements) explican y definen qué sistemas, servicios o componentes de infraestructura fueron parte del incidente. Las líneas de tiempo muestran cuándo ocurrieron los eventos en relación unos con otros. La evidencia muestra lo que se encontró, y los enunciados de impacto describen el resultado para la organización."
+  },
+  {
+    "id": 42,
+    "pregunta": "42. El equipo de respuesta a incidentes de Nila ha descubierto evidencia de un empleado que pudo haber estado involucrado en actividades criminales mientras realizaban una investigación de incidentes. El equipo ha sugerido que se contacte a las fuerzas del orden. ¿Qué preocupación significativa debería plantear Nila sobre esta posible comunicación?",
+    "opciones": [
+      "A) Las fuerzas del orden no pueden hacer cumplir la política organizacional.",
+      "B) La participación de las fuerzas del orden puede obstaculizar la capacidad de respuesta u operación de la organización.",
+      "C) La participación de las fuerzas del orden puede crear problemas de comunicación.",
+      "D) Las fuerzas del orden pueden arrestar a un empleado crítico."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Dado que la violación es solo de política organizacional, Nila debe notar que involucrar a las fuerzas del orden puede obstaculizar la capacidad de respuesta u operación. El problema más urgente es la interrupción del negocio y no las comunicaciones, y si el empleado violó la ley, el arresto podría ocurrir de todos modos."
+  },
+  {
+    "id": 43,
+    "pregunta": "43. Sameer quiere establecer y rastrear una métrica para su organización que le ayude a saber si sus procesos de monitoreo de IoC (Indicadores de Compromiso) funcionan bien. ¿Cuál de las siguientes métricas es la más adecuada para determinar si los IoC se están capturando y analizando eficazmente?",
+    "opciones": [
+      "A) Tiempo medio de detección (Mean time to detect).",
+      "B) Tiempo medio de respuesta (Mean time to respond).",
+      "C) Tiempo medio de remediación (Mean time to remediate).",
+      "D) Tiempo medio de compromiso (Mean time to compromise)."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Sameer sabe que el tiempo medio de detección (mean time to detect) debe ser menor si los IoC se capturan, correlacionan y analizan eficazmente. El tiempo medio de respuesta (mean time to respond) mide desde la detección hasta la activación del proceso. El tiempo medio de remediación es una métrica compleja influenciada por la complejidad del incidente. El tiempo medio de compromiso no suele ser rastreado por los defensores."
+  },
+  {
+    "id": 44,
+    "pregunta": "44. Sameer continúa mejorando sus métricas para informar a la junta directiva de su organización. La junta ha solicitado que incluya volúmenes de alertas en sus informes. ¿Qué problema debería discutir Sameer con la junta después de recibir esta solicitud?",
+    "opciones": [
+      "A) Los volúmenes altos de alertas indican procesos de respuesta a incidentes deficientes.",
+      "B) Los volúmenes bajos de alertas indican procesos de respuesta a incidentes efectivos.",
+      "C) El volumen de alertas no es una métrica de seguridad efectiva.",
+      "D) El volumen de alertas requiere otras medidas, como la cantidad de parches instalados, para ser una métrica de seguridad efectiva."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. El volumen de alertas no es una métrica de seguridad eficaz porque está altamente influenciado por el ajuste (tuning) y factores externos. Los volúmenes altos o bajos de alertas pueden indicar una mala configuración o la falta de detección, no necesariamente un proceso de respuesta a incidentes deficiente."
+  },
+  {
+    "id": 45,
+    "pregunta": "45. ¿Qué sección importante del informe de respuesta a incidentes depende en gran medida del protocolo NTP para tener éxito?",
+    "opciones": [
+      "A) El resumen ejecutivo.",
+      "B) Las recomendaciones.",
+      "C) La línea de tiempo (Timeline).",
+      "D) La declaración de alcance (Scope statement)."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. El Protocolo de Tiempo de Red (NTP) se utiliza para sincronizar relojes y asegurar que las entradas de registro tengan la hora correcta. Sin tiempo sincronizado entre sistemas, es extremadamente difícil correlacionar registros y construir líneas de tiempo precisas."
+  },
+  {
+    "id": 46,
+    "pregunta": "46. ¿Qué tipo de acuerdo entre dos organizaciones es un inhibidor común para la remediación debido a los requisitos de tiempo de actividad (uptime)?",
+    "opciones": [
+      "A) Un NDA (Acuerdo de confidencialidad).",
+      "B) Un SLA (Acuerdo de Nivel de Servicio).",
+      "C) Un TLA (acrónimo de tres letras).",
+      "D) Un KPI (Indicador clave de desempeño)."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Los SLA a menudo tienen requisitos de tiempo de actividad (uptime). Dado que el parcheo puede requerir que los sistemas estén fuera de línea, un SLA es un inhibidor común para la remediación. Los NDA, KPI y TLA (acrónimos de tres letras) no son inhibidores de remediación."
+  },
+  {
+    "id": 47,
+    "pregunta": "47. Valerie necesita explicar las métricas de puntuación CVSS a su equipo. ¿Cuál de las siguientes no es parte del grupo de métricas básicas (basic metric group) para las puntuaciones CVSS?",
+    "opciones": [
+      "A) El vector de ataque.",
+      "B) La madurez del código de exploit.",
+      "C) La complejidad del ataque.",
+      "D) Los privilegios requeridos."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. El grupo de métricas base del CVSS incluye vector de ataque, complejidad, privilegios, interacción del usuario y métricas de impacto (confidencialidad, integridad, disponibilidad y alcance). La madurez del código de explotación es parte del grupo de métricas temporales."
+  },
+  {
+    "id": 48,
+    "pregunta": "48. El instrumento científico del que Chas es responsable tiene múltiples vulnerabilidades de severidad crítica en su sistema operativo y servicios. El dispositivo no puede ser parcheado según las instrucciones del proveedor. ¿Cuál de las siguientes no es un control compensatorio apropiado en este escenario?",
+    "opciones": [
+      "A) Colocar un dispositivo de seguridad de red configurado para evitar el acceso al sistema entre el instrumento y la red.",
+      "B) Instalar parches del proveedor en contra de las recomendaciones.",
+      "C) Deshabilitar la conectividad de red del dispositivo.",
+      "D) Colocar el dispositivo en un segmento de red protegido."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Parchear ignorando las recomendaciones del proveedor es el único control en esta lista que no cumple con los requisitos comerciales. El uso de firewalls, deshabilitar la conectividad de red o aislar el segmento de red son controles compensatorios estándar."
+  },
+  {
+    "id": 49,
+    "pregunta": "49. El informe de respuesta a incidentes de Hui incluye entradas de registro que muestran que un usuario inició sesión desde otro país, a pesar de vivir y trabajar en el país donde se encuentra la empresa. ¿Qué sección del informe de respuesta a incidentes es más probable que contenga este tipo de información?",
+    "opciones": [
+      "A) La sección de impacto.",
+      "B) La sección de alcance.",
+      "C) La sección de evidencia.",
+      "D) La sección de línea de tiempo."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Las entradas de registro que muestran inicios de sesión desde un país donde el empleado no trabaja ni reside son un ejemplo de evidencia que puede incluirse en un informe de respuesta a incidentes."
+  },
+  {
+    "id": 50,
+    "pregunta": "50. Melissa está realizando un análisis de causa raíz (RCA). ¿Cuál de los siguientes no es un paso común en los procesos de RCA?",
+    "opciones": [
+      "A) Identificar problemas y eventos.",
+      "B) Establecer una línea de tiempo.",
+      "C) Diferenciar los factores causales y la causa raíz.",
+      "D) Implementar controles compensatorios."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Las cuatro etapas del análisis de causa raíz (RCA) son: identificar problemas/eventos, establecer una línea de tiempo, diferenciar factores causales y documentar el análisis. La implementación de controles compensatorios no suele formar parte del proceso de RCA en sí, sino de la preparación posterior."
+  },
+  {
+    "id": 51,
+    "pregunta": "51. ¿Qué información se incluye típicamente en una lista de hosts afectados en un informe de gestión de vulnerabilidades?",
+    "opciones": [
+      "A) Nombre de host y dirección IP.",
+      "B) Dirección IP y dirección MAC.",
+      "C) Nombre de host y dirección MAC.",
+      "D) Nombre de host y máscara de subred."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. El nombre de host y la dirección IP se utilizan habitualmente para identificar cada host vulnerable en un informe. La dirección hardware (MAC) y las máscaras de subred no suelen aparecer en estos informes."
+  },
+  {
+    "id": 52,
+    "pregunta": "52. Hannah quiere establecer una métrica que ayude a su organización a determinar si su proceso de respuesta se completa de manera oportuna. ¿Qué métrica común debería seleccionar para ayudar a evaluar esto?",
+    "opciones": [
+      "A) Tiempo medio de detección (Mean time to detect)",
+      "B) Tiempo medio de reporte (Mean time to report)",
+      "C) Tiempo medio de respuesta (Mean time to respond)",
+      "D) Tiempo medio de remediación (Mean time to remediate)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Evaluar si los incidentes se remedian de manera oportuna ayuda a Hannah a determinar si la finalización de la respuesta a incidentes es efectiva, ya que la remediación es la última etapa operativa antes de la fase de reporte."
+  },
+  {
+    "id": 53,
+    "pregunta": "53. El equipo de Mikayla ha determinado que una vulnerabilidad previamente remediada ha reaparecido tras la instalación de un parche suministrado por el proveedor. ¿Qué tipo de problema de gestión de vulnerabilidades es este?",
+    "opciones": [
+      "A) Puntuación de riesgo (Risk scoring)",
+      "B) Priorización",
+      "C) Mitigación",
+      "D) Recurrencia (Recurrence)"
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Este es un ejemplo de recurrencia y debe reportarse como parte del proceso continuo de gestión de excepciones y reporte de vulnerabilidades. Las vulnerabilidades que reaparecen son recurrencia, no remediación."
+  },
+  {
+    "id": 54,
+    "pregunta": "54. Gurvinder quiere considerar métricas de impacto como el impacto en la integridad, impacto en la disponibilidad e impacto en la compatibilidad de una vulnerabilidad puntuada usando CVSS. ¿Qué grupo de métricas incluye esta información?",
+    "opciones": [
+      "A) Básica (Basic)",
+      "B) Ambiental (Environmental)",
+      "C) Temporal (Temporal)",
+      "D) Residual (Residual)"
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. El Grupo de Métricas Base para CVSS incluye métricas de explotabilidad y métricas de impacto. La métrica de impacto cubre confidencialidad, integridad, disponibilidad y alcance."
+  },
+  {
+    "id": 55,
+    "pregunta": "55. ¿Cuál de los siguientes no es un tipo de parte interesada (stakeholder) que frecuentemente necesite entender la postura o el estado general de vulnerabilidad de una organización?",
+    "opciones": [
+      "A) Profesionales de seguridad (Security practitioners)",
+      "B) Asesoría legal (Legal counsel)",
+      "C) Auditores",
+      "D) Partes interesadas en cumplimiento (Compliance stakeholders)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. El asesor legal rara vez necesita conocer el estado de la gestión de vulnerabilidades de una organización. Los interesados en seguridad, auditoría y cumplimiento son los que requieren esta información."
+  },
+  {
+    "id": 56,
+    "pregunta": "56. ¿Cuál de las siguientes puntuaciones CVSS indica el impacto más alto para una organización?",
+    "opciones": [
+      "A) 9.6",
+      "B) 7.5",
+      "C) 3.2",
+      "D) 1.3"
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Las puntuaciones CVSS van de 0 a 10; las puntuaciones más altas indican un mayor impacto. Sin contexto adicional, el número más alto generalmente señala el mayor impacto."
+  },
+  {
+    "id": 57,
+    "pregunta": "57. Las expectativas de tiempo de remediación y tiempo de parcheo por parte de un proveedor son ejemplos de qué en un programa de gestión de vulnerabilidades?",
+    "opciones": [
+      "A) Objetivos de nivel de servicio (Service level objectives)",
+      "B) Riesgos",
+      "C) Vulnerabilidades",
+      "D) Políticas internas"
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Los objetivos de nivel de servicio (SLO) son parte de un acuerdo de nivel de servicio (SLA) con un proveedor. El tiempo de remediación y el tiempo de parcheo no son riesgos en sí mismos; las políticas internas no determinan las expectativas del proveedor sin un contrato vigente."
+  },
+ {
+    "id": 58,
+    "pregunta": "58. ¿Qué problema es probable que cause la gobernanza organizacional en un programa de gestión de vulnerabilidades?",
+    "opciones": [
+      "A) Puede evitar que se parcheen las vulnerabilidades o que se usen controles compensatorios.",
+      "B) Puede aumentar el número de vulnerabilidades que necesitan ser parcheadas.",
+      "C) Puede ralentizar la aplicación de parches.",
+      "D) Puede limitar las vulnerabilidades que serán parcheadas."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Los procesos de gobernanza tienden a retrasar los procedimientos de parcheo debido a los requisitos de aprobación. Normalmente no impiden la instalación de parches ni la implementación de controles compensatorios, aunque puede llevar tiempo determinar cuál de estas opciones se adoptará."
+  },
+  {
+    "id": 59,
+    "pregunta": "59. Jacob ha iniciado el proceso de respuesta a incidentes en su organización. Se han identificado los IoC y Jacob está listo para dar el siguiente paso en el proceso. ¿Qué sucede típicamente después?",
+    "opciones": [
+      "A) Se notifica a la asesoría legal.",
+      "B) Los respondedores de incidentes recolectan datos forenses.",
+      "C) Se notifica a las fuerzas del orden.",
+      "D) Los respondedores de incidentes determinan si es un incidente real."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. El hecho de que existan Indicadores de Compromiso (IoC) no significa que haya ocurrido un incidente. En cambio, los respondedores deben analizar los datos disponibles y buscar información adicional que indique si el incidente es real o un falso positivo. Notificar al asesor legal o a las fuerzas del orden sucede después de que se verifica un incidente y solo si es necesario."
+  },
+  {
+    "id": 60,
+    "pregunta": "60. Asha quiere reducir los volúmenes de alertas que su equipo está manejando debido a la cantidad de correos electrónicos y alertas SMS que están recibiendo. ¿Cuál de las siguientes es más probable que ayude a reducir el volumen de alertas?",
+    "opciones": [
+      "A) Ajustar los umbrales de alerta (Tune alerting thresholds).",
+      "B) Suscribirse a más feeds de IoC.",
+      "C) Crear IoC adicionales.",
+      "D) Establecer horarios de trabajo para evitar alertas fuera de horario."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Asha sabe que los volúmenes de alertas deben ajustarse (tuning) para ser útiles y dedicará su tiempo a ajustar las alertas para asegurar que solo las alertas importantes se escalen."
+  },
+  {
+    "id": 61,
+    "pregunta": "61. ¿Qué estándar NIST proporciona información sobre las prácticas de manejo de incidentes?",
+    "opciones": [
+      "A) NIST SP 800-61",
+      "B) ISO 27001",
+      "C) NIST SP 800-53",
+      "D) SOC 2"
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. NIST SP 800-61 es la guía de Manejo de Incidentes de Seguridad Informática de NIST y proporciona información sobre los estándares de manejo de incidentes. NIST SP 800-53 describe los controles de seguridad y privacidad para sistemas de información y organizaciones."
+  },
+  {
+    "id": 62,
+    "pregunta": "62. Jaime quiere considerar los componentes críticos de las relaciones públicas como parte de su plan de comunicaciones de incidentes. ¿Qué dos temas están mejor alineados con esto?",
+    "opciones": [
+      "A) Comunicaciones con clientes y fuerzas del orden.",
+      "B) Comunicaciones con clientes y ejecutivos.",
+      "C) Comunicaciones con clientes y medios de comunicación.",
+      "D) Comunicaciones con clientes y asesoría legal."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Jessica sabe que comunicarse con los clientes y con los medios son partes críticas de las relaciones públicas. Las comunicaciones con las fuerzas del orden, las comunicaciones ejecutivas y las comunicaciones con la asesoría legal son parte de las comunicaciones de respuesta a incidentes, pero no necesariamente parte de las relaciones públicas."
+  },
+  {
+    "id": 63,
+    "pregunta": "63. La organización de Annie hace que los administradores divisionales sean responsables de parchear vulnerabilidades después de que son notificados mediante un sistema de tickets. Annie ha notado que los administradores no están parcheando los sistemas con prontitud. ¿Qué debería hacer para abordar este problema de la manera más efectiva?",
+    "opciones": [
+      "A) Cambiar la notificación a correos electrónicos automatizados.",
+      "B) Invertir en una campaña de concienciación y formación.",
+      "C) Utilizar las vulnerabilidades para comprometer los sistemas y probar su punto.",
+      "D) Involucrar a Recursos Humanos debido a una falta de desempeño laboral."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Los programas de concienciación y formación son una parte importante de las prácticas de gestión de vulnerabilidades, y Annie puede esperar que si los administradores entienden sus roles, los requisitos del trabajo y la importancia de parchear, parchearán con mayor prontitud los sistemas de los que son responsables. Es poco probable que cambiar los estilos de notificación tenga un impacto importante; atacar los sistemas no es una práctica común o típicamente aceptable en la mayoría de las organizaciones, y escalar a Recursos Humanos puede generar resentimiento y no debería ser su primera opción."
+  },
+  {
+    "id": 64,
+    "pregunta": "64. La organización de Henry maneja datos de tarjetas de crédito como parte de sus operaciones. ¿Qué tipo de informe de gestión de vulnerabilidades es más probable que Henry necesite ejecutar debido a esto?",
+    "opciones": [
+      "A) Informes de cumplimiento de PCI.",
+      "B) Informes de cumplimiento de GLBA.",
+      "C) Una lista de sistemas comprometidos.",
+      "D) Una lista de sistemas sin parches."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. La organización de Henry tiene más probabilidades de necesitar cumplir con los estándares de la Industria de Tarjetas de Pago (PCI) y, por lo tanto, necesitará ejecutar informes que ayuden a demostrar el cumplimiento de PCI. No se requiere una lista de sistemas comprometidos o sin parches para PCI-DSS."
+  },
+  {
+    "id": 65,
+    "pregunta": "65. Jen ha descubierto que muchos sistemas en su organización se están implementando con un servicio vulnerable activo. ¿Qué solución es la más adecuada para abordar este tipo de problema en una organización grande?",
+    "opciones": [
+      "A) Un programa de concienciación.",
+      "B) Controles compensatorios.",
+      "C) Cambiar los requisitos de negocio.",
+      "D) Gestión de configuración (Configuration management)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Jen sabe que la gestión de la configuración es una solución apropiada para garantizar que se cumplan los estándares de toda la organización y que puede ayudar con este tipo de problemas. Es posible que también necesite implementar un programa de concienciación para garantizar que los administradores configuren los sistemas adecuadamente antes de la implementación, pero la gestión de la configuración es la corrección más completa."
+  },
+  {
+    "id": 66,
+    "pregunta": "66. Un informe de incidentes debe indicar a las personas involucradas, así como ¿cuál de los siguientes elementos?",
+    "opciones": [
+      "A) Las direcciones de hardware (hardware addresses) de los sistemas involucrados.",
+      "B) El marco de tiempo en el que ocurrió el evento o incidente.",
+      "C) Una declaración escrita de cada individuo entrevistado.",
+      "D) Un informe policial."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Los informes de incidentes normalmente deben incluir quién, qué, cuándo, dónde y por qué. Las direcciones de hardware, las declaraciones escritas de los involucrados y los informes policiales rara vez se incluyen."
+  },
+  {
+    "id": 67,
+    "pregunta": "67. Jason ha definido el problema como parte de un esfuerzo de análisis de causa raíz (RCA). ¿Qué paso sigue típicamente en RCA?",
+    "opciones": [
+      "A) Recopilar datos sobre el problema.",
+      "B) Determinar la causa raíz del problema.",
+      "C) Determinar los factores causales potenciales.",
+      "D) Analizar las causas."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. El análisis de causa raíz (RCA) requiere datos para proceder, y Jason sabe que su siguiente paso es recopilar datos. Luego procederá a determinar los factores causales, identificar la causa raíz y priorizar las causas."
+  },
+  {
+    "id": 68,
+    "pregunta": "68. El tiempo medio de respuesta (Mean time to respond) es un ejemplo de ¿qué?",
+    "opciones": [
+      "A) Un objetivo de informe de respuesta a incidentes.",
+      "B) Un SOW (Declaración de trabajo) estándar de la industria.",
+      "C) Un SLA (Acuerdo de nivel de servicio) estándar de la industria.",
+      "D) Un KPI (Indicador clave de desempeño) de respuesta a incidentes."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. El tiempo medio de respuesta (Mean time to respond) es un indicador clave de desempeño (KPI) para la respuesta a incidentes."
+  },
+  {
+    "id": 69,
+    "pregunta": "69. ¿Qué información se recopila como parte de un ejercicio de lecciones aprendidas realizado al final de un proceso de respuesta a incidentes?",
+    "opciones": [
+      "A) Problemas que impactarán positivamente los procesos futuros de respuesta a incidentes.",
+      "B) Tanto las lecciones positivas como las negativas aprendidas durante el proceso.",
+      "C) Problemas que impactarán negativamente los procesos futuros de respuesta a incidentes.",
+      "D) Causas raíz del incidente."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Las lecciones aprendidas deben incluir tanto lecciones positivas como negativas. Esto asegura que las organizaciones refuercen lo que sale bien y mejoren lo que sale mal. Las causas raíz se identifican como parte de un análisis de causa raíz, no como parte de las lecciones aprendidas."
+  },
+  {
+    "id": 70,
+    "pregunta": "70. Jason quiere entender rápidamente el contenido de un informe de incidentes. ¿Qué debería leer?",
+    "opciones": [
+      "A) La declaración de alcance.",
+      "B) La línea de tiempo (Timeline).",
+      "C) El resumen ejecutivo.",
+      "D) La evidencia."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Los resúmenes ejecutivos deben ser cortos, concisos y están destinados a permitir a los lectores comprender rápidamente el contenido del informe sin leer el informe completo. Las declaraciones de alcance describen la escala y los sistemas o servicios impactados, las líneas de tiempo enumeran cuándo sucedieron los eventos y la evidencia proporciona información detallada sobre el incidente que respalda el análisis o las teorías."
+  },
+  {
+    "id": 71,
+    "pregunta": "71. ¿Qué papel importante desempeñan la criticidad y la información de impacto en el uso organizacional de las puntuaciones CVSS?",
+    "opciones": [
+      "A) Ayuda con la priorización.",
+      "B) Determina si se debe instalar un parche.",
+      "C) Determina si se debe usar un control compensatorio.",
+      "D) Ayuda a prevenir la recurrencia."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Combinando la criticidad y la información de impacto, las organizaciones pueden determinar qué tan peligroso es el problema y qué tan probable es que las impacte. Eso significa que CVSS puede proporcionar una calificación útil para priorizar sus esfuerzos dados los recursos y el tiempo limitados. La recurrencia no se ve afectada por la criticidad o el impacto, sino que tiende a apuntar a problemas técnicos o de procedimiento. Los controles compensatorios se utilizan cuando no hay un parche disponible o la solución no satisface las necesidades de negocio de una organización."
+  },
+  {
+    "id": 72,
+    "pregunta": "72. Natalie ha firmado un acuerdo de nivel de servicio (SLA) con un cliente que especifica requisitos de rendimiento para un servicio que su empresa proporciona. ¿Cómo es más probable que esto afecte su capacidad para remediar vulnerabilidades en los servicios contenedorizados subyacentes que proporcionan dicho servicio?",
+    "opciones": [
+      "A) Requerirá que Natalie busque la aprobación del cliente para cada parche que se implemente mediante su proceso de gobernanza.",
+      "B) Requerirá que Natalie asegure que el servicio no se interrumpa cuando se implementen nuevos contenedores parcheados y se deshabiliten los contenedores vulnerables.",
+      "C) Permitirá tanto tiempo de inactividad como sea necesario a medida que se implementen parches en los servicios contenedorizados.",
+      "D) Evitará que Natalie actualice los sistemas heredados (legacy systems) de los que depende el cliente."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. El hecho de que la organización de Natalie utilice contenedores probablemente le ayudará a evitar tiempos de inactividad inesperados o no deseados, pero Natalie aún debe asegurarse de que el servicio no se interrumpa mientras implementa contenedores parcheados y elimina los contenedores vulnerables antiguos. Un SLA no requiere gobernanza externa; en cambio, determina aspectos clave del rendimiento del servicio como el tiempo de actividad (uptime), y el tiempo de inactividad rara vez es ilimitado."
+  },
+  {
+    "id": 73,
+    "pregunta": "73. La organización de Angela ha descubierto que sus estaciones de trabajo Windows tienen una vulnerabilidad que fue descubierta hace más de un año. ¿Qué solución es la más adecuada para manejar esta vulnerabilidad conocida?",
+    "opciones": [
+      "A) Aplicar parches (Patching).",
+      "B) Concienciación, educación y formación.",
+      "C) Cambiar los requisitos de negocio.",
+      "D) Controles compensatorios."
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Angela sabe que simplemente parchear es probablemente la mejor opción. Una vulnerabilidad conocida de Windows generalmente tendrá un parche disponible. Ella debería averiguar por qué su organización no lo ha parcheado y abordar el problema. ¡Eso puede requerir concienciación o formación una vez que descubra por qué no se está parcheando! Los controles compensatorios generalmente no son necesarios para una vulnerabilidad antigua y conocida en un producto compatible porque los parches suelen existir, y no hay indicios en la pregunta de un cambio de proceso de negocio que ayudaría."
+  },
+  {
+    "id": 74,
+    "pregunta": "74. Jacob quiere actualizar las notas de mitigación para una vulnerabilidad en un servidor. ¿Cuál de las siguientes no es una opción de mitigación común?",
+    "opciones": [
+      "A) Instalar un parche.",
+      "B) Implementar un control compensatorio.",
+      "C) Deshabilitar un servicio o software.",
+      "D) Apagar el sistema (Turning the system off)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Simplemente apagar un sistema no es una mitigación común, ya que los sistemas generalmente tienen un propósito para ejecutarse, y apagarlos creará una interrupción del negocio. Si bien apagar los sistemas puede hacerse en circunstancias urgentes, parchear, implementar un control compensatorio o deshabilitar un servicio vulnerable son mucho más comunes."
+  },
+  {
+    "id": 75,
+    "pregunta": "75. ¿Qué es lo más crítico para involucrar en los procesos de escalamiento de incidentes?",
+    "opciones": [
+      "A) Usuarios finales.",
+      "B) Asesoría legal.",
+      "C) Gestión (Directivos/Gerencia).",
+      "D) Fuerzas del orden."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Es fundamental involucrar a la dirección en los procesos de escalamiento de incidentes para permitir un escalamiento y una respuesta adecuados. Los expertos legales y de las fuerzas del orden se involucran según sea necesario, y los usuarios finales normalmente no requieren ser involucrados en el escalamiento."
+  },
+  {
+    "id": 76,
+    "pregunta": "76. La organización de Gurvinder debe reportar brechas dentro de las 24 horas posteriores a la detección de la brecha, independientemente de qué tan avanzada esté la investigación. ¿Qué tipo de requisito es más probable que impulse este tipo de comunicación?",
+    "opciones": [
+      "A) Requisitos contractuales.",
+      "B) Requisitos de redes sociales.",
+      "C) Requisitos regulatorios.",
+      "D) Requisitos de reputación."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Los requisitos regulatorios a menudo tienen marcos de tiempo específicos para la comunicación, independientemente del estado del proceso de respuesta a incidentes. Los requisitos contractuales tienden a ofrecer a la organización más flexibilidad en la presentación de informes. Las redes sociales no crean requisitos, y la reputación puede beneficiarse de una notificación oportuna, pero no resulta en requisitos."
+  },
+  {
+    "id": 77,
+    "pregunta": "77. La organización de Xuan utiliza un paquete de software antiguo, que ya no se actualiza ni se vende, el cual tiene un servidor web integrado que expone en cada estación de trabajo que ejecuta el software, permitiendo la transferencia de archivos entre estaciones. Durante un escaneo de vulnerabilidades, el navegador web fue marcado como una vulnerabilidad crítica. ¿Qué solución debería recomendar Xuan para resolver mejor el problema?",
+    "opciones": [
+      "A) Un programa de concienciación.",
+      "B) Controles compensatorios.",
+      "C) Cambiar los requisitos de negocio.",
+      "D) Gestión de configuración."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Xuan debería recomendar que la organización cambie sus prácticas comerciales. Hay muchas otras formas de intercambiar archivos que no requieren un paquete de software vulnerable, y un cambio en el proceso resolvería esto. La concienciación, los controles compensatorios y la gestión de la configuración no abordan la necesidad comercial."
+  },
+  {
+    "id": 78,
+    "pregunta": "78. Jackie está revisando las puntuaciones de riesgo en un informe de vulnerabilidades y observa que el riesgo que está revisando tiene una puntuación de 1.0. ¿Qué recomendación debería hacer Jackie sobre la vulnerabilidad?",
+    "opciones": [
+      "A) Debe parchearse inmediatamente porque la puntuación de riesgo es alta.",
+      "B) El riesgo es muy bajo y probablemente puede ignorarse.",
+      "C) El riesgo es bajo y debe parchearse en el siguiente ciclo de parches.",
+      "D) Debe parchearse inmediatamente porque está en el 10 por ciento superior de los riesgos."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Aunque un riesgo tan bajo como 1.0 en la escala CVSS tiene pocas probabilidades de causar daños inmediatos, si existe un parche disponible y este no introduce riesgos adicionales, debería instalarse durante la siguiente ventana de mantenimiento."
+  },
+  {
+    "id": 79,
+    "pregunta": "79. ¿Las entradas de registro (log entries) se encuentran comúnmente en qué parte de un informe de respuesta a incidentes?",
+    "opciones": [
+      "A) Recomendaciones.",
+      "B) Resumen ejecutivo.",
+      "C) Evidencia.",
+      "D) Línea de tiempo."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. La sección de evidencia (evidence) de un informe de respuesta a incidentes suele incluir información como entradas de registro (log entries). Los archivos de registro normalmente no aparecen en el resumen ejecutivo, la línea de tiempo o la sección de recomendaciones del informe."
+  },
+  {
+    "id": 80,
+    "pregunta": "80. Kathleen quiere crear una lista priorizada de vulnerabilidades para su organización. ¿Qué parte de la métrica CVSS le ayudará a ajustar la puntuación para que coincida mejor con los requisitos de disponibilidad de su organización?",
+    "opciones": [
+      "A) El grupo de métricas básicas (Basic metric group).",
+      "B) El grupo de métricas avanzadas (Advanced metric group).",
+      "C) El grupo de métricas temporales (Temporal metric group).",
+      "D) El grupo de métricas ambientales (Environmental metric group)."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. El grupo ambiental (environmental) incluye información que toma en cuenta los requisitos específicos de una organización, incluidos los requisitos de disponibilidad establecidos por la propia entidad."
+  },
+  {
+    "id": 81,
+    "pregunta": "81. Derek es el líder del equipo de finanzas y contabilidad de su organización y ha expresado su preocupación por la instalación de parches porque su equipo depende del servicio que está siendo parcheado. Derek señaló que el equipo está en un momento crítico debido a los informes financieros anuales. ¿Qué tipo de inhibidor para la remediación es este?",
+    "opciones": [
+      "A) Una posible violación de un MOU.",
+      "B) Un problema de sistema heredado (legacy system).",
+      "C) Un problema de interrupción de proceso de negocio.",
+      "D) Una posible violación de un SLA."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Este es un ejemplo de un problema de interrupción de procesos de negocio. Las organizaciones suelen ser sensibles a los tiempos de inactividad y cortes provocados por tareas de parcheo o remediación durante periodos críticos o de alta actividad en su ciclo de negocio."
+  },
+  {
+    "id": 82,
+    "pregunta": "82. ¿Qué parte de un informe de respuesta a incidentes describe formas detalladas para evitar problemas similares en el futuro?",
+    "opciones": [
+      "A) El resumen ejecutivo",
+      "B) Lecciones aprendidas (Lessons learned)",
+      "C) El alcance (Scope)",
+      "D) Evidencia"
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Los informes de respuesta a incidentes deben incluir una lista de lecciones aprendidas (lessons learned) que describa formas de mejorar y cómo evitar problemas similares en el futuro. El resumen ejecutivo es breve y, aunque puede señalar lecciones aprendidas, no suele cubrirlas en profundidad."
+  },
+  {
+    "id": 83,
+    "pregunta": "83. ¿En qué sección de un informe de gestión de vulnerabilidades se pueden encontrar controles compensatorios potenciales?",
+    "opciones": [
+      "A) La sección de mitigaciones",
+      "B) Las puntuaciones de riesgo",
+      "C) La sección de recurrencia",
+      "D) La lista de hosts afectados"
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Los controles compensatorios son un ejemplo de técnica de mitigación y pueden encontrarse como parte de las recomendaciones de mitigación."
+  },
+  {
+    "id": 84,
+    "pregunta": "84. La empresa para la que trabaja Amari utiliza un sistema embebido como parte de un proceso de fabricación. El sistema depende de un sistema operativo creado por el proveedor de la máquina y el equipo de Amari ha identificado vulnerabilidades durante un escaneo de red. ¿Como qué tipo de sistema debería identificar Amari este dispositivo?",
+    "opciones": [
+      "A) Un sistema propietario (Proprietary system)",
+      "B) Un sistema heredado (Legacy system)",
+      "C) Un sistema primario",
+      "D) Un sistema secundario"
+    ],
+    "respuesta": "A",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "A. Este es un ejemplo de un sistema propietario que puede no utilizar sistemas operativos o software soportados y comúnmente disponibles. Los sistemas heredados (legacy systems) son sistemas obsoletos y, a menudo, sin soporte. Los términos \"sistemas primarios\" y \"secundarios\" no se utilizan habitualmente para categorizar sistemas vulnerables."
+  },
+  {
+    "id": 85,
+    "pregunta": "85. Amari quiere asegurar que su equipo pueda cumplir con el acuerdo de nivel de servicio (SLA) de su organización para el sistema embebido que ha sido identificado como vulnerable. ¿Cuál de los siguientes controles compensatorios sería la solución más adecuada para permitir que el sistema permanezca en línea mientras permanece seguro?",
+    "opciones": [
+      "A) Instalar un IDS basado en hardware entre el sistema y la red.",
+      "B) Colocar un firewall de hardware entre el sistema y la red.",
+      "C) Deshabilitar la conexión de red del dispositivo.",
+      "D) Instalar un sistema operativo no propietario en el sistema embebido."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Un firewall de hardware impedirá el acceso remoto al sistema si se configura correctamente, protegiéndolo de ataques basados en red y actuando como un control compensatorio apropiado. Un IDS solo detecta ataques y no los detiene. Deshabilitar la conexión de red del dispositivo por completo probablemente impactaría el acuerdo de nivel de servicio (SLA), e instalar otro sistema operativo es prácticamente imposible."
+  },
+  {
+    "id": 86,
+    "pregunta": "86. Amari ha implementado un control compensatorio para proteger el sistema embebido vulnerable del que es responsable. ¿Qué paso debería tomar a continuación?",
+    "opciones": [
+      "A) Crear un informe de incidentes y distribuirlo a los destinatarios apropiados.",
+      "B) Eliminar el dispositivo del proceso de escaneo de vulnerabilidades para evitar falsos positivos continuos.",
+      "C) Registrar el control compensatorio y marcar el dispositivo para seguimiento para ver si hay parches disponibles.",
+      "D) Marcar las vulnerabilidades descubiertas previamente como falsos positivos."
+    ],
+    "respuesta": "C",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "C. Amari debe documentar el control compensatorio y asegurarse de realizar revisiones periódicas para determinar si se requieren nuevos parches, controles adicionales o mantenimiento del firewall. No ocurrió ningún incidente, por lo que no es necesario un informe de incidentes. El dispositivo no debe eliminarse del sistema de escaneo de vulnerabilidades porque sigue conectado a la red. Las vulnerabilidades no fueron falsos positivos y no deben tratarse como tales."
+  },
+  {
+    "id": 87,
+    "pregunta": "87. NIST proporciona recomendaciones para la comunicación con los medios como parte de la respuesta a incidentes. ¿Cuál de las siguientes es una preparación recomendada por NIST para trabajar con los medios?",
+    "opciones": [
+      "A) Escribir previamente todas las comunicaciones de incidentes antes de que ocurran.",
+      "B) Realizar sesiones de práctica con los medios para los respondedores de incidentes como parte de los ejercicios de RI.",
+      "C) Crear procedimientos para evitar a los medios como parte de la planificación de la respuesta a incidentes.",
+      "D) Contactar a las fuerzas del orden para prepararse para las preocupaciones de los medios."
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Realizar sesiones de práctica con los medios de comunicación para los respondedores de incidentes como parte de los ejercicios de RI es una práctica recomendada por el NIST. Si bien se pueden preparar ejemplos y plantillas de comunicación, no es posible redactar todas las comunicaciones antes de que ocurran los incidentes."
+  },
+  {
+    "id": 88,
+    "pregunta": "88. El análisis de causa raíz (RCA) de Michele ha determinado una serie de eventos que contribuyeron al problema pero que no fueron la causa raíz. ¿Qué ha identificado ella?",
+    "opciones": [
+      "A) Controles compensatorios",
+      "B) Factores causales (Causal factors)",
+      "C) Causas de rama (Branch causes)",
+      "D) Causas no fundamentales (Nonroot causes)"
+    ],
+    "respuesta": "B",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "B. Los factores causales (causal factors) son eventos que contribuyen a un incidente, pero que no constituyen la causa raíz."
+  },
+  {
+    "id": 89,
+    "pregunta": "89. ¿Qué tres grupos de métricas componen una puntuación CVSS?",
+    "opciones": [
+      "A) El grupo de métricas centrales, el grupo de métricas de impacto y el grupo de métricas organizacionales.",
+      "B) El grupo de métricas centrales, el grupo de métricas temporales y el grupo de métricas organizacionales.",
+      "C) El grupo de métricas básicas, el grupo de métricas de impacto y el grupo de métricas ambientales.",
+      "D) El grupo de métricas básicas, el grupo de métricas temporales y el grupo de métricas ambientales."
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Las puntuaciones CVSS se basan en tres conjuntos de métricas: los grupos Base, Temporal y Ambiental."
+  },
+  {
+    "id": 90,
+    "pregunta": "90. ¿Cuál de las siguientes preguntas no se responde normalmente como parte de un informe de respuesta a incidentes?",
+    "opciones": [
+      "A) ¿Quién?",
+      "B) ¿Cuándo?",
+      "C) ¿Qué?",
+      "D) ¿Con quién?"
+    ],
+    "respuesta": "D",
+    "objetivo": "Reporting and Communication",
+    "explicacion": "D. Puede parecer sentido común, pero responder a las cinco preguntas fundamentales (quién, qué, cuándo, dónde y por qué) es estándar en los informes de respuesta a incidentes. Sin embargo, \"¿con quién?\" no forma parte de esas cinco preguntas."
+  } 
+]

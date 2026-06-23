@@ -1,0 +1,6 @@
+        tip:  [*]  and  duration  <  10  packets  and  destbytes  <  3000  and  flowcompleted  =  true 
+
+          application  =  http  or  https  or  tcp  or  unknown  and  content  !=  uripath:*  and  content 
+
+          contentencoding:* 
+

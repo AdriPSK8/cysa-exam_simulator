@@ -1,0 +1,4 @@
+>Executable  file  was  dropped:  C:\Logs\mffcae1.exe 
+>Child  process  was  created,  parent  C:\Windows\system32\cmd.exe 
+>mffcae1.exe  connects  to  unusual  port 
+>File  downloaded:  cx99.exe

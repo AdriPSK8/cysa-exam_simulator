@@ -1,0 +1,11 @@
+select  source.name,  data.process.cmd,  count(*)  AS  hostcount 
+from  windows - events  where  type  =  ‘sysmon’  AND 
+data.process.action  =  ‘launch’  AND  data.process.image.file  = 
+‘reg.exe’  AND  data.process.parentImage.file  =  ‘cmd.exe’ 
+ 
+He then queries the returned data using the following script:
+
+select  source.name,  data.process.cmd,  count(*)  AS  hostcount 
+from  network - events  where  type  =  ‘sysmon’  AND 
+data.process.action  =  ‘launch’  AND  data.process.  image.file  = 
+‘cmd.exe’  AND  data.process.parentImage.file  =  ‘explorer.exe’

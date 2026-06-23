@@ -1,0 +1,3 @@
+Aug  30  09:46:54  ip - 172 - 30 - 0 - 62  sshd[3051]:  Accepted  publickey  for  ec2 - user  from  10.174.238.88  port  57478  ssh2:  RSA  e5:f5:c1:46:bb:49:a1:43:da:9d:50:c5:37:bd:79:22 
+Aug  30  09:46:54  ip - 172 - 30 - 0 - 62  ssh[3051]:  pam_unix[sshd:session]:  session  opened  for  user  ec2 - user  by  (uid=0) 
+Aug  30  09:48:06  ip - 172 - 30 - 0 - 62  sudo:  ec2 - user  :  TTY=ps/0  ;  PWD=/home/ec2 - user  ;  USER=root;  COMMAND=/bin/bash

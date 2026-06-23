@@ -1,0 +1,5 @@
+select  timeInterval(date,  ‘4h’),  `data.login.user`, 
+count(distinct  data.login.machine.name)  as  machinecount  from 
+network - events  where  data.winevent.EventID  =  4624  having 
+machinecount>  1 
+

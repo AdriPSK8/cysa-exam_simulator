@@ -1,0 +1,2 @@
+¿Qué tal, amigos y apasionados por la ciberseguridad? Durante mis estudios para el examen de CompTIA CySA+, me fijé que había muy poca información en español sobre el examen, así que dediqué un tiempo para traducir una guía de SYBEX que contiene 1000 preguntas, con los dominios que vas a encontrar en la prueba.
+Lo creé con Python y JSON. Quizás tenga que hacerle algunas correcciones a futuro, pero sé que les ayudará a pasar su examen. El simulador incluye imágenes y logs que te ayudan a analizar como todo un experto.
